@@ -1,5 +1,13 @@
 
+/*
+author: Paul Kim
+date: May 8, 2024
+version: 1.0
+description: Home page for Vision Coding Academy
+ */
+
 import $ from 'jquery';
+import { NavLink } from "react-router-dom"
 import ScrollReveal from 'scrollreveal'
 import jayImg from "/jay.jpg"
 import codingClass from "/coding-class1.jpg"
@@ -357,8 +365,8 @@ export default function HomePage() {
                 <section className="mx-2 py-10 border-t-2 border-b-2">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.918591896756!2d-122.80519882320316!3d49.27793977108967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548678cc852829e7%3A0x417feb8745527bef!2s2885%20Barnet%20Hwy%2C%20Coquitlam%2C%20BC%20V3B%201C1!5e0!3m2!1sen!2sca!4v1715144121249!5m2!1sen!2sca"
-                        width="300" height="450" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade" className="map mx-auto"></iframe>
+                        width="300" height="450" allowFullScreen="" loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade" className="map mx-auto"></iframe>
                 </section>
             </div>
         </main>
