@@ -8,12 +8,14 @@ description: Header component for Vision Coding Academy
 
 import $ from 'jquery';
 import { NavLink } from "react-router-dom"
-import visionCodingIcon from "/vision-coding-icon.jpg"
+import visionCodingIcon from "/yellow1.png"
 
 export default function Header() {
 
     const $mainNav = $('#main-nav');
-
+    const $mainNav2 = $('.main-nav');
+    console.log($mainNav)
+    console.log($mainNav2)
     $mainNav.hide();
 
     if (window.innerWidth > 700) {
@@ -25,55 +27,55 @@ export default function Header() {
     }
 
     return (
-        <header className="md:flex justify-between px-5 py-5 bg-black bg-opacity-70 text-white sticky z-50 top-0">
+        <header className="md:flex justify-between bg-black bg-opacity-70 text-white sticky z-50 top-0">
             <div className="flex justify-between md:block px-2">
-                <div className="flex"><img src={visionCodingIcon} className="" />
+                <div className="flex"><img src={visionCodingIcon} className="w-[60px]" />
                     <NavLink to="/">
-                        <div className="nav-element hidden md:block py-2 text-2xl">Vision Coding Academy</div>
+                        <div className="nav-element hidden md:block py-5 text-2xl">Vision Coding Academy</div>
                     </NavLink>
-                    <NavLink to="/"><div className="md:hidden py-2">Vision Coding</div></NavLink>
+                    <NavLink to="/"><div className="md:hidden py-5 text-lg">Vision Coding</div></NavLink>
                 </div>
                 <button id="hamburger-menu" className="text-3xl md:hidden" onClick={slideToggle}>&#x2630;</button>
             </div>
             <nav id="main-nav">
                 <ul className="md:flex">
                     <li
-                        className="px-5 py-3 text-center rounded-md transition ease-in-out duration-300  md:hidden">
-                        <NavLink to="/">Home</NavLink>
+                        className="px-5 py-2 md:py-5 text-center rounded-md transition ease-in-out duration-300  md:hidden">
+                        <NavLink to="/" onClick={() => { $mainNav.slideUp() }}>Home</NavLink>
                     </li>
                     <li
-                        className="px-5 py-3 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">
-                        <NavLink to="/about">About</NavLink>
+                        className="px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">
+                        <NavLink to="/about" onClick={() => { $mainNav.slideUp() }}>About</NavLink>
                     </li>
                     <li
-                        className="px-5 py-3 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">
-                        <NavLink to="/courses">Courses</NavLink>
+                        className="px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">
+                        <NavLink to="/courses" onClick={() => { $mainNav.slideUp() }}>Courses</NavLink>
                     </li>
                     <li
-                        className="px-5 py-3 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">
-                        <NavLink to="#">Forum</NavLink>
+                        className="px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">
+                        <NavLink to="#" onClick={() => { $mainNav.slideUp() }}>Forum</NavLink>
                     </li>
                     <li
-                        className="px-5 py-3 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">
-                        <NavLink to="/contact">Contact</NavLink>
+                        className="px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">
+                        <NavLink to="/contact" onClick={() => { $mainNav.slideUp() }}>Contact</NavLink>
                     </li>
                     <li
-                        className="px-5 py-3 text-center md:hidden rounded-md transition ease-in-out duration-300  md:text-2xl">
-                        <NavLink to="#">Login</NavLink>
+                        className="px-5 py-2 text-center md:hidden rounded-md transition ease-in-out duration-300  md:text-2xl">
+                        <NavLink to="#" onClick={() => { $mainNav.slideUp() }}>Login</NavLink>
                     </li>
                     <li
-                        className="px-5 py-3 text-center md:hidden rounded-md transition ease-in-out duration-300  md:text-2xl">
-                        <NavLink to="#">Signup</NavLink>
+                        className="px-5 py-2 text-center md:hidden rounded-md transition ease-in-out duration-300  md:text-2xl">
+                        <NavLink to="#" onClick={() => { $mainNav.slideUp() }}>Signup</NavLink>
                     </li>
                 </ul>
             </nav>
             <div className="flex">
                 <div
-                    className="nav-element hidden px-5 py-3 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">
+                    className="nav-element hidden px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">
                     Login
                 </div>
                 <div
-                    className="nav-element hidden px-5 py-3 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">
+                    className="nav-element hidden px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">
                     Signup
                 </div>
             </div>
