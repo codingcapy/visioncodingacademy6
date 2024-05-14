@@ -61,23 +61,23 @@ export default function Header() {
                     </li>
                     <li
                         className="px-5 py-2 text-center md:hidden rounded-md transition ease-in-out duration-300  md:text-2xl">
-                        <NavLink to="#" onClick={() => { $mainNav.slideUp() }}>Login</NavLink>
+                        <NavLink to="/login" onClick={() => { $mainNav.slideUp() }}>Login</NavLink>
                     </li>
                     <li
                         className="px-5 py-2 text-center md:hidden rounded-md transition ease-in-out duration-300  md:text-2xl">
-                        <NavLink to="#" onClick={() => { $mainNav.slideUp() }}>Signup</NavLink>
+                        <NavLink to="/signup" onClick={() => { $mainNav.slideUp() }}>Signup</NavLink>
                     </li>
                 </ul>
             </nav>
             <div className="flex">
-                <div
+                <NavLink to="/login"
                     className="nav-element hidden px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">
                     Login
-                </div>
-                <div
+                </NavLink>
+                <NavLink to="/signup"
                     className="nav-element hidden px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">
                     Signup
-                </div>
+                </NavLink>
             </div>
         </header>
     )

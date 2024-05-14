@@ -6,6 +6,7 @@ version: 1.0
 description: Footer component for Vision Coding Academy
  */
 
+import { NavLink } from "react-router-dom"
 import visionCodingIcon from "/vision-coding-icon.jpg"
 
 export default function Footer() {
@@ -19,12 +20,12 @@ export default function Footer() {
                         <div className="py-2 text-2xl">Vision Coding Academy</div>
                     </a>
                 </div>
-                <div>
+                <div className="flex flex-col">
                     <h3 className="text-2xl md:text-4xl pb-5">Menu</h3>
-                    <p className="py-2 md:text-lg">Home</p>
-                    <p className="py-2 md:text-lg">Courses</p>
-                    <p className="py-2 md:text-lg">About Us</p>
-                    <p className="py-2 md:text-lg">Contact</p>
+                    <NavLink to="/" className="py-2 md:text-lg">Home</NavLink>
+                    <NavLink to="/courses" className="py-2 md:text-lg">Courses</NavLink>
+                    <NavLink to="/about" className="py-2 md:text-lg">About Us</NavLink>
+                    <NavLink to="/contact" className="py-2 md:text-lg">Contact</NavLink>
                 </div>
                 <div>
                     <h3 className="text-2xl md:text-4xl pb-5">Contact Us</h3>

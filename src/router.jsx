@@ -12,6 +12,8 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import CoursesPage from "./pages/CoursesPage";
 import ContactPage from "./pages/ContactPage";
+import LoginPage from "./pages/LoginPage";
+import SignupPage from "./pages/SIgnupPage";
 
 export function Router() {
     const router = createBrowserRouter(
@@ -21,6 +23,8 @@ export function Router() {
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/courses" element={<CoursesPage />} />
                 <Route path="/contact" element={<ContactPage />} />
+                <Route path="/login" element={<LoginPage />} />
+                <Route path="/signup" element={<SignupPage />} />
             </Route>
         )
     )
