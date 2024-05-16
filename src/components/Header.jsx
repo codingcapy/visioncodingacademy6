@@ -27,7 +27,7 @@ export default function Header() {
     }
 
     return (
-        <header className="md:flex justify-between bg-black bg-opacity-70 text-white sticky z-50 top-0">
+        <header className="md:flex justify-between bg-black text-white sticky z-50 top-0">
             <div className="flex justify-between md:block px-2">
                 <div className="flex"><img src={visionCodingIcon} className="w-[60px]" />
                     <NavLink to="/">
@@ -53,7 +53,7 @@ export default function Header() {
                     </li>
                     <li
                         className="px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">
-                        <NavLink to="#" onClick={() => { $mainNav.slideUp() }}>Forum</NavLink>
+                        <NavLink to="#" onClick={() => { $mainNav.slideUp() }}>Gallery</NavLink>
                     </li>
                     <li
                         className="px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">

@@ -16,16 +16,16 @@ export default function Footer() {
             <div className="py-10 md:grid md:grid-cols-4">
                 <div>
                     <img src={visionCodingIcon} className="" />
-                    <a href="./index.html">
-                        <div className="py-2 text-2xl">Vision Coding Academy</div>
-                    </a>
+                    <NavLink to="/">
+                        <div className="nav-element py-2 text-2xl">Vision Coding Academy</div>
+                    </NavLink>
                 </div>
                 <div className="flex flex-col">
                     <h3 className="text-2xl md:text-4xl pb-5">Menu</h3>
-                    <NavLink to="/" className="py-2 md:text-lg">Home</NavLink>
-                    <NavLink to="/courses" className="py-2 md:text-lg">Courses</NavLink>
-                    <NavLink to="/about" className="py-2 md:text-lg">About Us</NavLink>
-                    <NavLink to="/contact" className="py-2 md:text-lg">Contact</NavLink>
+                    <NavLink to="/" className="nav-element py-2 md:text-lg">Home</NavLink>
+                    <NavLink to="/courses" className="nav-element py-2 md:text-lg">Courses</NavLink>
+                    <NavLink to="/about" className="nav-element py-2 md:text-lg">About Us</NavLink>
+                    <NavLink to="/contact" className="nav-element py-2 md:text-lg">Contact</NavLink>
                 </div>
                 <div>
                     <h3 className="text-2xl md:text-4xl pb-5">Contact Us</h3>

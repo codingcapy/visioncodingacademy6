@@ -6,7 +6,7 @@ version: 1.0
 description: Courses page for Vision Coding Academy
  */
 
-import noIcon from "/noicon.jpg"
+import noIcon from "/lightbulb-black.jpg"
 
 export default function CoursesPage() {
 

@@ -9,12 +9,16 @@ description: Home page for Vision Coding Academy
 import $ from 'jquery';
 import { NavLink } from "react-router-dom"
 import ScrollReveal from 'scrollreveal'
-import jayImg from "/jay.jpg"
 import codingClass from "/coding-class1.jpg"
 import techIcon from "/icon1.jpg"
-import jayImg2 from "/jay2.jpg"
-import danny from "/danny.jpg"
-import noIcon from "/noicon.jpg"
+import heroBanner from "/Banner-black words2.png"
+import visionCodingIcon from "/yellow1.png"
+import { LuMapPin } from "react-icons/lu";
+import { FaInstagram } from "react-icons/fa";
+import { FaPhoneAlt } from "react-icons/fa";
+import { RiKakaoTalkFill } from "react-icons/ri";
+import { TfiEmail } from "react-icons/tfi";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function HomePage() {
 
@@ -73,21 +77,22 @@ export default function HomePage() {
 
     return (
         <main className="flex-1 mx-auto">
-            <section className="hero-banner">
-                <h1 className="timeline-content js--fadeInBottom">
-                    <span className="glow text-5xl md:text-9xl">Code Your</span>
-                    <span className="glow-teal pl-2 text-5xl md:text-9xl text-teal-300">Vision</span>
+            <section class="hero-banner bg-white">
+                <h1 class="timeline-content js--fadeInRight">
+                    <img src={heroBanner} alt="Banner words" class="" />
+                    <div class="flex flex-col mx-auto">
+                        <p class="text-center text-2xl pb-5 drop-shadow">Discover the Power to Transform the Future with
+                            Every Line
+                            of
+                            Code</p>
+                        <NavLink to="/courses" className='mx-auto px-3 py-3 border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500'>View
+                            Courses</NavLink>
+                    </div>
                 </h1>
-                <p className="text-2xl pt-5">Discover the Power to Transform the Future</p>
-                <p className="text-2xl pb-5">with Every Line of Code</p>
-                <button
-                    className="px-3 py-3 my-7 border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500">Vision
-                    Coding
-                    Courses</button>
             </section>
             <section className="intro py-20 md:py-32">
                 <div className="max-w-[1000px] mx-auto">
-                    <h2 className="timeline-content js--fadeInBottom text-2xl md:text-4xl pb-4 text-teal-300">Who we are
+                    <h2 className="timeline-content js--fadeInBottom text-2xl md:text-4xl pb-4 bg-gradient-to-r from-yellow-400 to-yellow-100 inline-block text-transparent bg-clip-text h-[50px]">Who we are
                     </h2>
                     <p className="timeline-content js--fadeInBottom pb-2 md:text-lg md:py-5">Welcome to Vision Coding
                         Academy,
@@ -106,12 +111,12 @@ export default function HomePage() {
                         us!</p>
                     <img src={codingClass} alt="Coding Class"
                         className="timeline-content js--fadeInBottom md:max-w-[400px] rounded-xl border-white border-4 float-left md:mr-5" />
-                    <h3 className="timeline-content js--fadeInRight text-2xl pl-4 text-teal-300">Our Vision</h3>
-                    <p className="timeline-content js--fadeInRight">To forge a future where our students become the leaders
+                    <h3 className="timeline-content js--fadeInRight text-2xl md:pl-4 text-cyan-500">Our Vision</h3>
+                    <p className="timeline-content js--fadeInRight pb-10">To forge a future where our students become the leaders
                         of
                         technology, driving innovation and
                         creativity in the digital age.</p>
-                    <h3 className="timeline-content js--fadeInRight text-2xl text-teal-300 py-5">Our Mission</h3>
+                    <h3 className="timeline-content js--fadeInRight text-2xl text-cyan-500">Our Mission</h3>
                     <p className="timeline-content js--fadeInRight">Ignite a passion for technology in young minds and to
                         equip
                         them with the skills they need to
@@ -147,16 +152,16 @@ export default function HomePage() {
                 </section>
                 <section className="py-10 max-w-[1000px] mx-auto">
                     <div className="py-5">
-                        <h2 className="text-2xl md:text-4xl text-center py-5">Choose the Class That Fits You Best</h2>
-                        <p className="text-center md:text-lg">Every course designed by IT professionals in Canada</p>
+                        <h2 className="timeline-content js--fadeInRight text-2xl md:text-4xl text-center py-5">Choose the Class That Fits You Best</h2>
+                        <p className="timeline-content js--fadeInRight text-center md:text-lg">Every course designed by IT professionals in Canada</p>
                     </div>
                     <div
-                        className="border-2 py-5 px-5 my-5 hover:transform hover:scale-110 transition-all ease duration-300">
-                        <h3 className="text-2xl">Advanced</h3>
-                        <img src={techIcon} alt="tech-icon" className="md:float-left" />
-                        <h2 className="text-2xl md:text-4xl text-teal-300">3 Month</h2>
-                        <h3 className="md:text-lg">Intensive bootcamp course</h3>
-                        <p className="md:text-lg">Elevate your knowledge through hands-on projects; app development and
+                        className="md:border-2 py-5 px-5 my-5 hover:transform hover:scale-110 transition-all ease duration-300">
+                        <h3 className="timeline-content js--fadeInRight text-2xl">All Levels</h3>
+                        <img src={techIcon} alt="timeline-content js--fadeInRight tech-icon" className="md:float-left" />
+                        <h2 className="timeline-content js--fadeInRight text-2xl md:text-4xl text-cyan-500">Programming Language</h2>
+                        <h3 className="timeline-content js--fadeInRight md:text-lg">Intensive bootcamp course</h3>
+                        <p className="timeline-content js--fadeInRight md:text-lg">Elevate your knowledge through hands-on projects; app development and
                             creating
                             SAAS (Software as
                             a Service). Ideal for advanced students seeking to apply their coding skills in practical,
@@ -164,22 +169,22 @@ export default function HomePage() {
                             project-based environments.</p>
                     </div>
                     <div
-                        className="border-2 py-5 px-5 my-5 hover:transform hover:scale-110 transition-all ease duration-300">
-                        <h2 className="text-2xl">Beginner</h2>
-                        <img src={techIcon} alt="tech-icon" className="md:float-right" />
-                        <h2 className="text-2xl md:text-4xl text-teal-300">6 Month</h2>
-                        <h3 className="md:text-lg">Learn the basics of Computer</h3>
-                        <p className="md:text-lg">Learn the essentials of computer including hardware, software, internet,
+                        className="md:border-2 py-5 px-5 my-5 hover:transform hover:scale-110 transition-all ease duration-300">
+                        <h2 className="timeline-content js--fadeInRight text-2xl">All Levels</h2>
+                        <img src={techIcon} alt="tech-icon" className="timeline-content js--fadeInRight md:float-right" />
+                        <h2 className="timeline-content js--fadeInRight text-2xl md:text-4xl text-cyan-500">Computer Science</h2>
+                        <h3 className="timeline-content js--fadeInRight md:text-lg">Learn the basics of Computer</h3>
+                        <p className="timeline-content js--fadeInRight md:text-lg">Learn the essentials of computer including hardware, software, internet,
                             programming languages,
                             and web design. It provides a comprehensive introduction to the digital world around us.</p>
                     </div>
                     <div
-                        className="border-2 py-5 px-5 my-5 hover:transform hover:scale-110 transition-all ease duration-300">
-                        <h2 className="text-2xl">Intermediate</h2>
-                        <img src={techIcon} alt="tech-icon" className="md:float-left" />
-                        <h2 className="text-2xl md:text-4xl text-teal-300">1 Year</h2>
-                        <h3 className="md:text-lg">Deep dive into coding and AI</h3>
-                        <p className="md:text-lg">Dive into the exciting world of computer science, exploring automation and
+                        className="md:border-2 py-5 px-5 my-5 hover:transform hover:scale-110 transition-all ease duration-300">
+                        <h2 className="timeline-content js--fadeInRight text-2xl">Intermediate</h2>
+                        <img src={techIcon} alt="tech-icon" className="timeline-content js--fadeInRight md:float-left" />
+                        <h2 className="timeline-content js--fadeInRight text-2xl md:text-4xl text-cyan-500">Project portfolio & Mentorship</h2>
+                        <h3 className="timeline-content js--fadeInRight md:text-lg">Deep dive into coding and AI</h3>
+                        <p className="timeline-content js--fadeInRight md:text-lg">Dive into the exciting world of computer science, exploring automation and
                             the
                             latest AI trends
                             such as image recognition, cloud services, and robotics. Suitable for beginners and
@@ -187,47 +192,41 @@ export default function HomePage() {
                             learners eager to explore diverse aspects of technology.</p>
                     </div>
                     <div
-                        className="border-2 py-5 px-5 my-5 hover:transform hover:scale-110 transition-all ease duration-300">
-                        <h2 className="text-2xl">All levels</h2>
-                        <img src={techIcon} alt="tech-icon" className="md:float-right" />
-                        <h2 className="text-2xl md:text-4xl text-teal-300">Private Tutoring</h2>
-                        <h3 className="md:text-lg">Custom tailored tutoring</h3>
-                        <p className="md:text-lg">Geared towards students needing support with school projects (CS10, 11,
+                        className="md:border-2 py-5 px-5 my-5 hover:transform hover:scale-110 transition-all ease duration-300">
+                        <h2 className="timeline-content js--fadeInRight text-2xl">Advanced</h2>
+                        <img src={techIcon} alt="tech-icon" className="timeline-content js--fadeInRight md:float-right" />
+                        <h2 className="timeline-content js--fadeInRight text-2xl md:text-4xl text-cyan-500">Computing Competition</h2>
+                        <h3 className="timeline-content js--fadeInRight md:text-lg">Custom tailored tutoring</h3>
+                        <p className="timeline-content js--fadeInRight md:text-lg">Geared towards students needing support with school projects (CS10, 11,
                             12,
                             and AP CS) or those
                             looking to build a personalized portfolio. This course offers guidance and expertise to help
                             bring your projects to life.</p>
                     </div>
                     <div
-                        className="border-2 py-5 px-5 my-5 hover:transform hover:scale-110 transition-all ease duration-300">
-                        <h2 className="text-2xl">All levels</h2>
-                        <img src={techIcon} alt="tech-icon" className="md:float-left" />
-                        <h2 className="text-2xl md:text-4xl text-teal-300">Education Consulting</h2>
-                        <h3 className="md:text-lg">University prep and career reinforcement</h3>
-                        <p className="md:text-lg">This customized consultation focuses on preparing students for university
+                        className="md:border-2 py-5 px-5 my-5 hover:transform hover:scale-110 transition-all ease duration-300">
+                        <h2 className="timeline-content js--fadeInRight text-2xl">Career</h2>
+                        <img src={techIcon} alt="tech-icon" className="timeline-content js--fadeInRight md:float-left" />
+                        <h2 className="timeline-content js--fadeInRight text-2xl md:text-4xl text-cyan-500">Interview Preparation</h2>
+                        <h3 className="timeline-content js--fadeInRight md:text-lg">University prep and career reinforcement</h3>
+                        <p className="timeline-content js--fadeInRight md:text-lg">This customized consultation focuses on preparing students for university
                             applications with
                             focuse in Computer Science. It includes guidance on creating a compelling portfolio with
                             multiple GitHub projects and strategies for career advancement in the tech field.</p>
                     </div>
-                    <button
-                        className="px-3 py-3 my-7 border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500">Click
-                        for Details</button>
+                    <div class="flex flex-col py-30 mx-auto">
+
+                        <NavLink to="/courses"
+                            className="px-3 py-3 border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500 mx-auto">
+                            <img src={visionCodingIcon} alt="vision coding logo" className="w-[100px] mx-auto" />Learn
+                            More about Courses</NavLink>
+                    </div>
                 </section>
-                <section className="md:max-w-[1000px] mx-auto py-10">
-                    <img src={jayImg} className="w-[250px] md:float-right" />
-                    <h2 className="pl-2 text-4xl md:text-6xl py-10">Meet Our Director</h2>
-                    <p className="pl-2 md:text-lg">At Vision Coding Academy, I, Jay, blend my tech know-how with educational
-                        insights
-                        to create a
-                        dynamic learning environment. My journey in tech and teaching isn't just about imparting
-                        knowledge;
-                        it's about igniting a passion for innovation and problem-solving in our students.</p>
-                </section>
-                <section className="py-10 bg-gray-600 bg-opacity-70 text-yellow-300">
-                    <div className="max-w-[1000px] mx-auto">
-                        <div className="">
-                            <h3 className="pl-2 text-2xl md:text-4xl py-10">Our Approach</h3>
-                            <p className="pl-2 md:text-lg">In over six years of teaching, I've learned that the key to
+                <section class="approach py-10 bg-gray-600 bg-opacity-70 text-yellow-300">
+                    <div class="md:max-w-[1000px] mx-auto">
+                        <div class="">
+                            <h3 class="pl-2 text-2xl md:text-4xl py-10">Our Approach</h3>
+                            <p class="pl-2 md:text-lg">In over six years of teaching, I've learned that the key to
                                 engaging
                                 students is making
                                 complex
@@ -240,15 +239,15 @@ export default function HomePage() {
                                 are
                                 inspiring.</p>
                         </div>
-                        <h3 className="pl-2 text-2xl md:text-4xl py-10">Educational Consulting</h3>
-                        <p className="pl-2 md:text-lg">My experience in guiding students to top universities has taught me
+                        <h3 class="pl-2 text-2xl md:text-4xl py-10">Educational Consulting</h3>
+                        <p class="pl-2 md:text-lg">My experience in guiding students to top universities has taught me
                             the
                             importance of tailored
                             educational strategies. At Vision Coding Academy, we use these insights to help our students
                             not
                             just learn, but excel and prepare for their future academic and career paths.</p>
-                        <h3 className="pl-2 text-2xl md:text-4xl py-10">Philosophy</h3>
-                        <p className="pl-2 md:text-lg">We go beyond just coding; we're about nurturing the creators and
+                        <h3 class="pl-2 text-2xl md:text-4xl py-10">Philosophy</h3>
+                        <p class="pl-2 md:text-lg">We go beyond just coding; we're about nurturing the creators and
                             innovators of
                             tomorrow. Our goal
                             is
@@ -258,71 +257,19 @@ export default function HomePage() {
                             connection to the industry ensures that our teaching stays current and meaningful.</p>
                     </div>
                 </section>
-                <section className="max-w-[1000px] mx-auto py-10">
-                    <h3 className="pl-2 text-2xl md:text-6xl py-10">Our Team</h3>
-                    <p className="pl-2 md:text-lg">Meet the driving force behind Vision Coding Academy: a diverse team of IT
+                <section class="max-w-[1000px] mx-auto py-10">
+                    <h3 class="pl-2 text-2xl md:text-6xl py-10 text-center">Our Team</h3>
+                    <p class="pl-2 md:text-lg">Meet the driving force behind Vision Coding Academy: a diverse team of IT
                         industry
                         experts
                         specializing in software, hardware, frontend, backend, automation, UI/UX, and web design. Each
                         member brings a unique blend of theoretical knowledge and practical experience, tailored to meet
                         the
-                        individual needs and aspirations of our students. It's this wealth of expertise and personalized
-                        approach that truly distinguishes Vision Coding Academy from others in the field.</p>
+                        individual needs and aspirations of our students. </p>
                 </section>
-                <section className="py-10 md:grid md:grid-cols-5 md:pl-20">
-                    <div>
-                        <img src={jayImg2} alt="Jay" />
-                        <h3 className="pl-2 text-2xl">Jay</h3>
-                        <h2 className="pl-2 text-lg">DevOps Engineer</h2>
-                    </div>
-                    <div>
-                        <img src={danny} alt="Jay" />
-                        <h3 className="pl-2 text-2xl">Danny</h3>
-                        <h2 className="pl-2 text-lg">Branch Manager</h2>
-                    </div>
-                    <div>
-                        <img src={noIcon} alt="Jay" />
-                        <h3 className="pl-2 text-2xl">Hwanyong</h3>
-                        <h2 className="pl-2 text-lg">Backend Engineer</h2>
-                    </div>
-                    <div>
-                        <img src={noIcon} alt="Jay" />
-                        <h3 className="pl-2 text-2xl">
-                            Luke</h3>
-                        <h2 className="pl-2 text-lg">Full Stack Developer</h2>
-                    </div>
-                    <div>
-                        <img src={noIcon} alt="Jay" />
-                        <h3 className="pl-2 text-2xl">Iktae</h3>
-                        <h2 className="pl-2 text-lg">Automation Engineer</h2>
-                    </div>
-                    <div>
-                        <img src={noIcon} alt="Jay" />
-                        <h3 className="pl-2 text-2xl">
-                            Sumi</h3>
-                        <h2 className="pl-2 text-lg">UX / UI Deisgner</h2>
-                    </div>
-                    <div>
-                        <img src={noIcon} alt="Jay" />
-                        <h3 className="pl-2 text-2xl">Jee</h3>
-                        <h2 className="pl-2 text-lg">Full Stack Developer</h2>
-                    </div>
-                    <div>
-                        <img src={noIcon} alt="Jay" />
-                        <h3 className="text-2xl">Taylor</h3>
-                        <h2 className="text-lg">Full Stack Developer</h2>
-                    </div>
-                    <div>
-                        <img src={noIcon} alt="Jay" />
-                        <h3 className="pl-2 text-2xl">JK</h3>
-                        <h2 className="pl-2 text-lg">Mentor @ Microsoft</h2>
-                    </div>
-                    <div>
-                        <img src={noIcon} alt="Jay" />
-                        <h3 className="pl-2 text-2xl">Andy</h3>
-                        <h2 className="pl-2 text-lg">Mentor @ AWS amazon</h2>
-                    </div>
-                </section>
+                <NavLink to="/about"
+                    className="px-3 py-3 my-10 border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500 mx-auto">Learn
+                    more about us</NavLink>
                 <section className="py-10">
                     <h2 className="text-2xl md:text-6xl text-center py-10 text-yellow-200">Our Future Goals</h2>
                     <div className="max-w-[1000px] mx-auto">
@@ -351,16 +298,37 @@ export default function HomePage() {
                         </div>
                     </div>
                 </section>
-                <section>
-                    <h2 className="glow text-2xl md:text-6xl text-center py-10">Code with us</h2>
-                    <div className="max-w-[1000px] mx-auto md:grid md:grid-cols-2">
-                        <p class="py-10 text-lg">2885 Barnet Hwy, Coquitlam, BC V3B 1C1</p>
-                        <p class="py-10 text-lg">vision.coding</p>
-                        <p class="py-10 text-lg">2428 Haywood Ave, West Vancouver, BC V7V 1Y1</p>
-                        <p class="py-10 text-lg">+1 604-900-3707</p>
-                        <p class="py-10 text-lg">@visioncodingcqt</p>
-                        <p class="py-10 text-lg">visioncodingca@gmail.com</p>
-                        <p class="py-10 text-lg">6049003707</p>
+                <section class="py-10 border-b">
+                    <h2 class="glow text-2xl md:text-6xl text-center py-10">Code with us</h2>
+                    <div class="max-w-[1000px] mx-auto md:grid md:grid-cols-2 px-2">
+                        <div class="flex md:py-7">
+                            <LuMapPin size={25} />
+                            <p class="text-lg pl-2">2885 Barnet Hwy, Coquitlam, BC V3B 1C1</p>
+                        </div>
+                        <div class="flex py-7">
+                            <LuMapPin size={25} />
+                            <p class="text-lg pl-2">2428 Haywood Ave, West Vancouver, BC V7V 1Y1</p>
+                        </div>
+                        <div class="flex md:py-7">
+                            <FaInstagram size={25} />
+                            <p class="text-lg pl-2">vision.coding</p>
+                        </div>
+                        <div class="flex py-7">
+                            <FaPhoneAlt size={25} />
+                            <p class=" text-lg pl-2">+1 604-900-3707</p>
+                        </div>
+                        <div class="flex md:py-7">
+                            <RiKakaoTalkFill size={25} />
+                            <p class="text-lg pl-2">@visioncodingcqt</p>
+                        </div>
+                        <div class="flex py-7">
+                            <TfiEmail size={25} />
+                            <p class="text-lg pl-2">visioncodingca@gmail.com</p>
+                        </div>
+                        <div class="flex md:py-7">
+                            <FaWhatsapp size={25} />
+                            <p class="text-lg pl-2">6049003707</p>
+                        </div>
                     </div>
                 </section>
                 <section className="md:flex mx-auto py-10 w-[100%]">
@@ -369,7 +337,7 @@ export default function HomePage() {
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.918591896756!2d-122.80519882320316!3d49.27793977108967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548678cc852829e7%3A0x417feb8745527bef!2s2885%20Barnet%20Hwy%2C%20Coquitlam%2C%20BC%20V3B%201C1!5e0!3m2!1sen!2sca!4v1715144121249!5m2!1sen!2sca"
                             width="300" height="450" allowFullScreen="" loading="lazy"
-                            referrerPolicy="no-referrer-when-downgrade" class="map"></iframe>
+                            referrerPolicy="no-referrer-when-downgrade" className="map"></iframe>
 
                     </div>
                     <div className="mx-2 py-10 md:py-0 w-[100%]">
@@ -377,7 +345,7 @@ export default function HomePage() {
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83196.59938726886!2d-123.33264520273437!3d49.33523070000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54866f5e357e6601%3A0xfe3a1182e56f9edb!2sVision%20Coding%20Academy!5e0!3m2!1sen!2sca!4v1715361821515!5m2!1sen!2sca"
                             width="300" height="450" allowFullScreen="" loading="lazy"
-                            referrerPolicy="no-referrer-when-downgrade" class="map"></iframe>
+                            referrerPolicy="no-referrer-when-downgrade" className="map"></iframe>
                     </div>
                 </section>
             </div>
