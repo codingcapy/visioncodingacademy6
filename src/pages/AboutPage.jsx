@@ -8,6 +8,12 @@ description: About page for Vision Coding Academy
 
 import $ from 'jquery';
 import ScrollReveal from 'scrollreveal'
+import { LuMapPin } from "react-icons/lu";
+import { FaInstagram } from "react-icons/fa";
+import { FaPhoneAlt } from "react-icons/fa";
+import { RiKakaoTalkFill } from "react-icons/ri";
+import { TfiEmail } from "react-icons/tfi";
+import { FaWhatsapp } from "react-icons/fa";
 import visionCodingLetters from "/vision-banner-letters.png"
 import jayImg from "/member1_jay4.png"
 import dannyImg from "/member2_danny4.png"
@@ -259,15 +265,37 @@ export default function AboutPage() {
                         <img src={testimonial3} alt="Jay" className="rounded-full border w-[300px] h-[300px] md:w-[350px] md:h-[350px] md:mx-3" />
                     </div>
                 </section>
-                <section>
-                    <h2 className="glow text-2xl md:text-6xl text-center py-10">Code with us</h2>
-                    <div className="max-w-[1000px] mx-auto md:grid md:grid-cols-2">
-                        <p className="py-10">2885 Barnet Hwy, Coquitlam, BC V3B 1C1</p>
-                        <p className="py-10">vision.coding</p>
-                        <p className="py-10">+1 604-900-3707</p>
-                        <p className="py-10">@visioncodingcqt</p>
-                        <p className="py-10">visioncodingca@gmail.com</p>
-                        <p className="py-10">6049003707</p>
+                <section class="py-10 border-b">
+                    <h2 class="glow text-2xl md:text-6xl text-center py-10">Code with us</h2>
+                    <div class="max-w-[1000px] mx-auto md:grid md:grid-cols-2 px-2">
+                        <div class="flex md:py-7">
+                            <LuMapPin size={25} />
+                            <p class="text-lg pl-2">2885 Barnet Hwy, Coquitlam, BC V3B 1C1</p>
+                        </div>
+                        <div class="flex py-7">
+                            <LuMapPin size={25} />
+                            <p class="text-lg pl-2">2428 Haywood Ave, West Vancouver, BC V7V 1Y1</p>
+                        </div>
+                        <div class="flex md:py-7">
+                            <FaInstagram size={25} />
+                            <p class="text-lg pl-2">vision.coding</p>
+                        </div>
+                        <div class="flex py-7">
+                            <FaPhoneAlt size={25} />
+                            <p class=" text-lg pl-2">+1 604-900-3707</p>
+                        </div>
+                        <div class="flex md:py-7">
+                            <RiKakaoTalkFill size={25} />
+                            <p class="text-lg pl-2">@visioncodingcqt</p>
+                        </div>
+                        <div class="flex py-7">
+                            <TfiEmail size={25} />
+                            <p class="text-lg pl-2">visioncodingca@gmail.com</p>
+                        </div>
+                        <div class="flex md:py-7">
+                            <FaWhatsapp size={25} />
+                            <p class="text-lg pl-2">6049003707</p>
+                        </div>
                     </div>
                 </section>
                 <section className="mx-2 py-10 border-t-2 border-b-2">
