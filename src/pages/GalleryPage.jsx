@@ -43,7 +43,7 @@ export default function GalleryPage() {
 
     useEffect(() => {
         document.title = 'Gallery | Vision Coding';
-      }, []);
+    }, []);
 
     useEffect(() => {
         const $images = $('.image');
@@ -107,6 +107,7 @@ export default function GalleryPage() {
             });
         });
     }, []);
+
     return (
         <main className="flex-1 mx-auto">
             <div className="bg-black text-white flex flex-col">
@@ -116,94 +117,94 @@ export default function GalleryPage() {
                 </section>
                 <section className="py-10 px-1 md:grid md:grid-cols-5 md:pl-20 mx-auto">
                     <div className="py-2">
-                        <img src={gallery1} alt="gallery" className="w-[250px] px-2 cursor-pointer" />
+                        <img src={gallery1} alt="gallery" className="image w-[250px] px-2 cursor-pointer" />
                     </div>
                     <div className="py-2">
-                        <img src={gallery2} alt="gallery" className="w-[250px] px-2 cursor-pointer" />
+                        <img src={gallery2} alt="gallery" className="image w-[250px] px-2 cursor-pointer" />
                     </div>
                     <div className="py-2">
-                        <img src={gallery3} alt="gallery" className="w-[250px] px-2 cursor-pointer" />
+                        <img src={gallery3} alt="gallery" className="image w-[250px] px-2 cursor-pointer" />
                     </div>
                     <div className="py-2">
-                        <img src={gallery4} alt="gallery" className="w-[250px] px-2" />
+                        <img src={gallery4} alt="gallery" className="image w-[250px] px-2 cursor-pointer" />
                     </div>
                     <div className="py-2">
-                        <img src={gallery5} alt="gallery" className="w-[250px] px-2" />
+                        <img src={gallery5} alt="gallery" className="image w-[250px] px-2 cursor-pointer" />
                     </div>
                     <div className="py-2">
-                        <img src={gallery6} alt="gallery" className="w-[250px] px-2" />
+                        <img src={gallery6} alt="gallery" className="image w-[250px] px-2 cursor-pointer" />
                     </div>
                     <div className="py-2">
-                        <img src={gallery7} alt="gallery" className="w-[250px] px-2" />
+                        <img src={gallery7} alt="gallery" className="image w-[250px] px-2 cursor-pointer" />
                     </div>
                     <div className="py-2">
-                        <img src={gallery8} alt="gallery" className="w-[250px] px-2" />
+                        <img src={gallery8} alt="gallery" className="image w-[250px] px-2 cursor-pointer" />
                     </div>
                     <div className="py-2">
-                        <img src={gallery9} alt="gallery" className="w-[250px] px-2" />
+                        <img src={gallery9} alt="gallery" className="image w-[250px] px-2 cursor-pointer" />
                     </div>
                     <div className="py-2">
-                        <img src={gallery10} alt="gallery" className="w-[250px] px-2" />
+                        <img src={gallery10} alt="gallery" className="image w-[250px] px-2 cursor-pointer" />
                     </div>
                     <div className="py-2">
-                        <img src={gallery11} className="w-[250px] px-2" />
+                        <img src={gallery11} alt="gallery" className="image w-[250px] px-2 cursor-pointer" />
                     </div>
                     <div className="py-2">
-                        <img src={gallery12} alt="gallery" className="w-[250px] px-2" />
+                        <img src={gallery12} alt="gallery" className="image w-[250px] px-2 cursor-pointer" />
                     </div>
                     <div className="py-2">
-                        <img src={gallery13} alt="gallery" className="w-[250px] px-2" />
+                        <img src={gallery13} alt="gallery" className="image w-[250px] px-2 cursor-pointer" />
                     </div>
                     <div className="py-2">
-                        <img src={gallery14} alt="gallery" className="w-[250px] px-2" />
+                        <img src={gallery14} alt="gallery" className="image w-[250px] px-2 cursor-pointer" />
                     </div>
                     <div className="py-2">
-                        <img src={gallery15} alt="gallery" className="w-[250px] px-2" />
+                        <img src={gallery15} alt="gallery" className="image w-[250px] px-2 cursor-pointer" />
                     </div>
                     <div className="py-2">
-                        <img src={gallery16} alt="gallery" className="w-[250px] px-2" />
+                        <img src={gallery16} alt="gallery" className="image w-[250px] px-2 cursor-pointer" />
                     </div>
                     <div className="py-2">
-                        <img src={gallery17} alt="gallery" className="w-[250px] px-2" />
+                        <img src={gallery17} alt="gallery" className="image w-[250px] px-2 cursor-pointer" />
                     </div>
                     <div className="py-2">
-                        <img src={gallery18} alt="gallery" className="w-[250px] px-2" />
+                        <img src={gallery18} alt="gallery" className="image w-[250px] px-2 cursor-pointer" />
                     </div>
                     <div className="py-2">
-                        <img src={gallery19} alt="gallery" className="w-[250px] px-2" />
+                        <img src={gallery19} alt="gallery" className="image w-[250px] px-2 cursor-pointer" />
                     </div>
                     <div className="py-2">
-                        <img src={gallery20} alt="gallery" className="w-[250px] px-2" />
+                        <img src={gallery20} alt="gallery" className="image w-[250px] px-2 cursor-pointer" />
                     </div>
                     <div className="py-2">
-                        <img src={gallery24} alt="gallery" className="w-[250px] px-2" />
+                        <img src={gallery24} alt="gallery" className="image w-[250px] px-2 cursor-pointer" />
                     </div>
                     <div className="py-2">
-                        <img src={gallery25} alt="gallery" className="w-[250px] px-2" />
+                        <img src={gallery25} alt="gallery" className="image w-[250px] px-2 cursor-pointer" />
                     </div>
                     <div className="py-2">
-                        <img src={gallery26} alt="gallery" className="w-[250px] px-2" />
+                        <img src={gallery26} alt="gallery" className="image w-[250px] px-2 cursor-pointer" />
                     </div>
                     <div className="py-2">
-                        <img src={gallery27} alt="gallery" className="w-[250px] px-2" />
+                        <img src={gallery27} alt="gallery" className="image w-[250px] px-2 cursor-pointer" />
                     </div>
                     <div className="py-2">
-                        <img src={gallery28} alt="gallery" className="w-[250px] px-2" />
+                        <img src={gallery28} alt="gallery" className="image w-[250px] px-2 cursor-pointer" />
                     </div>
                     <div className="py-2">
-                        <img src={gallery29} alt="gallery" className="w-[250px] px-2" />
+                        <img src={gallery29} alt="gallery" className="image w-[250px] px-2 cursor-pointer" />
                     </div>
                     <div className="py-2">
-                        <img src={gallery30} alt="gallery" className="w-[250px] px-2" />
+                        <img src={gallery30} alt="gallery" className="image w-[250px] px-2 cursor-pointer" />
                     </div>
                     <div className="py-2">
-                        <img src={gallery31} alt="gallery" className="w-[250px] px-2" />
+                        <img src={gallery31} alt="gallery" className="image w-[250px] px-2 cursor-pointer" />
                     </div>
                     <div className="py-2">
-                        <img src={gallery32} alt="gallery" className="w-[250px] px-2" />
+                        <img src={gallery32} alt="gallery" className="image w-[250px] px-2 cursor-pointer" />
                     </div>
                     <div className="py-2">
-                        <img src={gallery33} alt="gallery" className="w-[250px] px-2" />
+                        <img src={gallery33} alt="gallery" className="image w-[250px] px-2 cursor-pointer" />
                     </div>
                 </section>
             </div>

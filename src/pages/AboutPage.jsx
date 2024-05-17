@@ -32,7 +32,7 @@ export default function AboutPage() {
 
     useEffect(() => {
         document.title = 'About | Vision Coding';
-      }, []);
+    }, []);
 
     $(function () {
         window.sr = ScrollReveal();
@@ -87,66 +87,68 @@ export default function AboutPage() {
         });
     });
 
-    const images = document.querySelectorAll('.image');
+    useEffect(() => {
+        const $images = $('.image');
 
-    images.forEach((image, index) => {
-        image.addEventListener('click', (index) => {
-            const lightbox = document.createElement('div');
-            lightbox.classList.add('lightbox');
+        $images.each((index, image) => {
+            $(image).on('click', () => {
+                const lightbox = $('<div></div>').addClass('lightbox')[0];
 
-            const fullSizeImage = document.createElement('img');
-            fullSizeImage.src = image.src;
-            fullSizeImage.classList.add('lightbox-image');
-            lightbox.appendChild(fullSizeImage);
+                const fullSizeImage = document.createElement('img');
+                fullSizeImage.src = image.src;
+                fullSizeImage.classList.add('lightbox-image');
+                lightbox.appendChild(fullSizeImage);
 
-            const leftArrow = document.createElement('div');
-            leftArrow.classList.add('arrow', 'left-arrow');
-            leftArrow.innerHTML = '&lt;';
-            lightbox.appendChild(leftArrow);
+                const leftArrow = document.createElement('div');
+                leftArrow.classList.add('arrow', 'left-arrow');
+                leftArrow.innerHTML = '&lt;';
+                lightbox.appendChild(leftArrow);
 
-            const rightArrow = document.createElement('div');
-            rightArrow.classList.add('arrow', 'right-arrow');
-            rightArrow.innerHTML = '&gt;';
-            lightbox.appendChild(rightArrow);
+                const rightArrow = document.createElement('div');
+                rightArrow.classList.add('arrow', 'right-arrow');
+                rightArrow.innerHTML = '&gt;';
+                lightbox.appendChild(rightArrow);
 
-            let currentIndex = index;
+                let currentIndex = index;
 
-            function showImage(index) {
-                fullSizeImage.style.opacity = 0; // Fade out
-                setTimeout(() => {
-                    fullSizeImage.src = images[index].src;
-                    fullSizeImage.style.opacity = 1; // Fade in
-                }, 300); // Delay to allow fade out transition to complete
-            }
-
-            leftArrow.addEventListener('click', (event) => {
-                event.stopPropagation();
-                currentIndex = (currentIndex - 1 + images.length) % images.length;
-                showImage(currentIndex);
-            });
-
-            rightArrow.addEventListener('click', (event) => {
-                event.stopPropagation();
-                currentIndex = (currentIndex + 1) % images.length;
-                showImage(currentIndex);
-            });
-
-            lightbox.addEventListener('click', (event) => {
-                if (event.target === lightbox) {
-                    lightbox.classList.add('fade-out');
+                function showImage(index) {
+                    fullSizeImage.classList.add('fade-out');
                     setTimeout(() => {
-                        document.body.removeChild(lightbox);
-                    }, 500);
+                        fullSizeImage.src = $images.eq(index).attr('src');
+                        fullSizeImage.classList.remove('fade-out');
+                        fullSizeImage.classList.add('fade-in');
+                    }, 300);
                 }
+
+                $(leftArrow).on('click', (event) => {
+                    event.stopPropagation();
+                    currentIndex = (currentIndex - 1 + $images.length) % $images.length;
+                    showImage(currentIndex);
+                });
+
+                $(rightArrow).on('click', (event) => {
+                    event.stopPropagation();
+                    currentIndex = (currentIndex + 1) % $images.length;
+                    showImage(currentIndex);
+                });
+
+                $(lightbox).on('click', (event) => {
+                    if (event.target === lightbox) {
+                        lightbox.classList.add('fade-out');
+                        setTimeout(() => {
+                            document.body.removeChild(lightbox);
+                        }, 500);
+                    }
+                });
+
+                document.body.appendChild(lightbox);
+
+                setTimeout(() => {
+                    lightbox.classList.add('fade-in');
+                }, 50);
             });
-
-            document.body.appendChild(lightbox);
-
-            setTimeout(() => {
-                lightbox.classList.add('fade-in');
-            }, 50);
         });
-    });
+    }, []);
 
     return (
         <main className="flex-1 mx-auto">
@@ -265,9 +267,9 @@ export default function AboutPage() {
                         <p className="text-center md:text-lg">Testimonial reviews & comments</p>
                     </div>
                     <div className="md:flex mx-auto py-10">
-                        <img src={testimonial1} alt="Jay" className="rounded-full border w-[300px] h-[300px] md:w-[350px] md:h-[350px] md:mx-3 cursor-pointer" />
-                        <img src={testimonial2} alt="Jay" className="rounded-full border w-[300px] h-[300px] md:w-[350px] md:h-[350px] md:mx-3 cursor-pointer" />
-                        <img src={testimonial3} alt="Jay" className="rounded-full border w-[300px] h-[300px] md:w-[350px] md:h-[350px] md:mx-3 cursor-pointer" />
+                        <img src={testimonial1} alt="Jay" className="image rounded-full border w-[300px] h-[300px] md:w-[350px] md:h-[350px] md:mx-3 cursor-pointer" />
+                        <img src={testimonial2} alt="Jay" className="image rounded-full border w-[300px] h-[300px] md:w-[350px] md:h-[350px] md:mx-3 cursor-pointer" />
+                        <img src={testimonial3} alt="Jay" className="image rounded-full border w-[300px] h-[300px] md:w-[350px] md:h-[350px] md:mx-3 cursor-pointer" />
                     </div>
                 </section>
                 <section className="py-10 border-b">
