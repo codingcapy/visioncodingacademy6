@@ -1,5 +1,10 @@
 
-
+/*
+author: Paul Kim
+date: May 8, 2024
+version: 1.0
+description: Signup page for Vision Coding Academy
+ */
 
 export default function SignupPage() {
 
@@ -36,7 +41,7 @@ export default function SignupPage() {
                                 rows="10" cols="40" className="px-2 border rounded-lg border-slate-700 py-1 w-[300px]" />
                         </div>
                         <button
-                            className="px-3 py-3 my-7 border border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500">Sign
+                            className="px-3 py-3 my-7 border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500">Sign
                             Up</button>
                         <p className="text-lg text-center">or <a href="../login/index.html"
                             className="text-teal-300 font-bold">Login</a>

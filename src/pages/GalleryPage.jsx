@@ -1,3 +1,13 @@
+
+/*
+author: Paul Kim
+date: May 8, 2024
+version: 1.0
+description: Gallery page for Vision Coding Academy
+ */
+
+import $ from 'jquery';
+import { useEffect } from 'react';
 import gallery1 from "/gallery1.jpg"
 import gallery2 from "/gallery2.jpg"
 import gallery3 from "/gallery3.jpg"
@@ -31,6 +41,68 @@ import gallery33 from "/gallery33.jpeg"
 
 export default function GalleryPage() {
 
+    useEffect(() => {
+        const $images = $('.image');
+
+        $images.each((index, image) => {
+            $(image).on('click', () => {
+                const lightbox = $('<div></div>').addClass('lightbox')[0];
+
+                const fullSizeImage = document.createElement('img');
+                fullSizeImage.src = image.src;
+                fullSizeImage.classList.add('lightbox-image');
+                lightbox.appendChild(fullSizeImage);
+
+                const leftArrow = document.createElement('div');
+                leftArrow.classList.add('arrow', 'left-arrow');
+                leftArrow.innerHTML = '&lt;';
+                lightbox.appendChild(leftArrow);
+
+                const rightArrow = document.createElement('div');
+                rightArrow.classList.add('arrow', 'right-arrow');
+                rightArrow.innerHTML = '&gt;';
+                lightbox.appendChild(rightArrow);
+
+                let currentIndex = index;
+
+                function showImage(index) {
+                    fullSizeImage.classList.add('fade-out');
+                    setTimeout(() => {
+                        fullSizeImage.src = $images.eq(index).attr('src');
+                        fullSizeImage.classList.remove('fade-out');
+                        fullSizeImage.classList.add('fade-in');
+                    }, 300);
+                }
+
+                $(leftArrow).on('click', (event) => {
+                    event.stopPropagation();
+                    currentIndex = (currentIndex - 1 + $images.length) % $images.length;
+                    showImage(currentIndex);
+                });
+
+                $(rightArrow).on('click', (event) => {
+                    event.stopPropagation();
+                    currentIndex = (currentIndex + 1) % $images.length;
+                    showImage(currentIndex);
+                });
+
+                $(lightbox).on('click', (event) => {
+                    if (event.target === lightbox) {
+                        lightbox.classList.add('fade-out');
+                        setTimeout(() => {
+                            document.body.removeChild(lightbox);
+                        }, 500);
+                    }
+                });
+
+                document.body.appendChild(lightbox);
+
+                setTimeout(() => {
+                    lightbox.classList.add('fade-in');
+                }, 50);
+            });
+        });
+    }, []);
     return (
         <main className="flex-1 mx-auto">
             <div className="bg-black text-white flex flex-col">
@@ -40,13 +112,13 @@ export default function GalleryPage() {
                 </section>
                 <section className="py-10 px-1 md:grid md:grid-cols-5 md:pl-20 mx-auto">
                     <div className="py-2">
-                        <img src={gallery1} alt="gallery" className="w-[250px] px-2 rounded-[100px]" />
+                        <img src={gallery1} alt="gallery" className="w-[250px] px-2 cursor-pointer" />
                     </div>
                     <div className="py-2">
-                        <img src={gallery2} alt="gallery" className="w-[250px] px-2" />
+                        <img src={gallery2} alt="gallery" className="w-[250px] px-2 cursor-pointer" />
                     </div>
                     <div className="py-2">
-                        <img src={gallery3} alt="gallery" className="w-[250px] px-2" />
+                        <img src={gallery3} alt="gallery" className="w-[250px] px-2 cursor-pointer" />
                     </div>
                     <div className="py-2">
                         <img src={gallery4} alt="gallery" className="w-[250px] px-2" />

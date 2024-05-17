@@ -90,7 +90,7 @@ export default function CoursesPage() {
             <div className="bg-black text-white flex flex-col">
                 <section className="max-w-[1000px] mx-auto py-10">
                     <h3 className="pl-2 text-5xl md:text-6xl py-10 pb-5 text-center">Vision Coding Courses</h3>
-                    <img src={visionCodingIcon} alt="vision coding icon" className="mx-auto w-[100px]"/>
+                    <img src={visionCodingIcon} alt="vision coding icon" className="mx-auto w-[100px]" />
                     <p className="timeline-content js--fadeInLeft text-center md:text-lg">Each course is crafted for
                         hands-on, practical learning,</p>
                     <p className="timeline-content js--fadeInLeft text-center md:text-lg">guided by our team of industry
@@ -103,7 +103,7 @@ export default function CoursesPage() {
                                 className="w-[250px] text-center border-2 rounded-full py-12 mb-5 mx-auto hover:transform hover:scale-110 hover:bg-yellow-100 text-yellow-100 hover:text-black transition-all ease duration-300">
                                 <div className="text-xl font-bold">ENTRY</div>
                                 <div className="text-xl font-bold">[G1-G3]</div>
-                                <img src={icon1} alt="course1" className="w-[100px] mx-auto"/>
+                                <img src={icon1} alt="course1" className="w-[100px] mx-auto" />
                             </div>
                             <h3 className="pl-2 text-2xl text-center">View Detail</h3>
                         </NavLink>
@@ -114,7 +114,7 @@ export default function CoursesPage() {
                                 className="w-[250px] text-center border-2 rounded-full py-12 mb-5 mx-auto hover:transform hover:scale-110 hover:bg-yellow-100 text-yellow-100 hover:text-black transition-all ease duration-300">
                                 <div className="text-xl font-bold">ADVANCED</div>
                                 <div className="text-xl font-bold">[G1-G3]</div>
-                                <img src={icon2} alt="course1" className="w-[100px] mx-auto"/>
+                                <img src={icon2} alt="course1" className="w-[100px] mx-auto" />
                             </div>
                             <h3 className="pl-2 text-2xl text-center">View Detail</h3>
                         </NavLink>
@@ -125,7 +125,7 @@ export default function CoursesPage() {
                                 className="w-[250px] text-center border-2 rounded-full py-12 mb-5 mx-auto hover:transform hover:scale-110 hover:bg-yellow-100 text-yellow-100 hover:text-black transition-all ease duration-300">
                                 <div className="text-xl font-bold">ENTRY</div>
                                 <div className="text-xl font-bold">[G4-G10]</div>
-                                <img src={icon3} alt="course1" className="w-[100px] mx-auto"/>
+                                <img src={icon3} alt="course1" className="w-[100px] mx-auto" />
                             </div>
                             <h3 className="pl-2 text-2xl text-center">View Detail</h3>
                         </NavLink>
@@ -136,7 +136,7 @@ export default function CoursesPage() {
                                 className="w-[250px] text-center border-2 rounded-full py-12 mb-5 mx-auto hover:transform hover:scale-110 hover:bg-yellow-100 text-yellow-100 hover:text-black transition-all ease duration-300">
                                 <div className="text-xl font-bold">INTERMEDIATE</div>
                                 <div className="text-xl font-bold">[G4-G10]</div>
-                                <img src={icon4} alt="course1" className="w-[100px] mx-auto"/>
+                                <img src={icon4} alt="course1" className="w-[100px] mx-auto" />
                             </div>
                             <h3 className="pl-2 text-2xl text-center">View Detail</h3>
                         </NavLink>
@@ -147,7 +147,7 @@ export default function CoursesPage() {
                                 className="w-[250px] text-center border-2 rounded-full py-12 mb-5 mx-auto hover:transform hover:scale-110 hover:bg-yellow-100 text-yellow-100 hover:text-black transition-all ease duration-300">
                                 <div className="text-xl font-bold">ADVANCED</div>
                                 <div className="text-xl font-bold">[G1-G3]</div>
-                                <img src={icon5} alt="course1" className="w-[100px] mx-auto"/>
+                                <img src={icon5} alt="course1" className="w-[100px] mx-auto" />
                             </div>
                             <h3 className="pl-2 text-2xl text-center">View Detail</h3>
                         </NavLink>
@@ -157,7 +157,7 @@ export default function CoursesPage() {
                             <div
                                 className="w-[250px] text-center border-2 rounded-full py-12 mb-5 mx-auto hover:transform hover:scale-110 hover:bg-yellow-100 text-yellow-100 hover:text-black transition-all ease duration-300">
                                 <div className="text-xl font-bold">MOBILE APP DEVELOPMENT</div>
-                                <img src={icon6} alt="course1" className="w-[100px] mx-auto"/>
+                                <img src={icon6} alt="course1" className="w-[100px] mx-auto" />
                             </div>
                             <h3 className="pl-2 text-2xl text-center">View Detail</h3>
                         </NavLink>
@@ -167,7 +167,7 @@ export default function CoursesPage() {
                             <div
                                 className="w-[250px] text-center border-2 rounded-full py-16 mb-5 mx-auto hover:transform hover:scale-110 hover:bg-yellow-100 text-yellow-100 hover:text-black transition-all ease duration-300">
                                 <div className="text-xl font-bold">BEGINNER PYTHON</div>
-                                <img src={icon7} alt="course1" className="w-[100px] mx-auto"/>
+                                <img src={icon7} alt="course1" className="w-[100px] mx-auto" />
                             </div>
                             <h3 className="pl-2 text-2xl text-center">View Detail</h3>
                         </NavLink>
@@ -178,7 +178,7 @@ export default function CoursesPage() {
                                 className="w-[250px] text-center border-2 rounded-full py-12 mb-5 mx-auto hover:transform hover:scale-110 hover:bg-yellow-100 text-yellow-100 hover:text-black transition-all ease duration-300">
                                 <div className="text-xl font-bold">EXTRA</div>
                                 <div className="text-xl font-bold">CURRICULUMS</div>
-                                <img src={icon8} alt="course1" className="w-[100px] mx-auto"/>
+                                <img src={icon8} alt="course1" className="w-[100px] mx-auto" />
                             </div>
                             <h3 className="pl-2 text-2xl text-center">View Detail</h3>
                         </NavLink>
@@ -189,7 +189,7 @@ export default function CoursesPage() {
                                 className="w-[250px] text-center border-2 rounded-full py-12 mb-5 mx-auto hover:transform hover:scale-110 hover:bg-yellow-100 text-yellow-100 hover:text-black transition-all ease duration-300">
                                 <div className="text-xl font-bold">Beginner</div>
                                 <div className="text-xl font-bold">Artificial Intelligence</div>
-                                <img src={icon9} alt="course1" className="w-[100px] mx-auto"/>
+                                <img src={icon9} alt="course1" className="w-[100px] mx-auto" />
                             </div>
                             <h3 className="pl-2 text-2xl text-center">View Detail</h3>
                         </NavLink>
@@ -200,7 +200,7 @@ export default function CoursesPage() {
                                 className="w-[250px] text-center border-2 rounded-full py-12 mb-5 mx-auto hover:transform hover:scale-110 hover:bg-yellow-100 text-yellow-100 hover:text-black transition-all ease duration-300">
                                 <div className="text-xl font-bold">AWS Cloud</div>
                                 <div className="text-xl font-bold">Certification</div>
-                                <img src={icon10} alt="course1" className="w-[100px] mx-auto"/>
+                                <img src={icon10} alt="course1" className="w-[100px] mx-auto" />
                             </div>
                             <h3 className="pl-2 text-2xl text-center">View Detail</h3>
                         </NavLink>
@@ -211,7 +211,7 @@ export default function CoursesPage() {
                                 className="w-[250px] text-center border-2 rounded-full py-12 mb-5 mx-auto hover:transform hover:scale-110 hover:bg-yellow-100 text-yellow-100 hover:text-black transition-all ease duration-300">
                                 <div className="text-xl font-bold">COLLEGE</div>
                                 <div className="text-xl font-bold">Computer Science</div>
-                                <img src={icon11} alt="course1" className="w-[100px] mx-auto"/>
+                                <img src={icon11} alt="course1" className="w-[100px] mx-auto" />
                             </div>
                             <h3 className="pl-2 text-2xl text-center">View Detail</h3>
                         </NavLink>
@@ -222,7 +222,7 @@ export default function CoursesPage() {
                                 className="w-[250px] text-center border-2 rounded-full py-12 mb-5 mx-auto hover:transform hover:scale-110 hover:bg-yellow-100 text-yellow-100 hover:text-black transition-all ease duration-300">
                                 <div className="text-xl font-bold">ROBLOX</div>
                                 <div className="text-xl font-bold">Game Development</div>
-                                <img src={icon12} alt="course1" className="w-[100px] mx-auto"/>
+                                <img src={icon12} alt="course1" className="w-[100px] mx-auto" />
                             </div>
                             <h3 className="pl-2 text-2xl text-center">View Detail</h3>
                         </NavLink>
