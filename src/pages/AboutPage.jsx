@@ -260,41 +260,41 @@ export default function AboutPage() {
                         <p className="text-center md:text-lg">Testimonial reviews & comments</p>
                     </div>
                     <div className="md:flex mx-auto py-10">
-                        <img src={testimonial1} alt="Jay" className="rounded-full border w-[300px] h-[300px] md:w-[350px] md:h-[350px] md:mx-3" />
-                        <img src={testimonial2} alt="Jay" className="rounded-full border w-[300px] h-[300px] md:w-[350px] md:h-[350px] md:mx-3" />
-                        <img src={testimonial3} alt="Jay" className="rounded-full border w-[300px] h-[300px] md:w-[350px] md:h-[350px] md:mx-3" />
+                        <img src={testimonial1} alt="Jay" className="rounded-full border w-[300px] h-[300px] md:w-[350px] md:h-[350px] md:mx-3 cursor-pointer" />
+                        <img src={testimonial2} alt="Jay" className="rounded-full border w-[300px] h-[300px] md:w-[350px] md:h-[350px] md:mx-3 cursor-pointer" />
+                        <img src={testimonial3} alt="Jay" className="rounded-full border w-[300px] h-[300px] md:w-[350px] md:h-[350px] md:mx-3 cursor-pointer" />
                     </div>
                 </section>
-                <section class="py-10 border-b">
-                    <h2 class="glow text-2xl md:text-6xl text-center py-10">Code with us</h2>
-                    <div class="max-w-[1000px] mx-auto md:grid md:grid-cols-2 px-2">
-                        <div class="flex md:py-7">
+                <section className="py-10 border-b">
+                    <h2 className="glow text-2xl md:text-6xl text-center py-10">Code with us</h2>
+                    <div className="max-w-[1000px] mx-auto md:grid md:grid-cols-2 px-2">
+                        <div className="flex md:py-7">
                             <LuMapPin size={25} />
-                            <p class="text-lg pl-2">2885 Barnet Hwy, Coquitlam, BC V3B 1C1</p>
+                            <p className="text-lg pl-2">2885 Barnet Hwy, Coquitlam, BC V3B 1C1</p>
                         </div>
-                        <div class="flex py-7">
+                        <div className="flex py-7">
                             <LuMapPin size={25} />
-                            <p class="text-lg pl-2">2428 Haywood Ave, West Vancouver, BC V7V 1Y1</p>
+                            <p className="text-lg pl-2">2428 Haywood Ave, West Vancouver, BC V7V 1Y1</p>
                         </div>
-                        <div class="flex md:py-7">
+                        <div className="flex md:py-7">
                             <FaInstagram size={25} />
-                            <p class="text-lg pl-2">vision.coding</p>
+                            <p className="text-lg pl-2">vision.coding</p>
                         </div>
-                        <div class="flex py-7">
+                        <div className="flex py-7">
                             <FaPhoneAlt size={25} />
-                            <p class=" text-lg pl-2">+1 604-900-3707</p>
+                            <p className=" text-lg pl-2">+1 604-900-3707</p>
                         </div>
-                        <div class="flex md:py-7">
+                        <div className="flex md:py-7">
                             <RiKakaoTalkFill size={25} />
-                            <p class="text-lg pl-2">@visioncodingcqt</p>
+                            <p className="text-lg pl-2">@visioncodingcqt</p>
                         </div>
-                        <div class="flex py-7">
+                        <div className="flex py-7">
                             <TfiEmail size={25} />
-                            <p class="text-lg pl-2">visioncodingca@gmail.com</p>
+                            <p className="text-lg pl-2">visioncodingca@gmail.com</p>
                         </div>
-                        <div class="flex md:py-7">
+                        <div className="flex md:py-7">
                             <FaWhatsapp size={25} />
-                            <p class="text-lg pl-2">6049003707</p>
+                            <p className="text-lg pl-2">6049003707</p>
                         </div>
                     </div>
                 </section>

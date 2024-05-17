@@ -15,6 +15,7 @@ import ContactPage from "./pages/ContactPage";
 import LoginPage from "./pages/LoginPage";
 import SignupPage from "./pages/SIgnupPage";
 import GalleryPage from "./pages/GalleryPage";
+import ComingSoonPage from "./pages/ComingSoonPage";
 
 export function Router() {
     const router = createBrowserRouter(
@@ -27,6 +28,7 @@ export function Router() {
                 <Route path="/gallery" element={<GalleryPage />} />
                 <Route path="/login" element={<LoginPage />} />
                 <Route path="/signup" element={<SignupPage />} />
+                <Route path="/comingsoon" element={<ComingSoonPage />} />
             </Route>
         )
     )

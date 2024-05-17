@@ -29,8 +29,8 @@ export default function Footer() {
                 </div>
                 <div>
                     <h3 className="text-2xl md:text-4xl pb-5">Contact Us</h3>
-                    <p className="py-2 md:text-lg">Home</p>
                     <p className="py-2 md:text-lg">2885 Barnet Hwy, Coquitlam, BC V3B 1C1</p>
+                    <p className="py-2 md:text-lg">2428 Haywood Ave, West Vancouver, BC V7V 1Y1</p>
                     <p className="py-2 md:text-lg">+1 604-900-3707</p>
                     <p className="py-2 md:text-lg">visioncodingca@gmail.com</p>
                 </div>

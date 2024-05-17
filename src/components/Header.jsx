@@ -53,7 +53,7 @@ export default function Header() {
                     </li>
                     <li
                         className="px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">
-                        <NavLink to="#" onClick={() => { $mainNav.slideUp() }}>Gallery</NavLink>
+                        <NavLink to="/gallery" onClick={() => { $mainNav.slideUp() }}>Gallery</NavLink>
                     </li>
                     <li
                         className="px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">

@@ -8,13 +8,13 @@ description: Courses page for Vision Coding Academy
 
 import $ from 'jquery';
 import ScrollReveal from 'scrollreveal'
+import { NavLink } from 'react-router-dom';
 import { LuMapPin } from "react-icons/lu";
 import { FaInstagram } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import { RiKakaoTalkFill } from "react-icons/ri";
 import { TfiEmail } from "react-icons/tfi";
 import { FaWhatsapp } from "react-icons/fa";
-import noIcon from "/lightbulb-black.jpg"
 import visionCodingIcon from "/yellow1.png"
 import icon1 from "/icon1application.png"
 import icon2 from "/icon2binary-code.png"
@@ -86,178 +86,178 @@ export default function CoursesPage() {
     });
 
     return (
-        <main class="flex-1 mx-auto">
-            <div class="bg-black text-white flex flex-col">
-                <section class="max-w-[1000px] mx-auto py-10">
-                    <h3 class="pl-2 text-5xl md:text-6xl py-10 pb-5 text-center">Vision Coding Courses</h3>
-                    <img src={visionCodingIcon} alt="vision coding icon" class="mx-auto w-[100px]"/>
-                    <p class="timeline-content js--fadeInLeft text-center md:text-lg">Each course is crafted for
+        <main className="flex-1 mx-auto">
+            <div className="bg-black text-white flex flex-col">
+                <section className="max-w-[1000px] mx-auto py-10">
+                    <h3 className="pl-2 text-5xl md:text-6xl py-10 pb-5 text-center">Vision Coding Courses</h3>
+                    <img src={visionCodingIcon} alt="vision coding icon" className="mx-auto w-[100px]"/>
+                    <p className="timeline-content js--fadeInLeft text-center md:text-lg">Each course is crafted for
                         hands-on, practical learning,</p>
-                    <p class="timeline-content js--fadeInLeft text-center md:text-lg">guided by our team of industry
+                    <p className="timeline-content js--fadeInLeft text-center md:text-lg">guided by our team of industry
                         experts.</p>
                 </section>
-                <section class="py-10 md:grid md:grid-cols-4 md:pl-20">
-                    <div class="timeline-content js--fadeInRight md:px-5 py-2">
-                        <a href="./entry1.html">
+                <section className="py-10 md:grid md:grid-cols-4 md:pl-20">
+                    <div className="timeline-content js--fadeInRight md:px-5 py-2">
+                        <NavLink to="/comingsoon">
                             <div
-                                class="w-[250px] text-center border-2 rounded-full py-12 mb-5 mx-auto hover:transform hover:scale-110 hover:bg-yellow-100 text-yellow-100 hover:text-black transition-all ease duration-300">
-                                <div class="text-xl font-bold">ENTRY</div>
-                                <div class="text-xl font-bold">[G1-G3]</div>
-                                <img src={icon1} alt="course1" class="w-[100px] mx-auto"/>
+                                className="w-[250px] text-center border-2 rounded-full py-12 mb-5 mx-auto hover:transform hover:scale-110 hover:bg-yellow-100 text-yellow-100 hover:text-black transition-all ease duration-300">
+                                <div className="text-xl font-bold">ENTRY</div>
+                                <div className="text-xl font-bold">[G1-G3]</div>
+                                <img src={icon1} alt="course1" className="w-[100px] mx-auto"/>
                             </div>
-                            <h3 class="pl-2 text-2xl text-center">View Detail</h3>
-                        </a>
+                            <h3 className="pl-2 text-2xl text-center">View Detail</h3>
+                        </NavLink>
                     </div>
-                    <div class="timeline-content js--fadeInRight px-2 py-2">
-                        <a href="./advanced1.html">
+                    <div className="timeline-content js--fadeInRight px-2 py-2">
+                        <NavLink to="/comingsoon">
                             <div
-                                class="w-[250px] text-center border-2 rounded-full py-12 mb-5 mx-auto hover:transform hover:scale-110 hover:bg-yellow-100 text-yellow-100 hover:text-black transition-all ease duration-300">
-                                <div class="text-xl font-bold">ADVANCED</div>
-                                <div class="text-xl font-bold">[G1-G3]</div>
-                                <img src={icon2} alt="course1" class="w-[100px] mx-auto"/>
+                                className="w-[250px] text-center border-2 rounded-full py-12 mb-5 mx-auto hover:transform hover:scale-110 hover:bg-yellow-100 text-yellow-100 hover:text-black transition-all ease duration-300">
+                                <div className="text-xl font-bold">ADVANCED</div>
+                                <div className="text-xl font-bold">[G1-G3]</div>
+                                <img src={icon2} alt="course1" className="w-[100px] mx-auto"/>
                             </div>
-                            <h3 class="pl-2 text-2xl text-center">View Detail</h3>
-                        </a>
+                            <h3 className="pl-2 text-2xl text-center">View Detail</h3>
+                        </NavLink>
                     </div>
-                    <div class="timeline-content js--fadeInRight px-2 py-2">
-                        <a href="./entry4.html">
+                    <div className="timeline-content js--fadeInRight px-2 py-2">
+                        <NavLink to="/comingsoon">
                             <div
-                                class="w-[250px] text-center border-2 rounded-full py-12 mb-5 mx-auto hover:transform hover:scale-110 hover:bg-yellow-100 text-yellow-100 hover:text-black transition-all ease duration-300">
-                                <div class="text-xl font-bold">ENTRY</div>
-                                <div class="text-xl font-bold">[G4-G10]</div>
-                                <img src={icon3} alt="course1" class="w-[100px] mx-auto"/>
+                                className="w-[250px] text-center border-2 rounded-full py-12 mb-5 mx-auto hover:transform hover:scale-110 hover:bg-yellow-100 text-yellow-100 hover:text-black transition-all ease duration-300">
+                                <div className="text-xl font-bold">ENTRY</div>
+                                <div className="text-xl font-bold">[G4-G10]</div>
+                                <img src={icon3} alt="course1" className="w-[100px] mx-auto"/>
                             </div>
-                            <h3 class="pl-2 text-2xl text-center">View Detail</h3>
-                        </a>
+                            <h3 className="pl-2 text-2xl text-center">View Detail</h3>
+                        </NavLink>
                     </div>
-                    <div class="timeline-content js--fadeInRight px-2 py-2">
-                        <a href="./comingsoon.html">
+                    <div className="timeline-content js--fadeInRight px-2 py-2">
+                        <NavLink to="/comingsoon">
                             <div
-                                class="w-[250px] text-center border-2 rounded-full py-12 mb-5 mx-auto hover:transform hover:scale-110 hover:bg-yellow-100 text-yellow-100 hover:text-black transition-all ease duration-300">
-                                <div class="text-xl font-bold">INTERMEDIATE</div>
-                                <div class="text-xl font-bold">[G4-G10]</div>
-                                <img src={icon4} alt="course1" class="w-[100px] mx-auto"/>
+                                className="w-[250px] text-center border-2 rounded-full py-12 mb-5 mx-auto hover:transform hover:scale-110 hover:bg-yellow-100 text-yellow-100 hover:text-black transition-all ease duration-300">
+                                <div className="text-xl font-bold">INTERMEDIATE</div>
+                                <div className="text-xl font-bold">[G4-G10]</div>
+                                <img src={icon4} alt="course1" className="w-[100px] mx-auto"/>
                             </div>
-                            <h3 class="pl-2 text-2xl text-center">View Detail</h3>
-                        </a>
+                            <h3 className="pl-2 text-2xl text-center">View Detail</h3>
+                        </NavLink>
                     </div>
-                    <div class="timeline-content js--fadeInRight px-2 py-2">
-                        <a href="./comingsoon.html">
+                    <div className="timeline-content js--fadeInRight px-2 py-2">
+                        <NavLink to="/comingsoon">
                             <div
-                                class="w-[250px] text-center border-2 rounded-full py-12 mb-5 mx-auto hover:transform hover:scale-110 hover:bg-yellow-100 text-yellow-100 hover:text-black transition-all ease duration-300">
-                                <div class="text-xl font-bold">ADVANCED</div>
-                                <div class="text-xl font-bold">[G1-G3]</div>
-                                <img src={icon5} alt="course1" class="w-[100px] mx-auto"/>
+                                className="w-[250px] text-center border-2 rounded-full py-12 mb-5 mx-auto hover:transform hover:scale-110 hover:bg-yellow-100 text-yellow-100 hover:text-black transition-all ease duration-300">
+                                <div className="text-xl font-bold">ADVANCED</div>
+                                <div className="text-xl font-bold">[G1-G3]</div>
+                                <img src={icon5} alt="course1" className="w-[100px] mx-auto"/>
                             </div>
-                            <h3 class="pl-2 text-2xl text-center">View Detail</h3>
-                        </a>
+                            <h3 className="pl-2 text-2xl text-center">View Detail</h3>
+                        </NavLink>
                     </div>
-                    <div class="timeline-content js--fadeInRight px-2 py-2">
-                        <a href="./comingsoon.html">
+                    <div className="timeline-content js--fadeInRight px-2 py-2">
+                        <NavLink to="/comingsoon">
                             <div
-                                class="w-[250px] text-center border-2 rounded-full py-12 mb-5 mx-auto hover:transform hover:scale-110 hover:bg-yellow-100 text-yellow-100 hover:text-black transition-all ease duration-300">
-                                <div class="text-xl font-bold">MOBILE APP DEVELOPMENT</div>
-                                <img src={icon6} alt="course1" class="w-[100px] mx-auto"/>
+                                className="w-[250px] text-center border-2 rounded-full py-12 mb-5 mx-auto hover:transform hover:scale-110 hover:bg-yellow-100 text-yellow-100 hover:text-black transition-all ease duration-300">
+                                <div className="text-xl font-bold">MOBILE APP DEVELOPMENT</div>
+                                <img src={icon6} alt="course1" className="w-[100px] mx-auto"/>
                             </div>
-                            <h3 class="pl-2 text-2xl text-center">View Detail</h3>
-                        </a>
+                            <h3 className="pl-2 text-2xl text-center">View Detail</h3>
+                        </NavLink>
                     </div>
-                    <div class="timeline-content js--fadeInRight px-2 py-2">
-                        <a href="./comingsoon.html">
+                    <div className="timeline-content js--fadeInRight px-2 py-2">
+                        <NavLink to="/comingsoon">
                             <div
-                                class="w-[250px] text-center border-2 rounded-full py-16 mb-5 mx-auto hover:transform hover:scale-110 hover:bg-yellow-100 text-yellow-100 hover:text-black transition-all ease duration-300">
-                                <div class="text-xl font-bold">BEGINNER PYTHON</div>
-                                <img src={icon7} alt="course1" class="w-[100px] mx-auto"/>
+                                className="w-[250px] text-center border-2 rounded-full py-16 mb-5 mx-auto hover:transform hover:scale-110 hover:bg-yellow-100 text-yellow-100 hover:text-black transition-all ease duration-300">
+                                <div className="text-xl font-bold">BEGINNER PYTHON</div>
+                                <img src={icon7} alt="course1" className="w-[100px] mx-auto"/>
                             </div>
-                            <h3 class="pl-2 text-2xl text-center">View Detail</h3>
-                        </a>
+                            <h3 className="pl-2 text-2xl text-center">View Detail</h3>
+                        </NavLink>
                     </div>
-                    <div class="timeline-content js--fadeInRight px-2 py-2">
-                        <a href="./comingsoon.html">
+                    <div className="timeline-content js--fadeInRight px-2 py-2">
+                        <NavLink to="/comingsoon">
                             <div
-                                class="w-[250px] text-center border-2 rounded-full py-12 mb-5 mx-auto hover:transform hover:scale-110 hover:bg-yellow-100 text-yellow-100 hover:text-black transition-all ease duration-300">
-                                <div class="text-xl font-bold">EXTRA</div>
-                                <div class="text-xl font-bold">CURRICULUMS</div>
-                                <img src={icon8} alt="course1" class="w-[100px] mx-auto"/>
+                                className="w-[250px] text-center border-2 rounded-full py-12 mb-5 mx-auto hover:transform hover:scale-110 hover:bg-yellow-100 text-yellow-100 hover:text-black transition-all ease duration-300">
+                                <div className="text-xl font-bold">EXTRA</div>
+                                <div className="text-xl font-bold">CURRICULUMS</div>
+                                <img src={icon8} alt="course1" className="w-[100px] mx-auto"/>
                             </div>
-                            <h3 class="pl-2 text-2xl text-center">View Detail</h3>
-                        </a>
+                            <h3 className="pl-2 text-2xl text-center">View Detail</h3>
+                        </NavLink>
                     </div>
-                    <div class="timeline-content js--fadeInRight px-2 py-2">
-                        <a href="./comingsoon.html">
+                    <div className="timeline-content js--fadeInRight px-2 py-2">
+                        <NavLink to="/comingsoon">
                             <div
-                                class="w-[250px] text-center border-2 rounded-full py-12 mb-5 mx-auto hover:transform hover:scale-110 hover:bg-yellow-100 text-yellow-100 hover:text-black transition-all ease duration-300">
-                                <div class="text-xl font-bold">Beginner</div>
-                                <div class="text-xl font-bold">Artificial Intelligence</div>
-                                <img src={icon9} alt="course1" class="w-[100px] mx-auto"/>
+                                className="w-[250px] text-center border-2 rounded-full py-12 mb-5 mx-auto hover:transform hover:scale-110 hover:bg-yellow-100 text-yellow-100 hover:text-black transition-all ease duration-300">
+                                <div className="text-xl font-bold">Beginner</div>
+                                <div className="text-xl font-bold">Artificial Intelligence</div>
+                                <img src={icon9} alt="course1" className="w-[100px] mx-auto"/>
                             </div>
-                            <h3 class="pl-2 text-2xl text-center">View Detail</h3>
-                        </a>
+                            <h3 className="pl-2 text-2xl text-center">View Detail</h3>
+                        </NavLink>
                     </div>
-                    <div class="timeline-content js--fadeInRight px-2 py-2">
-                        <a href="./comingsoon.html">
+                    <div className="timeline-content js--fadeInRight px-2 py-2">
+                        <NavLink to="/comingsoon">
                             <div
-                                class="w-[250px] text-center border-2 rounded-full py-12 mb-5 mx-auto hover:transform hover:scale-110 hover:bg-yellow-100 text-yellow-100 hover:text-black transition-all ease duration-300">
-                                <div class="text-xl font-bold">AWS Cloud</div>
-                                <div class="text-xl font-bold">Certification</div>
-                                <img src={icon10} alt="course1" class="w-[100px] mx-auto"/>
+                                className="w-[250px] text-center border-2 rounded-full py-12 mb-5 mx-auto hover:transform hover:scale-110 hover:bg-yellow-100 text-yellow-100 hover:text-black transition-all ease duration-300">
+                                <div className="text-xl font-bold">AWS Cloud</div>
+                                <div className="text-xl font-bold">Certification</div>
+                                <img src={icon10} alt="course1" className="w-[100px] mx-auto"/>
                             </div>
-                            <h3 class="pl-2 text-2xl text-center">View Detail</h3>
-                        </a>
+                            <h3 className="pl-2 text-2xl text-center">View Detail</h3>
+                        </NavLink>
                     </div>
-                    <div class="timeline-content js--fadeInRight px-2 py-2">
-                        <a href="./comingsoon.html">
+                    <div className="timeline-content js--fadeInRight px-2 py-2">
+                        <NavLink to="/comingsoon">
                             <div
-                                class="w-[250px] text-center border-2 rounded-full py-12 mb-5 mx-auto hover:transform hover:scale-110 hover:bg-yellow-100 text-yellow-100 hover:text-black transition-all ease duration-300">
-                                <div class="text-xl font-bold">COLLEGE</div>
-                                <div class="text-xl font-bold">Computer Science</div>
-                                <img src={icon11} alt="course1" class="w-[100px] mx-auto"/>
+                                className="w-[250px] text-center border-2 rounded-full py-12 mb-5 mx-auto hover:transform hover:scale-110 hover:bg-yellow-100 text-yellow-100 hover:text-black transition-all ease duration-300">
+                                <div className="text-xl font-bold">COLLEGE</div>
+                                <div className="text-xl font-bold">Computer Science</div>
+                                <img src={icon11} alt="course1" className="w-[100px] mx-auto"/>
                             </div>
-                            <h3 class="pl-2 text-2xl text-center">View Detail</h3>
-                        </a>
+                            <h3 className="pl-2 text-2xl text-center">View Detail</h3>
+                        </NavLink>
                     </div>
-                    <div class="timeline-content js--fadeInRight px-2 py-2">
-                        <a href="./comingsoon.html">
+                    <div className="timeline-content js--fadeInRight px-2 py-2">
+                        <NavLink to="/comingsoon">
                             <div
-                                class="w-[250px] text-center border-2 rounded-full py-12 mb-5 mx-auto hover:transform hover:scale-110 hover:bg-yellow-100 text-yellow-100 hover:text-black transition-all ease duration-300">
-                                <div class="text-xl font-bold">ROBLOX</div>
-                                <div class="text-xl font-bold">Game Development</div>
-                                <img src={icon12} alt="course1" class="w-[100px] mx-auto"/>
+                                className="w-[250px] text-center border-2 rounded-full py-12 mb-5 mx-auto hover:transform hover:scale-110 hover:bg-yellow-100 text-yellow-100 hover:text-black transition-all ease duration-300">
+                                <div className="text-xl font-bold">ROBLOX</div>
+                                <div className="text-xl font-bold">Game Development</div>
+                                <img src={icon12} alt="course1" className="w-[100px] mx-auto"/>
                             </div>
-                            <h3 class="pl-2 text-2xl text-center">View Detail</h3>
-                        </a>
+                            <h3 className="pl-2 text-2xl text-center">View Detail</h3>
+                        </NavLink>
                     </div>
                 </section>
-                <section class="py-10 border-b">
-                    <h2 class="glow text-2xl md:text-6xl text-center py-10">Code with us</h2>
-                    <div class="max-w-[1000px] mx-auto md:grid md:grid-cols-2 px-2">
-                        <div class="flex md:py-7">
+                <section className="py-10 border-b">
+                    <h2 className="glow text-2xl md:text-6xl text-center py-10">Code with us</h2>
+                    <div className="max-w-[1000px] mx-auto md:grid md:grid-cols-2 px-2">
+                        <div className="flex md:py-7">
                             <LuMapPin size={25} />
-                            <p class="text-lg pl-2">2885 Barnet Hwy, Coquitlam, BC V3B 1C1</p>
+                            <p className="text-lg pl-2">2885 Barnet Hwy, Coquitlam, BC V3B 1C1</p>
                         </div>
-                        <div class="flex py-7">
+                        <div className="flex py-7">
                             <LuMapPin size={25} />
-                            <p class="text-lg pl-2">2428 Haywood Ave, West Vancouver, BC V7V 1Y1</p>
+                            <p className="text-lg pl-2">2428 Haywood Ave, West Vancouver, BC V7V 1Y1</p>
                         </div>
-                        <div class="flex md:py-7">
+                        <div className="flex md:py-7">
                             <FaInstagram size={25} />
-                            <p class="text-lg pl-2">vision.coding</p>
+                            <p className="text-lg pl-2">vision.coding</p>
                         </div>
-                        <div class="flex py-7">
+                        <div className="flex py-7">
                             <FaPhoneAlt size={25} />
-                            <p class=" text-lg pl-2">+1 604-900-3707</p>
+                            <p className=" text-lg pl-2">+1 604-900-3707</p>
                         </div>
-                        <div class="flex md:py-7">
+                        <div className="flex md:py-7">
                             <RiKakaoTalkFill size={25} />
-                            <p class="text-lg pl-2">@visioncodingcqt</p>
+                            <p className="text-lg pl-2">@visioncodingcqt</p>
                         </div>
-                        <div class="flex py-7">
+                        <div className="flex py-7">
                             <TfiEmail size={25} />
-                            <p class="text-lg pl-2">visioncodingca@gmail.com</p>
+                            <p className="text-lg pl-2">visioncodingca@gmail.com</p>
                         </div>
-                        <div class="flex md:py-7">
+                        <div className="flex md:py-7">
                             <FaWhatsapp size={25} />
-                            <p class="text-lg pl-2">6049003707</p>
+                            <p className="text-lg pl-2">6049003707</p>
                         </div>
                     </div>
                 </section>

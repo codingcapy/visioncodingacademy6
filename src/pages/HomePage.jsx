@@ -77,11 +77,11 @@ export default function HomePage() {
 
     return (
         <main className="flex-1 mx-auto">
-            <section class="hero-banner bg-white">
-                <h1 class="timeline-content js--fadeInRight">
-                    <img src={heroBanner} alt="Banner words" class="" />
-                    <div class="flex flex-col mx-auto">
-                        <p class="text-center text-2xl pb-5 drop-shadow">Discover the Power to Transform the Future with
+            <section className="hero-banner bg-white">
+                <h1 className="timeline-content js--fadeInRight">
+                    <img src={heroBanner} alt="Banner words" className="" />
+                    <div className="flex flex-col mx-auto">
+                        <p className="text-center text-2xl pb-5 drop-shadow">Discover the Power to Transform the Future with
                             Every Line
                             of
                             Code</p>
@@ -214,7 +214,7 @@ export default function HomePage() {
                             focuse in Computer Science. It includes guidance on creating a compelling portfolio with
                             multiple GitHub projects and strategies for career advancement in the tech field.</p>
                     </div>
-                    <div class="flex flex-col py-30 mx-auto">
+                    <div className="flex flex-col py-30 mx-auto">
 
                         <NavLink to="/courses"
                             className="px-3 py-3 border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500 mx-auto">
@@ -222,11 +222,11 @@ export default function HomePage() {
                             More about Courses</NavLink>
                     </div>
                 </section>
-                <section class="approach py-10 bg-gray-600 bg-opacity-70 text-yellow-300">
-                    <div class="md:max-w-[1000px] mx-auto">
-                        <div class="">
-                            <h3 class="pl-2 text-2xl md:text-4xl py-10">Our Approach</h3>
-                            <p class="pl-2 md:text-lg">In over six years of teaching, I've learned that the key to
+                <section className="approach py-10 bg-gray-600 bg-opacity-70 text-yellow-300">
+                    <div className="md:max-w-[1000px] mx-auto">
+                        <div className="">
+                            <h3 className="pl-2 text-2xl md:text-4xl py-10">Our Approach</h3>
+                            <p className="pl-2 md:text-lg">In over six years of teaching, I've learned that the key to
                                 engaging
                                 students is making
                                 complex
@@ -239,15 +239,15 @@ export default function HomePage() {
                                 are
                                 inspiring.</p>
                         </div>
-                        <h3 class="pl-2 text-2xl md:text-4xl py-10">Educational Consulting</h3>
-                        <p class="pl-2 md:text-lg">My experience in guiding students to top universities has taught me
+                        <h3 className="pl-2 text-2xl md:text-4xl py-10">Educational Consulting</h3>
+                        <p className="pl-2 md:text-lg">My experience in guiding students to top universities has taught me
                             the
                             importance of tailored
                             educational strategies. At Vision Coding Academy, we use these insights to help our students
                             not
                             just learn, but excel and prepare for their future academic and career paths.</p>
-                        <h3 class="pl-2 text-2xl md:text-4xl py-10">Philosophy</h3>
-                        <p class="pl-2 md:text-lg">We go beyond just coding; we're about nurturing the creators and
+                        <h3 className="pl-2 text-2xl md:text-4xl py-10">Philosophy</h3>
+                        <p className="pl-2 md:text-lg">We go beyond just coding; we're about nurturing the creators and
                             innovators of
                             tomorrow. Our goal
                             is
@@ -257,9 +257,9 @@ export default function HomePage() {
                             connection to the industry ensures that our teaching stays current and meaningful.</p>
                     </div>
                 </section>
-                <section class="max-w-[1000px] mx-auto py-10">
-                    <h3 class="pl-2 text-2xl md:text-6xl py-10 text-center">Our Team</h3>
-                    <p class="pl-2 md:text-lg">Meet the driving force behind Vision Coding Academy: a diverse team of IT
+                <section className="max-w-[1000px] mx-auto py-10">
+                    <h3 className="pl-2 text-2xl md:text-6xl py-10 text-center">Our Team</h3>
+                    <p className="pl-2 md:text-lg">Meet the driving force behind Vision Coding Academy: a diverse team of IT
                         industry
                         experts
                         specializing in software, hardware, frontend, backend, automation, UI/UX, and web design. Each
@@ -298,36 +298,36 @@ export default function HomePage() {
                         </div>
                     </div>
                 </section>
-                <section class="py-10 border-b">
-                    <h2 class="glow text-2xl md:text-6xl text-center py-10">Code with us</h2>
-                    <div class="max-w-[1000px] mx-auto md:grid md:grid-cols-2 px-2">
-                        <div class="flex md:py-7">
+                <section className="py-10 border-b">
+                    <h2 className="glow text-2xl md:text-6xl text-center py-10">Code with us</h2>
+                    <div className="max-w-[1000px] mx-auto md:grid md:grid-cols-2 px-2">
+                        <div className="flex md:py-7">
                             <LuMapPin size={25} />
-                            <p class="text-lg pl-2">2885 Barnet Hwy, Coquitlam, BC V3B 1C1</p>
+                            <p className="text-lg pl-2">2885 Barnet Hwy, Coquitlam, BC V3B 1C1</p>
                         </div>
-                        <div class="flex py-7">
+                        <div className="flex py-7">
                             <LuMapPin size={25} />
-                            <p class="text-lg pl-2">2428 Haywood Ave, West Vancouver, BC V7V 1Y1</p>
+                            <p className="text-lg pl-2">2428 Haywood Ave, West Vancouver, BC V7V 1Y1</p>
                         </div>
-                        <div class="flex md:py-7">
+                        <div className="flex md:py-7">
                             <FaInstagram size={25} />
-                            <p class="text-lg pl-2">vision.coding</p>
+                            <p className="text-lg pl-2">vision.coding</p>
                         </div>
-                        <div class="flex py-7">
+                        <div className="flex py-7">
                             <FaPhoneAlt size={25} />
-                            <p class=" text-lg pl-2">+1 604-900-3707</p>
+                            <p className=" text-lg pl-2">+1 604-900-3707</p>
                         </div>
-                        <div class="flex md:py-7">
+                        <div className="flex md:py-7">
                             <RiKakaoTalkFill size={25} />
-                            <p class="text-lg pl-2">@visioncodingcqt</p>
+                            <p className="text-lg pl-2">@visioncodingcqt</p>
                         </div>
-                        <div class="flex py-7">
+                        <div className="flex py-7">
                             <TfiEmail size={25} />
-                            <p class="text-lg pl-2">visioncodingca@gmail.com</p>
+                            <p className="text-lg pl-2">visioncodingca@gmail.com</p>
                         </div>
-                        <div class="flex md:py-7">
+                        <div className="flex md:py-7">
                             <FaWhatsapp size={25} />
-                            <p class="text-lg pl-2">6049003707</p>
+                            <p className="text-lg pl-2">6049003707</p>
                         </div>
                     </div>
                 </section>
