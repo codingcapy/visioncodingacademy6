@@ -8,6 +8,7 @@ description: Home page for Vision Coding Academy
 
 import $ from 'jquery';
 import { NavLink } from "react-router-dom"
+import { useEffect } from 'react';
 import ScrollReveal from 'scrollreveal'
 import codingClass from "/coding-class1.jpg"
 import techIcon from "/icon1.jpg"
@@ -21,6 +22,10 @@ import { TfiEmail } from "react-icons/tfi";
 import { FaWhatsapp } from "react-icons/fa";
 
 export default function HomePage() {
+
+    useEffect(() => {
+        document.title = 'Home | Vision Coding';
+      }, []);
 
     $(function () {
         window.sr = ScrollReveal();

@@ -6,6 +6,7 @@ version: 1.0
 description: About page for Vision Coding Academy
  */
 
+import { useEffect } from 'react';
 import $ from 'jquery';
 import ScrollReveal from 'scrollreveal'
 import { LuMapPin } from "react-icons/lu";
@@ -28,6 +29,10 @@ import testimonial2 from "/testimonial2.jpg"
 import testimonial3 from "/testimonial3.jpg"
 
 export default function AboutPage() {
+
+    useEffect(() => {
+        document.title = 'About | Vision Coding';
+      }, []);
 
     $(function () {
         window.sr = ScrollReveal();

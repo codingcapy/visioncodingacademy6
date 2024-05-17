@@ -6,6 +6,7 @@ version: 1.0
 description: Courses page for Vision Coding Academy
  */
 
+import { useEffect } from 'react';
 import $ from 'jquery';
 import ScrollReveal from 'scrollreveal'
 import { NavLink } from 'react-router-dom';
@@ -31,6 +32,10 @@ import icon12 from "/icon2binary-code.png"
 
 
 export default function CoursesPage() {
+
+    useEffect(() => {
+        document.title = 'Courses | Vision Coding';
+      }, []);
 
     $(function () {
         window.sr = ScrollReveal();

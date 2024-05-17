@@ -6,11 +6,16 @@ version: 1.0
 description: Coming Soon page for Vision Coding Academy
  */
 
+import { useEffect } from 'react';
 import $ from 'jquery';
 import ScrollReveal from 'scrollreveal'
 import comingSoon from "/icon67coming-soon.png"
 
 export default function ComingSoonPage() {
+
+    useEffect(() => {
+        document.title = 'Coming Soon | Vision Coding';
+      }, []);
 
     $(function () {
         window.sr = ScrollReveal();

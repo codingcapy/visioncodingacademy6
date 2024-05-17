@@ -6,6 +6,7 @@ version: 1.0
 description: Contact page for Vision Coding Academy
  */
 
+import { useEffect } from 'react';
 import { LuMapPin } from "react-icons/lu";
 import { FaInstagram } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
@@ -14,6 +15,10 @@ import { TfiEmail } from "react-icons/tfi";
 import { FaWhatsapp } from "react-icons/fa";
 
 export default function ContactPage() {
+
+    useEffect(() => {
+        document.title = 'Contact | Vision Coding';
+      }, []);
 
     return (
         <main className="flex-1 mx-auto">

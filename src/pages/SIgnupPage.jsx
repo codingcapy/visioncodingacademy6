@@ -6,7 +6,13 @@ version: 1.0
 description: Signup page for Vision Coding Academy
  */
 
+import { useEffect } from "react"
+
 export default function SignupPage() {
+
+    useEffect(() => {
+        document.title = 'Signup | Vision Coding';
+      }, []);
 
     return (
         <main className="flex-1 mx-auto">

@@ -6,7 +6,13 @@ version: 1.0
 description: Login page for Vision Coding Academy
  */
 
+import { useEffect } from "react"
+
 export default function LoginPage() {
+
+    useEffect(() => {
+        document.title = 'Login | Vision Coding';
+      }, []);
 
     return (
         <main className="flex-1 mx-auto">

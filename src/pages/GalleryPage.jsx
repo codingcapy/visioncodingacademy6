@@ -6,8 +6,8 @@ version: 1.0
 description: Gallery page for Vision Coding Academy
  */
 
-import $ from 'jquery';
 import { useEffect } from 'react';
+import $ from 'jquery';
 import gallery1 from "/gallery1.jpg"
 import gallery2 from "/gallery2.jpg"
 import gallery3 from "/gallery3.jpg"
@@ -40,6 +40,10 @@ import gallery32 from "/gallery32.jpg"
 import gallery33 from "/gallery33.jpeg"
 
 export default function GalleryPage() {
+
+    useEffect(() => {
+        document.title = 'Gallery | Vision Coding';
+      }, []);
 
     useEffect(() => {
         const $images = $('.image');
