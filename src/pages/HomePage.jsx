@@ -25,7 +25,7 @@ export default function HomePage() {
 
     useEffect(() => {
         document.title = 'Home | Vision Coding';
-      }, []);
+    }, []);
 
     $(function () {
         window.sr = ScrollReveal();
@@ -86,10 +86,10 @@ export default function HomePage() {
                 <h1 className="timeline-content js--fadeInRight">
                     <img src={heroBanner} alt="Banner words" className="" />
                     <div className="flex flex-col mx-auto">
-                        <p className="text-center text-2xl pb-5 drop-shadow">Discover the Power to Transform the Future with
+                        <p className="text-center text-2xl pb-5 drop-shadow">Discover the Power to <span class="bg-gradient-to-r from-yellow-400 to-yellow-100 inline-block text-transparent bg-clip-text">Transform the Future</span> with
                             Every Line
-                            of
-                            Code</p>
+                            of 
+                            <span class="pl-2 bg-gradient-to-r from-yellow-400 to-yellow-100 inline-block text-transparent bg-clip-text">Code</span></p>
                         <NavLink to="/courses" className='mx-auto px-3 py-3 border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500'>View
                             Courses</NavLink>
                     </div>
