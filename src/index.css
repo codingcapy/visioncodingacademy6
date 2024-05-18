@@ -36,7 +36,7 @@ main {
 }
 
 .hero-banner {
-    height: 700px;
+    height: 300px;
     padding: 30px;
     background-image: url("/banner-bg.png");
     background-size: cover;
@@ -234,6 +234,10 @@ main {
 }
 
 @media(min-width:720px) {
+    .hero-banner {
+        height: 700px;
+    }
+    
     .map {
         width: 100%;
         height: 400px;
