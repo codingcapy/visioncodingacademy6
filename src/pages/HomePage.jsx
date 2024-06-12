@@ -11,8 +11,12 @@ import { NavLink } from "react-router-dom"
 import { useEffect } from 'react';
 import ScrollReveal from 'scrollreveal'
 import codingClass from "/coding-class1.jpg"
-import techIcon from "/icon1.jpg"
-import heroBanner from "/Banner-black words2.png"
+import techIcon from "/icon1.svg"
+import techIcon2 from "/icon2.svg"
+import techIcon3 from "/icon3.svg"
+import techIcon4 from "/icon4.svg"
+import techIcon5 from "/icon5.svg"
+import logoAlpha from "/logo_alpha.png"
 import visionCodingIcon from "/yellow1.png"
 import { LuMapPin } from "react-icons/lu";
 import { FaInstagram } from "react-icons/fa";
@@ -20,6 +24,8 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { RiKakaoTalkFill } from "react-icons/ri";
 import { TfiEmail } from "react-icons/tfi";
 import { FaWhatsapp } from "react-icons/fa";
+import { IoEyeOutline } from "react-icons/io5";
+import { TbTargetArrow } from "react-icons/tb";
 
 export default function HomePage() {
 
@@ -83,30 +89,48 @@ export default function HomePage() {
     return (
         <main className="flex-1 mx-auto">
             <section className="hero-banner bg-white">
-                <h1 className="timeline-content js--fadeInRight">
-                    <img src={heroBanner} alt="Banner words" className="" />
-                    <div className="flex flex-col mx-auto">
-                        <p className="text-center text-2xl pb-5 drop-shadow">Discover the Power to <span class="bg-gradient-to-r from-yellow-400 to-yellow-100 inline-block text-transparent bg-clip-text">Transform the Future</span> with
-                            Every Line
-                            of 
-                            <span class="pl-2 bg-gradient-to-r from-yellow-400 to-yellow-100 inline-block text-transparent bg-clip-text">Code</span></p>
-                        <NavLink to="/courses" className='mx-auto px-3 py-3 border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500'>View
-                            Courses</NavLink>
+                <div class="timeline-content js--fadeInRight">
+                    <div class="flex pt-5 md:pt-0">
+                        <img src={logoAlpha} alt="Banner words" className="w-[90px] h-[100px] md:w-[360px] md:h-[405px]" />
+                        <div class="flex flex-col md:my-24 md:ml-40 md:pl-10 md:border-l-8">
+                            <h1 class="text-4xl md:text-8xl text-yellow-100">VISION CODING ACADEMY</h1>
+                            <p class="text-lg md:text-7xl py-2 md:py-10 pb-0 mulish-light">Premium IT Education</p>
+                        </div>
                     </div>
-                </h1>
+                    <p class="text-center text-lg md:text-2xl py-5 md:py-0 md:pb-5 drop-shadow">Discover the Power to
+                        <span
+                            class="bg-gradient-to-r from-yellow-400 to-yellow-100 inline-block text-transparent bg-clip-text">Transform
+                            the Future</span> with
+                        Every Line
+                        of
+                        <span
+                            class="bg-gradient-to-r from-yellow-400 to-yellow-100 inline-block text-transparent bg-clip-text">Code</span>
+                    </p>
+                    <p></p>
+                    <div class="flex flex-col mx-auto">
+                        <a href="./courses/index.html"
+                            class="mx-auto px-3 py-3 border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500">View
+                            Courses</a>
+                    </div>
+                </div>
             </section>
             <section className="intro py-20 md:py-32">
-                <div className="max-w-[1000px] mx-auto">
-                    <h2 className="timeline-content js--fadeInBottom text-2xl md:text-4xl pb-4 bg-gradient-to-r from-yellow-400 to-yellow-100 inline-block text-transparent bg-clip-text h-[50px]">Who we are
+                <div class="md:max-w-[1400px] mx-auto">
+                    <h2 class="timeline-content js--fadeInBottom text-4xl pb-4 text-yellow-200">
+                        Who we are
                     </h2>
-                    <p className="timeline-content js--fadeInBottom pb-2 md:text-lg md:py-5">Welcome to Vision Coding
+                    <p class="timeline-content js--fadeInBottom pb-2 text-lg md:text-2xl md:py-5">Welcome to Vision
+                        Coding
                         Academy,
                         where we fuel young minds with a passion for
                         coding
                         and
                         innovation. Our vibrant team of IT educators in Vancouver creates a dynamic learning environment
                         for students in Grades 1-12.</p>
-                    <p className="timeline-content js--fadeInBottom py-2 md:text-lg md:py-10">We don't just teach coding; we
+                    <p class="hidden md:block timeline-content js--fadeInBottom py-2 text-lg md:text-2xl md:py-10">We
+                        don't just teach
+                        coding;
+                        we
                         open doors to creativity and future
                         possibilities. Our
                         curriculum
@@ -114,18 +138,236 @@ export default function HomePage() {
                         to advanced student. We aim to build the tech leaders of tomorrow through problem-solving,
                         critical thinking, and teamwork. Discover the joy of coding and the power of imagination with
                         us!</p>
-                    <img src={codingClass} alt="Coding Class"
-                        className="timeline-content js--fadeInBottom md:max-w-[400px] rounded-xl border-white border-4 float-left md:mr-5" />
-                    <h3 className="timeline-content js--fadeInRight text-2xl md:pl-4 text-cyan-500">Our Vision</h3>
-                    <p className="timeline-content js--fadeInRight pb-10">To forge a future where our students become the leaders
-                        of
-                        technology, driving innovation and
-                        creativity in the digital age.</p>
-                    <h3 className="timeline-content js--fadeInRight text-2xl text-cyan-500">Our Mission</h3>
-                    <p className="timeline-content js--fadeInRight">Ignite a passion for technology in young minds and to
-                        equip
-                        them with the skills they need to
-                        turn their most ambitious dreams into reality.</p>
+                    <div class="md:static py-20">
+                        <img src={codingClass} alt="Coding Class"
+                            class="timeline-content js--fadeInBottom md:max-w-[700px] rounded-xl border-white border-4 my-5 md:my-3 md:mr-5" />
+                        <div
+                            class="md:timeline-content md:js--fadeInRight md:relative md:border md:rounded-3xl md:bottom-[525px] md:left-[500px] md:py-10 md:px-10 md:bg-stone-800 opacity-95 md:max-w-[300px] lg:max-w-[500px] xl:max-w-[900px]">
+                            <div class="flex">
+                                <IoEyeOutline size={70} color='rgb(253 224 71)' class="hidden md:block w-[50px] pb-5" />
+                                <h3
+                                    class="timeline-content js--fadeInRight text-4xl md:pl-4 pb-5 text-yellow-200 md:text-yellow-300">
+                                    Our Vision
+                                </h3>
+                            </div>
+                            <p class="timeline-content js--fadeInRight pb-10 text-lg md:text-2xl">To forge a future
+                                where our
+                                students
+                                become the
+                                leaders
+                                of
+                                technology, driving innovation and
+                                creativity in the digital age.</p>
+                            <div class="flex">
+                            <TbTargetArrow size={100} color='rgb(253 224 71)' class="hidden md:block w-[50px] pb-5" />
+                                <h3
+                                    class="timeline-content js--fadeInRight text-4xl md:pl-4 py-5 text-yellow-200 md:text-yellow-300">
+                                    Our Mission</h3>
+                            </div>
+                            <p class="timeline-content js--fadeInRight text-lg md:text-2xl">Ignite a passion for
+                                technology in
+                                young
+                                minds and to
+                                equip
+                                them with the skills they need to
+                                turn their most ambitious dreams into reality.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="px-2 py-10 max-w-[1000px] mx-auto">
+                <div class="py-5">
+                    <h2 class="timeline-content js--fadeInRight text-4xl md:text-6xl text-center py-5 text-yellow-200">
+                        Choose the
+                        Class That Fits You Best</h2>
+                    <p class="timeline-content js--fadeInRight text-center text-lg md:text-2xl">Every course designed by
+                        IT
+                        professionals in Canada</p>
+                </div>
+                <div class="md:hidden mt-16 mb-7 h-[60px]">
+                    <div
+                        class="static bg-gradient-to-r from-black via-yellow-400 via-white via-yellow-400 to-black h-[2px]">
+                    </div>
+                    <img src="./images/yellow1.png" alt=""
+                        class="relative bottom-[45px] md:bottom-[60px] left-[40%] md:left-[48%] w-[75px] md:w-[100px] bg-black"/>
+                </div>
+                <div
+                    class="relative md:bg-gradient-to-r from-yellow-400 via-white to-yellow-400 rounded-tr-3xl rounded-bl-3xl md:py-[2px] px-[2px] md:my-10 hover:transform hover:scale-110 transition-all ease duration-300">
+                    <div class="bg-black rounded-tr-3xl rounded-bl-3xl md:py-5 px-5">
+                        <a href="./courses/index.html">
+                            <p
+                                class="md:absolute md:top-[-20px] md:left-[50px] md:px-5 md:z-[5] md:bg-black timeline-content js--fadeInRight text-lg md:text-2xl text-yellow-200 text-center md:text-left">
+                                All Levels</p>
+                            <img src={techIcon} alt="tech-icon"
+                                class="timeline-content js--fadeInRight mx-auto md:float-left w-[150px] fill-yellow-300"/>
+                            <h2
+                                class="timeline-content js--fadeInRight text-2xl md:text-4xl text-yellow-200 text-center md:text-left">
+                                Programming Language</h2>
+                            <p
+                                class="timeline-content js--fadeInRight text-lg md:text-2xl italic text-gray-500 py-2 text-center md:text-left">
+                                Software
+                                development
+                                courses</p>
+                            <p class="timeline-content js--fadeInRight text-lg md:text-2xl text-center md:text-left">Learn programming languages
+                                such as
+                                Python, Java, C, C++, C#, and JavaScript. Learn the fundamentals of programming such as
+                                Object-Oriented Programming, data structures and algorithms, and
+                                more.</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:hidden mt-20 h-[60px]">
+                    <div
+                        class="static bg-gradient-to-r from-black via-yellow-400 via-white via-yellow-400 to-black h-[2px]">
+                    </div>
+                    <img src="./images/yellow1.png" alt=""
+                        class="relative bottom-[45px] md:bottom-[60px] left-[40%] md:left-[48%] w-[75px] md:w-[100px] bg-black"/>
+                </div>
+                <div
+                    class="relative md:bg-gradient-to-r from-yellow-400 via-white to-yellow-400 rounded-tr-3xl rounded-bl-3xl md:py-[2px] px-[2px] md:my-10 hover:transform hover:scale-110 transition-all ease duration-300">
+                    <div class="bg-black rounded-tr-3xl rounded-bl-3xl md:py-5 px-5">
+                        <a href="./courses/index.html#computer-science">
+                            <p
+                                class="md:absolute md:top-[-20px] md:left-[50px] md:px-5 md:z-[5] md:bg-black timeline-content js--fadeInRight text-lg md:text-2xl text-yellow-200 text-center md:text-left">
+                                All Levels</p>
+                            <img src={techIcon2} alt="tech-icon2"
+                                class="timeline-content js--fadeInRight md:float-right mx-auto w-[150px]"/>
+                            <h2
+                                class="timeline-content js--fadeInRight text-2xl md:text-4xl text-yellow-200 text-center md:text-left">
+                                Computer
+                                Science
+                            </h2>
+                            <p
+                                class="timeline-content js--fadeInRight text-lg md:text-2xl italic text-gray-500 py-2 text-center md:text-left">
+                                Deepen
+                                your
+                                understanding</p>
+                            <p class="timeline-content js--fadeInRight text-lg md:text-2xl text-center md:text-left">Get a boost in computer
+                                science
+                                classes
+                                taught at schools such as CS 10, CS 11, CS 12 and AP CS A. Receive training for
+                                competitive
+                                computing events like the Canadian Computing Competition.</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:hidden mt-20 h-[60px]">
+                    <div
+                        class="static bg-gradient-to-r from-black via-yellow-400 via-white via-yellow-400 to-black h-[2px]">
+                    </div>
+                    <img src="./images/yellow1.png" alt=""
+                        class="relative bottom-[45px] md:bottom-[60px] left-[40%] md:left-[48%] w-[75px] md:w-[100px] bg-black"/>
+                </div>
+                <div
+                    class="relative md:bg-gradient-to-r from-yellow-400 via-white to-yellow-400 rounded-tr-3xl rounded-bl-3xl md:py-[2px] px-[2px] md:my-10 hover:transform hover:scale-110 transition-all ease duration-300">
+                    <div class="bg-black rounded-tr-3xl rounded-bl-3xl md:py-5 px-5">
+                        <a href="./courses/index.html">
+                            <p
+                                class="md:absolute md:top-[-20px] md:left-[50px] md:px-5 md:z-[5] md:bg-black timeline-content js--fadeInRight text-lg md:text-2xl text-yellow-200 text-center md:text-left">
+                                Intermediate</p>
+                            <img src={techIcon3} alt="tech-icon3"
+                                class="timeline-content js--fadeInRight md:float-left mx-auto w-[150px]"/>
+                            <h2
+                                class="timeline-content js--fadeInRight text-2xl md:text-4xl text-yellow-200 text-center md:text-left">
+                                Project
+                                portfolio & Mentorship</h2>
+                            <p
+                                class="timeline-content js--fadeInRight text-lg md:text-2xl italic text-gray-500 py-2 text-center md:text-left">
+                                Prepare
+                                for
+                                your
+                                career</p>
+                            <p class="timeline-content js--fadeInRight text-lg md:text-2xl text-center md:text-left">Design, build, test,
+                                optimize,
+                                deploy,
+                                and update capstone projects in an agile Scrum environment and add them to your GitHub
+                                and
+                                portfolio to enhance hireability.</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:hidden mt-20 h-[60px]">
+                    <div
+                        class="static bg-gradient-to-r from-black via-yellow-400 via-white via-yellow-400 to-black h-[2px]">
+                    </div>
+                    <img src="./images/yellow1.png" alt=""
+                        class="relative bottom-[45px] md:bottom-[60px] left-[40%] md:left-[48%] w-[75px] md:w-[100px] bg-black"/>
+                </div>
+                <div
+                    class="relative md:bg-gradient-to-r from-yellow-400 via-white to-yellow-400 rounded-tr-3xl rounded-bl-3xl md:py-[2px] px-[2px] md:my-10 hover:transform hover:scale-110 transition-all ease duration-300">
+                    <div class="bg-black rounded-tr-3xl rounded-bl-3xl md:py-5 px-5">
+                        <a href="./courses/index.html">
+                            <p
+                                class="md:absolute md:top-[-20px] md:left-[50px] md:px-5 md:z-[5] md:bg-black timeline-content js--fadeInRight text-lg md:text-2xl text-yellow-200 text-center md:text-left">
+                                Advanced</p>
+                            <img src={techIcon4} alt="tech-icon4"
+                                class="timeline-content js--fadeInRight md:float-right mx-auto w-[150px]"/>
+                            <h2
+                                class="timeline-content js--fadeInRight text-2xl md:text-4xl text-yellow-200 text-center md:text-left">
+                                Computing
+                                Competition</h2>
+                            <p
+                                class="timeline-content js--fadeInRight text-lg md:text-2xl italic text-gray-500 py-2 text-center md:text-left">
+                                Custom
+                                tailored
+                                tutoring</p>
+                            <p class="timeline-content js--fadeInRight text-lg md:text-2xl text-center md:text-left">Geared towards students
+                                looking to
+                                achieve high placement in competitive computing events. This intense training program
+                                helps
+                                students code fast in a high pressure environment by solving large amounts of complex
+                                computing problems.</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:hidden mt-20 h-[50px]">
+                    <div
+                        class="static bg-gradient-to-r from-black via-yellow-400 via-white via-yellow-400 to-black h-[2px]">
+                    </div>
+                    <img src="./images/yellow1.png" alt=""
+                        class="relative bottom-[45px] md:bottom-[60px] left-[40%] md:left-[48%] w-[75px] md:w-[100px] bg-black"/>
+                </div>
+                <div
+                    class="relative md:bg-gradient-to-r from-yellow-400 via-white to-yellow-400 rounded-tr-3xl rounded-bl-3xl md:py-[2px] px-[2px] md:my-10 hover:transform hover:scale-110 transition-all ease duration-300">
+                    <div class="bg-black rounded-tr-3xl rounded-bl-3xl md:py-5 px-5">
+                        <a href="./courses/index.html#interview-prep">
+                            <p
+                                class="md:absolute md:top-[-20px] md:left-[50px] md:px-5 md:z-[5] md:bg-black timeline-content js--fadeInRight text-lg md:text-2xl text-yellow-200 text-center md:text-left">
+                                Career</p>
+                            <img src={techIcon5} alt="tech-icon5"
+                                class="timeline-content js--fadeInRight md:float-left mx-auto w-[150px]"/>
+                            <h2
+                                class="timeline-content js--fadeInRight text-2xl md:text-4xl text-yellow-200 text-center md:text-left">
+                                Interview
+                                Preparation</h2>
+                            <p
+                                class="timeline-content js--fadeInRight text-lg md:text-2xl italic text-gray-500 py-2 text-center md:text-left">
+                                University prep
+                                and
+                                career
+                                reinforcement
+                            </p>
+                            <p class="timeline-content js--fadeInRight text-lg md:text-2xl text-center md:text-left">This customized consultation
+                                focuses
+                                on
+                                preparing students for university
+                                applications with
+                                focus in Computer Science. It includes guidance on creating a compelling portfolio with
+                                multiple GitHub projects and strategies for career advancement in the tech field.</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:hidden mt-20 h-[70px]">
+                    <div
+                        class="static bg-gradient-to-r from-black via-yellow-400 via-white via-yellow-400 to-black h-[2px]">
+                    </div>
+                    <img src="./images/yellow1.png" alt=""
+                        class="relative bottom-[45px] md:bottom-[60px] left-[40%] md:left-[48%] w-[75px] md:w-[100px] bg-black"/>
+                </div>
+                <div class="flex flex-col py-30 mx-auto">
+                    <a href="./courses/index.html"
+                        class=" text-center px-3 py-3 border border-4 rounded border-yellow-300 text-yellow-300 font-bold text-lg md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500 mx-auto w-[200px]">
+                        More Courses</a>
                 </div>
             </section>
             <div className="bg-black text-white flex flex-col">
@@ -155,113 +397,6 @@ export default function HomePage() {
                             real-world case studies, preparing students to confidently tackle real tech challenges.</p>
                     </div>
                 </section>
-                <section className="py-10 max-w-[1000px] mx-auto">
-                    <div className="py-5">
-                        <h2 className="timeline-content js--fadeInRight text-2xl md:text-4xl text-center py-5">Choose the Class That Fits You Best</h2>
-                        <p className="timeline-content js--fadeInRight text-center md:text-lg">Every course designed by IT professionals in Canada</p>
-                    </div>
-                    <div
-                        className="md:border-2 py-5 px-5 my-5 hover:transform hover:scale-110 transition-all ease duration-300">
-                        <h3 className="timeline-content js--fadeInRight text-2xl">All Levels</h3>
-                        <img src={techIcon} alt="timeline-content js--fadeInRight tech-icon" className="md:float-left" />
-                        <h2 className="timeline-content js--fadeInRight text-2xl md:text-4xl text-cyan-500">Programming Language</h2>
-                        <h3 className="timeline-content js--fadeInRight md:text-lg">Intensive bootcamp course</h3>
-                        <p className="timeline-content js--fadeInRight md:text-lg">Elevate your knowledge through hands-on projects; app development and
-                            creating
-                            SAAS (Software as
-                            a Service). Ideal for advanced students seeking to apply their coding skills in practical,
-                            and
-                            project-based environments.</p>
-                    </div>
-                    <div
-                        className="md:border-2 py-5 px-5 my-5 hover:transform hover:scale-110 transition-all ease duration-300">
-                        <h2 className="timeline-content js--fadeInRight text-2xl">All Levels</h2>
-                        <img src={techIcon} alt="tech-icon" className="timeline-content js--fadeInRight md:float-right" />
-                        <h2 className="timeline-content js--fadeInRight text-2xl md:text-4xl text-cyan-500">Computer Science</h2>
-                        <h3 className="timeline-content js--fadeInRight md:text-lg">Learn the basics of Computer</h3>
-                        <p className="timeline-content js--fadeInRight md:text-lg">Learn the essentials of computer including hardware, software, internet,
-                            programming languages,
-                            and web design. It provides a comprehensive introduction to the digital world around us.</p>
-                    </div>
-                    <div
-                        className="md:border-2 py-5 px-5 my-5 hover:transform hover:scale-110 transition-all ease duration-300">
-                        <h2 className="timeline-content js--fadeInRight text-2xl">Intermediate</h2>
-                        <img src={techIcon} alt="tech-icon" className="timeline-content js--fadeInRight md:float-left" />
-                        <h2 className="timeline-content js--fadeInRight text-2xl md:text-4xl text-cyan-500">Project portfolio & Mentorship</h2>
-                        <h3 className="timeline-content js--fadeInRight md:text-lg">Deep dive into coding and AI</h3>
-                        <p className="timeline-content js--fadeInRight md:text-lg">Dive into the exciting world of computer science, exploring automation and
-                            the
-                            latest AI trends
-                            such as image recognition, cloud services, and robotics. Suitable for beginners and
-                            intermediate
-                            learners eager to explore diverse aspects of technology.</p>
-                    </div>
-                    <div
-                        className="md:border-2 py-5 px-5 my-5 hover:transform hover:scale-110 transition-all ease duration-300">
-                        <h2 className="timeline-content js--fadeInRight text-2xl">Advanced</h2>
-                        <img src={techIcon} alt="tech-icon" className="timeline-content js--fadeInRight md:float-right" />
-                        <h2 className="timeline-content js--fadeInRight text-2xl md:text-4xl text-cyan-500">Computing Competition</h2>
-                        <h3 className="timeline-content js--fadeInRight md:text-lg">Custom tailored tutoring</h3>
-                        <p className="timeline-content js--fadeInRight md:text-lg">Geared towards students needing support with school projects (CS10, 11,
-                            12,
-                            and AP CS) or those
-                            looking to build a personalized portfolio. This course offers guidance and expertise to help
-                            bring your projects to life.</p>
-                    </div>
-                    <div
-                        className="md:border-2 py-5 px-5 my-5 hover:transform hover:scale-110 transition-all ease duration-300">
-                        <h2 className="timeline-content js--fadeInRight text-2xl">Career</h2>
-                        <img src={techIcon} alt="tech-icon" className="timeline-content js--fadeInRight md:float-left" />
-                        <h2 className="timeline-content js--fadeInRight text-2xl md:text-4xl text-cyan-500">Interview Preparation</h2>
-                        <h3 className="timeline-content js--fadeInRight md:text-lg">University prep and career reinforcement</h3>
-                        <p className="timeline-content js--fadeInRight md:text-lg">This customized consultation focuses on preparing students for university
-                            applications with
-                            focuse in Computer Science. It includes guidance on creating a compelling portfolio with
-                            multiple GitHub projects and strategies for career advancement in the tech field.</p>
-                    </div>
-                    <div className="flex flex-col py-30 mx-auto">
-
-                        <NavLink to="/courses"
-                            className="px-3 py-3 border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500 mx-auto">
-                            <img src={visionCodingIcon} alt="vision coding logo" className="w-[100px] mx-auto" />Learn
-                            More about Courses</NavLink>
-                    </div>
-                </section>
-                <section className="approach py-10 bg-gray-600 bg-opacity-70 text-yellow-300">
-                    <div className="md:max-w-[1000px] mx-auto">
-                        <div className="">
-                            <h3 className="pl-2 text-2xl md:text-4xl py-10">Our Approach</h3>
-                            <p className="pl-2 md:text-lg">In over six years of teaching, I've learned that the key to
-                                engaging
-                                students is making
-                                complex
-                                subjects like coding and science relatable and exciting. As a self-taught DevOps
-                                Engineer, I
-                                bring
-                                real-world tech applications into the classroom, ensuring our lessons are as practical
-                                as
-                                they
-                                are
-                                inspiring.</p>
-                        </div>
-                        <h3 className="pl-2 text-2xl md:text-4xl py-10">Educational Consulting</h3>
-                        <p className="pl-2 md:text-lg">My experience in guiding students to top universities has taught me
-                            the
-                            importance of tailored
-                            educational strategies. At Vision Coding Academy, we use these insights to help our students
-                            not
-                            just learn, but excel and prepare for their future academic and career paths.</p>
-                        <h3 className="pl-2 text-2xl md:text-4xl py-10">Philosophy</h3>
-                        <p className="pl-2 md:text-lg">We go beyond just coding; we're about nurturing the creators and
-                            innovators of
-                            tomorrow. Our goal
-                            is
-                            to equip students with the skills to make a real difference in the world. Our teaching team,
-                            including myself, are all professionals from the IT industry. We bring our day-to-day tech
-                            experiences into the classroom, offering students insights you can't find in textbooks. This
-                            connection to the industry ensures that our teaching stays current and meaningful.</p>
-                    </div>
-                </section>
                 <section className="max-w-[1000px] mx-auto py-10">
                     <h3 className="pl-2 text-2xl md:text-6xl py-10 text-center">Our Team</h3>
                     <p className="pl-2 md:text-lg">Meet the driving force behind Vision Coding Academy: a diverse team of IT
@@ -275,34 +410,6 @@ export default function HomePage() {
                 <NavLink to="/about"
                     className="px-3 py-3 my-10 border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500 mx-auto">Learn
                     more about us</NavLink>
-                <section className="py-10">
-                    <h2 className="text-2xl md:text-6xl text-center py-10 text-yellow-200">Our Future Goals</h2>
-                    <div className="max-w-[1000px] mx-auto">
-                        <div className="py-10">
-                            <h3 className="pl-2 text-2xl md:text-4xl text-yellow-200">Expansion of our location</h3>
-                            <p className="pl-2 md:text-lg">We are expecting new locations in Surrey, UBC, Langley and West
-                                Vancouver in
-                                2024 and more in
-                                forthcoming years. </p>
-                        </div>
-                        <div className="py-10">
-                            <h2 className="pl-2 md:pl-48 text-2xl md:text-4xl text-yellow-200">Expand Educational Reach</h2>
-                            <p className="pl-2 md:pl-48 md:text-lg">Broaden our curriculum to include emerging technologies
-                                like
-                                AI, robotics, and
-                                data science,
-                                catering
-                                to a wider range of interests and career paths.</p>
-                        </div>
-                        <div className="py-10">
-                            <h2 className="pl-2 text-2xl md:text-4xl text-yellow-200">Enhance Online Learning Platforms</h2>
-                            <p className="pl-2 md:text-lg">Develop a robust online learning platform to make our courses
-                                accessible to
-                                students beyond
-                                Vancouver, reaching across Canada and potentially globally.</p>
-                        </div>
-                    </div>
-                </section>
                 <section className="py-10 border-b">
                     <h2 className="glow text-2xl md:text-6xl text-center py-10">Code with us</h2>
                     <div className="max-w-[1000px] mx-auto md:grid md:grid-cols-2 px-2">

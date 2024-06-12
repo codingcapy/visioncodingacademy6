@@ -9,6 +9,124 @@ description: index CSS for Vision Coding Academy
 @tailwind components;
 @tailwind utilities;
 
+
+/*Credit to 한국전기안전공사*/
+@font-face {
+    font-family: 'Electric-Safety';
+    src: url(../font/전기안전체_R/Electric-Safety-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'EnvironmentR';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/EnvironmentR.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'G-Market-Sans-Medium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto';
+    src: url(../font/Noto_Sans_KR/static/NotoSansKR-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Mulish-Medium';
+    src: url(../font/Mulish/static/Mulish-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Mulish-Light';
+    src: url(../font/Mulish/static/Mulish-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Antonio-Regular';
+    src: url(../font/Antonio/static/Antonio-Regular.ttf);
+}
+
+
+@font-face {
+    font-family: 'Gabia';
+    src: url(../font/GabiaOndam/GabiaOndam.ttf);
+}
+
+@font-face {
+    font-family: 'KBO-Dia-Gothic_bold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dolbomche_R';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/Dolbomche_R.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ycomputer-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/Ycomputer-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'YiSunShinDotumM';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/YiSunShinDotumM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF_HailSnow';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HailSnow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dalmoori';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/dalmoori.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DosKor';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/DosKor.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.kr-font {
+    font-family: 'Noto';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+a {
+    font-family: 'Electric-Safety';
+}
+
+p,
+button {
+    font-family: 'EnvironmentR'
+}
+
 header nav ul li:hover {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 0px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff;
     transition: all ease-in-out 0.5s;
@@ -36,7 +154,7 @@ main {
 }
 
 .hero-banner {
-    height: 300px;
+    height: 400px;
     padding: 30px;
     background-image: url("/banner-bg.png");
     background-size: cover;
@@ -155,9 +273,63 @@ main {
 }
 
 @media(min-width:720px) {
+    .hero-banner {
+        height: 700px;
+    }
+
+    .intro {
+        height: 1150px;
+    }
+
     .map {
         width: 100%;
         height: 400px;
+    }
+
+    .approach {
+        height: 900px;
+    }
+
+    .about {
+        height: 700px;
+    }
+
+    .about::before {
+        height: 700px;
+    }
+
+    .summercamp {
+        height: 700px;
+    }
+
+    .summercamp::before {
+        height: 700px;
+    }
+
+    .summercamp-korean {
+        height: 2000px;
+    }
+
+    .summercamp-korean::before {
+        height: 2000px;
+    }
+
+    .arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 48px;
+        color: white;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .left-arrow {
+        left: 100px;
+    }
+
+    .right-arrow {
+        right: 100px;
     }
 }
 
