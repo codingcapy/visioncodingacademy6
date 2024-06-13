@@ -37,9 +37,8 @@ export default function Header() {
                 <div className="flex">
                     <img src={visionCodingIcon} className="w-[60px]" alt="Vision Coding Icon" />
                     <NavLink to="/">
-                        <div className="nav-element hidden md:block py-5 text-2xl">Vision Coding Academy</div>
+                        <div className="nav-element py-5 text-lg md:text-2xl">Vision Coding Academy</div>
                     </NavLink>
-                    <NavLink to="/"><div className="md:hidden py-5 text-lg">Vision Coding</div></NavLink>
                 </div>
                 <button id="hamburger-menu" className="text-3xl md:hidden" onClick={slideToggle}>&#x2630;</button>
             </div>
