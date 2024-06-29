@@ -7,6 +7,7 @@ description: Home page for Vision Coding Academy
  */
 
 import $ from 'jquery';
+import { useState } from 'react';
 import { NavLink } from "react-router-dom"
 import { useEffect } from 'react';
 import ScrollReveal from 'scrollreveal'
@@ -18,6 +19,7 @@ import techIcon4 from "/icon4.svg"
 import techIcon5 from "/icon5.svg"
 import logoAlpha from "/logo_alpha.png"
 import visionCodingIcon from "/yellow1.png"
+import gallery1 from '/gallery1.png'
 import { LuMapPin } from "react-icons/lu";
 import { FaInstagram } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
@@ -26,12 +28,15 @@ import { TfiEmail } from "react-icons/tfi";
 import { FaWhatsapp } from "react-icons/fa";
 import { IoEyeOutline } from "react-icons/io5";
 import { TbTargetArrow } from "react-icons/tb";
+import FloatingNav from '../components/FloatingNav';
 
 export default function HomePage() {
 
     useEffect(() => {
         document.title = 'Home | Vision Coding';
     }, []);
+
+    const [showPopUp, setShowPopUp] = useState(true)
 
     $(function () {
         window.sr = ScrollReveal();
@@ -89,37 +94,37 @@ export default function HomePage() {
     return (
         <main className="flex-1 mx-auto">
             <section className="hero-banner bg-white">
-                <div class="timeline-content js--fadeInRight">
-                    <div class="flex pt-5 md:pt-0">
+                <div className="timeline-content js--fadeInRight">
+                    <div className="flex pt-5 md:pt-0">
                         <img src={logoAlpha} alt="Banner words" className="w-[90px] h-[100px] md:w-[360px] md:h-[405px]" />
-                        <div class="flex flex-col md:my-24 md:ml-40 md:pl-10 md:border-l-8">
-                            <h1 class="text-4xl md:text-8xl text-yellow-100">VISION CODING ACADEMY</h1>
-                            <p class="text-lg md:text-7xl py-2 md:py-10 pb-0 mulish-light">Premium IT Education</p>
+                        <div className="flex flex-col md:my-24 md:ml-40 md:pl-10 md:border-l-8">
+                            <h1 className="text-4xl md:text-8xl text-yellow-100">VISION CODING ACADEMY</h1>
+                            <p className="text-lg md:text-7xl py-2 md:py-10 pb-0 mulish-light">Premium IT Education</p>
                         </div>
                     </div>
-                    <p class="text-center text-lg md:text-2xl py-5 md:py-0 md:pb-5 drop-shadow">Discover the Power to
+                    <p className="text-center text-lg md:text-2xl py-5 md:py-0 md:pb-5 drop-shadow">Discover the Power to
                         <span
-                            class="bg-gradient-to-r from-yellow-400 to-yellow-100 inline-block text-transparent bg-clip-text">Transform
+                            className="pl-2 bg-gradient-to-r from-yellow-400 to-yellow-100 inline-block text-transparent bg-clip-text">Transform
                             the Future</span> with
                         Every Line
                         of
                         <span
-                            class="bg-gradient-to-r from-yellow-400 to-yellow-100 inline-block text-transparent bg-clip-text">Code</span>
+                            className="pl-2 bg-gradient-to-r from-yellow-400 to-yellow-100 inline-block text-transparent bg-clip-text">Code</span>
                     </p>
                     <p></p>
-                    <div class="flex flex-col mx-auto">
+                    <div className="flex flex-col mx-auto">
                         <a href="./courses/index.html"
-                            class="mx-auto px-3 py-3 border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500">View
+                            className="mx-auto px-3 py-3 border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500">View
                             Courses</a>
                     </div>
                 </div>
             </section>
             <section className="intro py-20 md:py-32">
-                <div class="md:max-w-[1400px] mx-auto">
-                    <h2 class="timeline-content js--fadeInBottom text-4xl pb-4 text-yellow-200">
+                <div className="md:max-w-[1400px] mx-auto">
+                    <h2 className="timeline-content js--fadeInBottom text-4xl pb-4 text-yellow-200">
                         Who we are
                     </h2>
-                    <p class="timeline-content js--fadeInBottom pb-2 text-lg md:text-2xl md:py-5">Welcome to Vision
+                    <p className="timeline-content js--fadeInBottom pb-2 text-lg md:text-2xl md:py-5">Welcome to Vision
                         Coding
                         Academy,
                         where we fuel young minds with a passion for
@@ -127,7 +132,7 @@ export default function HomePage() {
                         and
                         innovation. Our vibrant team of IT educators in Vancouver creates a dynamic learning environment
                         for students in Grades 1-12.</p>
-                    <p class="hidden md:block timeline-content js--fadeInBottom py-2 text-lg md:text-2xl md:py-10">We
+                    <p className="hidden md:block timeline-content js--fadeInBottom py-2 text-lg md:text-2xl md:py-10">We
                         don't just teach
                         coding;
                         we
@@ -138,19 +143,19 @@ export default function HomePage() {
                         to advanced student. We aim to build the tech leaders of tomorrow through problem-solving,
                         critical thinking, and teamwork. Discover the joy of coding and the power of imagination with
                         us!</p>
-                    <div class="md:static py-20">
+                    <div className="md:static py-20">
                         <img src={codingClass} alt="Coding Class"
-                            class="timeline-content js--fadeInBottom md:max-w-[700px] rounded-xl border-white border-4 my-5 md:my-3 md:mr-5" />
+                            className="timeline-content js--fadeInBottom md:max-w-[700px] rounded-xl border-white border-4 my-5 md:my-3 md:mr-5" />
                         <div
-                            class="md:timeline-content md:js--fadeInRight md:relative md:border md:rounded-3xl md:bottom-[525px] md:left-[500px] md:py-10 md:px-10 md:bg-stone-800 opacity-95 md:max-w-[300px] lg:max-w-[500px] xl:max-w-[900px]">
-                            <div class="flex">
-                                <IoEyeOutline size={70} color='rgb(253 224 71)' class="hidden md:block w-[50px] pb-5" />
+                            className="md:timeline-content md:js--fadeInRight md:relative md:border md:rounded-3xl md:bottom-[525px] md:left-[500px] md:py-10 md:px-10 md:bg-stone-800 opacity-95 md:max-w-[300px] lg:max-w-[500px] xl:max-w-[900px]">
+                            <div className="flex">
+                                <IoEyeOutline size={70} color='rgb(253 224 71)' className="hidden md:block w-[50px] pb-5" />
                                 <h3
-                                    class="timeline-content js--fadeInRight text-4xl md:pl-4 pb-5 text-yellow-200 md:text-yellow-300">
+                                    className="timeline-content js--fadeInRight text-4xl md:pl-4 pb-5 text-yellow-200 md:text-yellow-300">
                                     Our Vision
                                 </h3>
                             </div>
-                            <p class="timeline-content js--fadeInRight pb-10 text-lg md:text-2xl">To forge a future
+                            <p className="timeline-content js--fadeInRight pb-10 text-lg md:text-2xl">To forge a future
                                 where our
                                 students
                                 become the
@@ -158,13 +163,13 @@ export default function HomePage() {
                                 of
                                 technology, driving innovation and
                                 creativity in the digital age.</p>
-                            <div class="flex">
-                                <TbTargetArrow size={100} color='rgb(253 224 71)' class="hidden md:block w-[50px] pb-5" />
+                            <div className="flex">
+                                <TbTargetArrow size={100} color='rgb(253 224 71)' className="hidden md:block w-[50px] pb-5" />
                                 <h3
-                                    class="timeline-content js--fadeInRight text-4xl md:pl-4 py-5 text-yellow-200 md:text-yellow-300">
+                                    className="timeline-content js--fadeInRight text-4xl md:pl-4 py-5 text-yellow-200 md:text-yellow-300">
                                     Our Mission</h3>
                             </div>
-                            <p class="timeline-content js--fadeInRight text-lg md:text-2xl">Ignite a passion for
+                            <p className="timeline-content js--fadeInRight text-lg md:text-2xl">Ignite a passion for
                                 technology in
                                 young
                                 minds and to
@@ -175,40 +180,40 @@ export default function HomePage() {
                     </div>
                 </div>
             </section>
-            <section class="px-2 py-10 max-w-[1000px] mx-auto">
-                <div class="py-5">
-                    <h2 class="timeline-content js--fadeInRight text-4xl md:text-6xl text-center py-5 text-yellow-200">
+            <section className="px-2 py-10 max-w-[1000px] mx-auto">
+                <div className="py-5">
+                    <h2 className="timeline-content js--fadeInRight text-4xl md:text-6xl text-center py-5 text-yellow-200">
                         Choose the
                         Class That Fits You Best</h2>
-                    <p class="timeline-content js--fadeInRight text-center text-lg md:text-2xl">Every course designed by
+                    <p className="timeline-content js--fadeInRight text-center text-lg md:text-2xl">Every course designed by
                         IT
                         professionals in Canada</p>
                 </div>
-                <div class="md:hidden mt-16 mb-7 h-[60px]">
+                <div className="md:hidden mt-16 mb-7 h-[60px]">
                     <div
-                        class="static bg-gradient-to-r from-black via-yellow-400 via-white via-yellow-400 to-black h-[2px]">
+                        className="static bg-gradient-to-r from-black via-yellow-400 via-white via-yellow-400 to-black h-[2px]">
                     </div>
                     <img src={visionCodingIcon} alt=""
-                        class="relative bottom-[45px] md:bottom-[60px] left-[40%] md:left-[48%] w-[75px] md:w-[100px] bg-black" />
+                        className="relative bottom-[45px] md:bottom-[60px] left-[40%] md:left-[48%] w-[75px] md:w-[100px] bg-black" />
                 </div>
                 <div
-                    class="relative md:bg-gradient-to-r from-yellow-400 via-white to-yellow-400 rounded-tr-3xl rounded-bl-3xl md:py-[2px] px-[2px] md:my-10 hover:transform hover:scale-110 transition-all ease duration-300">
-                    <div class="bg-black rounded-tr-3xl rounded-bl-3xl md:py-5 px-5">
+                    className="relative md:bg-gradient-to-r from-yellow-400 via-white to-yellow-400 rounded-tr-3xl rounded-bl-3xl md:py-[2px] px-[2px] md:my-10 hover:transform hover:scale-110 transition-all ease duration-300">
+                    <div className="bg-black rounded-tr-3xl rounded-bl-3xl md:py-5 px-5">
                         <a href="./courses/index.html">
                             <p
-                                class="md:absolute md:top-[-20px] md:left-[50px] md:px-5 md:z-[5] md:bg-black timeline-content js--fadeInRight text-lg md:text-2xl text-yellow-200 text-center md:text-left">
+                                className="md:absolute md:top-[-20px] md:left-[50px] md:px-5 md:z-[5] md:bg-black timeline-content js--fadeInRight text-lg md:text-2xl text-yellow-200 text-center md:text-left">
                                 All Levels</p>
                             <img src={techIcon} alt="tech-icon"
-                                class="timeline-content js--fadeInRight mx-auto md:float-left w-[150px] fill-yellow-300" />
+                                className="timeline-content js--fadeInRight mx-auto md:float-left w-[150px] fill-yellow-300" />
                             <h2
-                                class="timeline-content js--fadeInRight text-2xl md:text-4xl text-yellow-200 text-center md:text-left">
+                                className="timeline-content js--fadeInRight text-2xl md:text-4xl text-yellow-200 text-center md:text-left">
                                 Programming Language</h2>
                             <p
-                                class="timeline-content js--fadeInRight text-lg md:text-2xl italic text-gray-500 py-2 text-center md:text-left">
+                                className="timeline-content js--fadeInRight text-lg md:text-2xl italic text-gray-500 py-2 text-center md:text-left">
                                 Software
                                 development
                                 courses</p>
-                            <p class="timeline-content js--fadeInRight text-lg md:text-2xl text-center md:text-left">Learn programming languages
+                            <p className="timeline-content js--fadeInRight text-lg md:text-2xl text-center md:text-left">Learn programming languages
                                 such as
                                 Python, Java, C, C++, C#, and JavaScript. Learn the fundamentals of programming such as
                                 Object-Oriented Programming, data structures and algorithms, and
@@ -216,33 +221,33 @@ export default function HomePage() {
                         </a>
                     </div>
                 </div>
-                <div class="md:hidden mt-20 h-[60px]">
+                <div className="md:hidden mt-20 h-[60px]">
                     <div
-                        class="static bg-gradient-to-r from-black via-yellow-400 via-white via-yellow-400 to-black h-[2px]">
+                        className="static bg-gradient-to-r from-black via-yellow-400 via-white via-yellow-400 to-black h-[2px]">
                     </div>
                     <img src={visionCodingIcon} alt=""
-                        class="relative bottom-[45px] md:bottom-[60px] left-[40%] md:left-[48%] w-[75px] md:w-[100px] bg-black" />
+                        className="relative bottom-[45px] md:bottom-[60px] left-[40%] md:left-[48%] w-[75px] md:w-[100px] bg-black" />
                 </div>
                 <div
-                    class="relative md:bg-gradient-to-r from-yellow-400 via-white to-yellow-400 rounded-tr-3xl rounded-bl-3xl md:py-[2px] px-[2px] md:my-10 hover:transform hover:scale-110 transition-all ease duration-300">
-                    <div class="bg-black rounded-tr-3xl rounded-bl-3xl md:py-5 px-5">
+                    className="relative md:bg-gradient-to-r from-yellow-400 via-white to-yellow-400 rounded-tr-3xl rounded-bl-3xl md:py-[2px] px-[2px] md:my-10 hover:transform hover:scale-110 transition-all ease duration-300">
+                    <div className="bg-black rounded-tr-3xl rounded-bl-3xl md:py-5 px-5">
                         <a href="./courses/index.html#computer-science">
                             <p
-                                class="md:absolute md:top-[-20px] md:left-[50px] md:px-5 md:z-[5] md:bg-black timeline-content js--fadeInRight text-lg md:text-2xl text-yellow-200 text-center md:text-left">
+                                className="md:absolute md:top-[-20px] md:left-[50px] md:px-5 md:z-[5] md:bg-black timeline-content js--fadeInRight text-lg md:text-2xl text-yellow-200 text-center md:text-left">
                                 All Levels</p>
                             <img src={techIcon2} alt="tech-icon2"
-                                class="timeline-content js--fadeInRight md:float-right mx-auto w-[150px]" />
+                                className="timeline-content js--fadeInRight md:float-right mx-auto w-[150px]" />
                             <h2
-                                class="timeline-content js--fadeInRight text-2xl md:text-4xl text-yellow-200 text-center md:text-left">
+                                className="timeline-content js--fadeInRight text-2xl md:text-4xl text-yellow-200 text-center md:text-left">
                                 Computer
                                 Science
                             </h2>
                             <p
-                                class="timeline-content js--fadeInRight text-lg md:text-2xl italic text-gray-500 py-2 text-center md:text-left">
+                                className="timeline-content js--fadeInRight text-lg md:text-2xl italic text-gray-500 py-2 text-center md:text-left">
                                 Deepen
                                 your
                                 understanding</p>
-                            <p class="timeline-content js--fadeInRight text-lg md:text-2xl text-center md:text-left">Get a boost in computer
+                            <p className="timeline-content js--fadeInRight text-lg md:text-2xl text-center md:text-left">Get a boost in computer
                                 science
                                 classes
                                 taught at schools such as CS 10, CS 11, CS 12 and AP CS A. Receive training for
@@ -251,33 +256,33 @@ export default function HomePage() {
                         </a>
                     </div>
                 </div>
-                <div class="md:hidden mt-20 h-[60px]">
+                <div className="md:hidden mt-20 h-[60px]">
                     <div
-                        class="static bg-gradient-to-r from-black via-yellow-400 via-white via-yellow-400 to-black h-[2px]">
+                        className="static bg-gradient-to-r from-black via-yellow-400 via-white via-yellow-400 to-black h-[2px]">
                     </div>
                     <img src={visionCodingIcon} alt=""
-                        class="relative bottom-[45px] md:bottom-[60px] left-[40%] md:left-[48%] w-[75px] md:w-[100px] bg-black" />
+                        className="relative bottom-[45px] md:bottom-[60px] left-[40%] md:left-[48%] w-[75px] md:w-[100px] bg-black" />
                 </div>
                 <div
-                    class="relative md:bg-gradient-to-r from-yellow-400 via-white to-yellow-400 rounded-tr-3xl rounded-bl-3xl md:py-[2px] px-[2px] md:my-10 hover:transform hover:scale-110 transition-all ease duration-300">
-                    <div class="bg-black rounded-tr-3xl rounded-bl-3xl md:py-5 px-5">
+                    className="relative md:bg-gradient-to-r from-yellow-400 via-white to-yellow-400 rounded-tr-3xl rounded-bl-3xl md:py-[2px] px-[2px] md:my-10 hover:transform hover:scale-110 transition-all ease duration-300">
+                    <div className="bg-black rounded-tr-3xl rounded-bl-3xl md:py-5 px-5">
                         <a href="./courses/index.html">
                             <p
-                                class="md:absolute md:top-[-20px] md:left-[50px] md:px-5 md:z-[5] md:bg-black timeline-content js--fadeInRight text-lg md:text-2xl text-yellow-200 text-center md:text-left">
+                                className="md:absolute md:top-[-20px] md:left-[50px] md:px-5 md:z-[5] md:bg-black timeline-content js--fadeInRight text-lg md:text-2xl text-yellow-200 text-center md:text-left">
                                 Intermediate</p>
                             <img src={techIcon3} alt="tech-icon3"
-                                class="timeline-content js--fadeInRight md:float-left mx-auto w-[150px]" />
+                                className="timeline-content js--fadeInRight md:float-left mx-auto w-[150px]" />
                             <h2
-                                class="timeline-content js--fadeInRight text-2xl md:text-4xl text-yellow-200 text-center md:text-left">
+                                className="timeline-content js--fadeInRight text-2xl md:text-4xl text-yellow-200 text-center md:text-left">
                                 Project
                                 portfolio & Mentorship</h2>
                             <p
-                                class="timeline-content js--fadeInRight text-lg md:text-2xl italic text-gray-500 py-2 text-center md:text-left">
+                                className="timeline-content js--fadeInRight text-lg md:text-2xl italic text-gray-500 py-2 text-center md:text-left">
                                 Prepare
                                 for
                                 your
                                 career</p>
-                            <p class="timeline-content js--fadeInRight text-lg md:text-2xl text-center md:text-left">Design, build, test,
+                            <p className="timeline-content js--fadeInRight text-lg md:text-2xl text-center md:text-left">Design, build, test,
                                 optimize,
                                 deploy,
                                 and update capstone projects in an agile Scrum environment and add them to your GitHub
@@ -286,32 +291,32 @@ export default function HomePage() {
                         </a>
                     </div>
                 </div>
-                <div class="md:hidden mt-20 h-[60px]">
+                <div className="md:hidden mt-20 h-[60px]">
                     <div
-                        class="static bg-gradient-to-r from-black via-yellow-400 via-white via-yellow-400 to-black h-[2px]">
+                        className="static bg-gradient-to-r from-black via-yellow-400 via-white via-yellow-400 to-black h-[2px]">
                     </div>
                     <img src={visionCodingIcon} alt=""
-                        class="relative bottom-[45px] md:bottom-[60px] left-[40%] md:left-[48%] w-[75px] md:w-[100px] bg-black" />
+                        className="relative bottom-[45px] md:bottom-[60px] left-[40%] md:left-[48%] w-[75px] md:w-[100px] bg-black" />
                 </div>
                 <div
-                    class="relative md:bg-gradient-to-r from-yellow-400 via-white to-yellow-400 rounded-tr-3xl rounded-bl-3xl md:py-[2px] px-[2px] md:my-10 hover:transform hover:scale-110 transition-all ease duration-300">
-                    <div class="bg-black rounded-tr-3xl rounded-bl-3xl md:py-5 px-5">
+                    className="relative md:bg-gradient-to-r from-yellow-400 via-white to-yellow-400 rounded-tr-3xl rounded-bl-3xl md:py-[2px] px-[2px] md:my-10 hover:transform hover:scale-110 transition-all ease duration-300">
+                    <div className="bg-black rounded-tr-3xl rounded-bl-3xl md:py-5 px-5">
                         <a href="./courses/index.html">
                             <p
-                                class="md:absolute md:top-[-20px] md:left-[50px] md:px-5 md:z-[5] md:bg-black timeline-content js--fadeInRight text-lg md:text-2xl text-yellow-200 text-center md:text-left">
+                                className="md:absolute md:top-[-20px] md:left-[50px] md:px-5 md:z-[5] md:bg-black timeline-content js--fadeInRight text-lg md:text-2xl text-yellow-200 text-center md:text-left">
                                 Advanced</p>
                             <img src={techIcon4} alt="tech-icon4"
-                                class="timeline-content js--fadeInRight md:float-right mx-auto w-[150px]" />
+                                className="timeline-content js--fadeInRight md:float-right mx-auto w-[150px]" />
                             <h2
-                                class="timeline-content js--fadeInRight text-2xl md:text-4xl text-yellow-200 text-center md:text-left">
+                                className="timeline-content js--fadeInRight text-2xl md:text-4xl text-yellow-200 text-center md:text-left">
                                 Computing
                                 Competition</h2>
                             <p
-                                class="timeline-content js--fadeInRight text-lg md:text-2xl italic text-gray-500 py-2 text-center md:text-left">
+                                className="timeline-content js--fadeInRight text-lg md:text-2xl italic text-gray-500 py-2 text-center md:text-left">
                                 Custom
                                 tailored
                                 tutoring</p>
-                            <p class="timeline-content js--fadeInRight text-lg md:text-2xl text-center md:text-left">Geared towards students
+                            <p className="timeline-content js--fadeInRight text-lg md:text-2xl text-center md:text-left">Geared towards students
                                 looking to
                                 achieve high placement in competitive computing events. This intense training program
                                 helps
@@ -320,34 +325,34 @@ export default function HomePage() {
                         </a>
                     </div>
                 </div>
-                <div class="md:hidden mt-20 h-[50px]">
+                <div className="md:hidden mt-20 h-[50px]">
                     <div
-                        class="static bg-gradient-to-r from-black via-yellow-400 via-white via-yellow-400 to-black h-[2px]">
+                        className="static bg-gradient-to-r from-black via-yellow-400 via-white via-yellow-400 to-black h-[2px]">
                     </div>
                     <img src={visionCodingIcon} alt=""
-                        class="relative bottom-[45px] md:bottom-[60px] left-[40%] md:left-[48%] w-[75px] md:w-[100px] bg-black" />
+                        className="relative bottom-[45px] md:bottom-[60px] left-[40%] md:left-[48%] w-[75px] md:w-[100px] bg-black" />
                 </div>
                 <div
-                    class="relative md:bg-gradient-to-r from-yellow-400 via-white to-yellow-400 rounded-tr-3xl rounded-bl-3xl md:py-[2px] px-[2px] md:my-10 hover:transform hover:scale-110 transition-all ease duration-300">
-                    <div class="bg-black rounded-tr-3xl rounded-bl-3xl md:py-5 px-5">
+                    className="relative md:bg-gradient-to-r from-yellow-400 via-white to-yellow-400 rounded-tr-3xl rounded-bl-3xl md:py-[2px] px-[2px] md:my-10 hover:transform hover:scale-110 transition-all ease duration-300">
+                    <div className="bg-black rounded-tr-3xl rounded-bl-3xl md:py-5 px-5">
                         <a href="./courses/index.html#interview-prep">
                             <p
-                                class="md:absolute md:top-[-20px] md:left-[50px] md:px-5 md:z-[5] md:bg-black timeline-content js--fadeInRight text-lg md:text-2xl text-yellow-200 text-center md:text-left">
+                                className="md:absolute md:top-[-20px] md:left-[50px] md:px-5 md:z-[5] md:bg-black timeline-content js--fadeInRight text-lg md:text-2xl text-yellow-200 text-center md:text-left">
                                 Career</p>
                             <img src={techIcon5} alt="tech-icon5"
-                                class="timeline-content js--fadeInRight md:float-left mx-auto w-[150px]" />
+                                className="timeline-content js--fadeInRight md:float-left mx-auto w-[150px]" />
                             <h2
-                                class="timeline-content js--fadeInRight text-2xl md:text-4xl text-yellow-200 text-center md:text-left">
+                                className="timeline-content js--fadeInRight text-2xl md:text-4xl text-yellow-200 text-center md:text-left">
                                 Interview
                                 Preparation</h2>
                             <p
-                                class="timeline-content js--fadeInRight text-lg md:text-2xl italic text-gray-500 py-2 text-center md:text-left">
+                                className="timeline-content js--fadeInRight text-lg md:text-2xl italic text-gray-500 py-2 text-center md:text-left">
                                 University prep
                                 and
                                 career
                                 reinforcement
                             </p>
-                            <p class="timeline-content js--fadeInRight text-lg md:text-2xl text-center md:text-left">This customized consultation
+                            <p className="timeline-content js--fadeInRight text-lg md:text-2xl text-center md:text-left">This customized consultation
                                 focuses
                                 on
                                 preparing students for university
@@ -357,26 +362,26 @@ export default function HomePage() {
                         </a>
                     </div>
                 </div>
-                <div class="md:hidden mt-20 h-[70px]">
+                <div className="md:hidden mt-20 h-[70px]">
                     <div
-                        class="static bg-gradient-to-r from-black via-yellow-400 via-white via-yellow-400 to-black h-[2px]">
+                        className="static bg-gradient-to-r from-black via-yellow-400 via-white via-yellow-400 to-black h-[2px]">
                     </div>
                     <img src={visionCodingIcon} alt=""
-                        class="relative bottom-[45px] md:bottom-[60px] left-[40%] md:left-[48%] w-[75px] md:w-[100px] bg-black" />
+                        className="relative bottom-[45px] md:bottom-[60px] left-[40%] md:left-[48%] w-[75px] md:w-[100px] bg-black" />
                 </div>
-                <div class="flex flex-col py-30 mx-auto">
+                <div className="flex flex-col py-30 mx-auto">
                     <a href="./courses/index.html"
-                        class=" text-center px-3 py-3 border border-4 rounded border-yellow-300 text-yellow-300 font-bold text-lg md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500 mx-auto w-[200px]">
+                        className=" text-center px-3 py-3 border border-4 rounded border-yellow-300 text-yellow-300 font-bold text-lg md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500 mx-auto w-[200px]">
                         More Courses</a>
                 </div>
             </section>
             <div className="bg-black text-white flex flex-col">
                 <section className="md:flex py-10">
-                    <div class="ad1 md:px-2 mx-2 md:px-20 md:h-96 md:rounded-3xl">
-                        <h2 class="text-2xl md:text-4xl md:text-center text-yellow-200">Industry Expertise in Every
+                    <div className="ad1 md:px-2 mx-2 md:px-20 md:h-96 md:rounded-3xl">
+                        <h2 className="text-2xl md:text-4xl md:text-center text-yellow-200">Industry Expertise in Every
                             Classroom
                         </h2>
-                        <p class="md:text-center text-lg md:text-2xl">Our strength is our diverse team of IT industry
+                        <p className="md:text-center text-lg md:text-2xl">Our strength is our diverse team of IT industry
                             experts
                             from
                             various sectors. They bring a wealth
@@ -384,11 +389,11 @@ export default function HomePage() {
                             coding as a subject, but as a practical, applied skill relevant to today’s tech industry.
                         </p>
                     </div>
-                    <div class="ad2 md:px-2 mx-2 md:px-20 md:rounded-3xl">
+                    <div className="ad2 md:px-2 mx-2 md:px-20 md:rounded-3xl">
                         <div></div>
-                        <h2 class="text-2xl md:text-4xl md:text-center text-yellow-200">Practical, Hands-On Curriculum
+                        <h2 className="text-2xl md:text-4xl md:text-center text-yellow-200">Practical, Hands-On Curriculum
                         </h2>
-                        <p class="md:text-center text-lg md:text-2xl">Our curriculum is specially handcrafted for
+                        <p className="md:text-center text-lg md:text-2xl">Our curriculum is specially handcrafted for
                             practicality.
                             Every
                             lesson is designed for active,
@@ -396,10 +401,10 @@ export default function HomePage() {
                             them
                             creatively in real-world scenarios.</p>
                     </div>
-                    <div class="ad3 md:px-2 mx-2 md:px-20 md:rounded-3xl">
-                        <h2 class="text-2xl md:text-4xl md:text-center text-yellow-200">From Learning to Application
+                    <div className="ad3 md:px-2 mx-2 md:px-20 md:rounded-3xl">
+                        <h2 className="text-2xl md:text-4xl md:text-center text-yellow-200">From Learning to Application
                         </h2>
-                        <p class="md:text-center text-lg md:text-2xl">We bridge the gap between theory and practice. Our
+                        <p className="md:text-center text-lg md:text-2xl">We bridge the gap between theory and practice. Our
                             approach
                             involves project-based learning and
                             real-world case studies, preparing students to confidently tackle real tech challenges.</p>
@@ -418,12 +423,12 @@ export default function HomePage() {
                 <NavLink to="/about"
                     className="px-3 py-3 my-10 border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500 mx-auto">Learn
                     more about us</NavLink>
-                <div class="mt-20">
+                <div className="mt-20">
                     <div
-                        class="static bg-gradient-to-r from-black via-yellow-400 via-white via-yellow-400 to-black h-[2px]">
+                        className="static bg-gradient-to-r from-black via-yellow-400 via-white via-yellow-400 to-black h-[2px]">
                     </div>
                     <img src={visionCodingIcon} alt=""
-                        class="relative bottom-[45px] md:bottom-[60px] left-[40%] md:left-[48%] w-[75px] md:w-[100px] bg-black"/>
+                        className="relative bottom-[45px] md:bottom-[60px] left-[40%] md:left-[48%] w-[75px] md:w-[100px] bg-black" />
                 </div>
                 <section className="py-10 border-b">
                     <h2 className="glow text-2xl md:text-6xl text-center pb-10 text-yellow-200">Code with us</h2>
@@ -476,6 +481,16 @@ export default function HomePage() {
                     </div>
                 </section>
             </div>
+            {/* {showPopUp && <section className='fixed top-0 left-0 w-[100vw] h-[100vh] z-[1000] bg-black bg-opacity-60' onClick={()=>setShowPopUp(false)}>
+                <div className="absolute left-[50%] top-[40%] md:top-[50%] max-w-[400px] md:max-w-[1000px] min-w-[300pxx] py-3 px-3 bg-neutral-800 border-2 transform -translate-x-1/2 -translate-y-1/2 rounded-xl border-yellow-300">
+                    <h2 class="text-4xl md:text-7xl text-yellow-200 text-center pt-1 md:pt-5 md:px-5">GRAND OPENING!</h2>
+                    <h2 class="text-2xl md:text-4xl text-yellow-200 text-center py-1 md:py-2">Vision Coding West Vancouver!</h2>
+                    <p class="text-xl md:text-2xl text-center pb-1 md:pb-2"><span class="text-yellow-300">Free Trial</span> Classes Available</p>
+                    <img src={gallery1} alt="" class="py-1 md:py-2 w-[400px] mx-auto" />
+                    <p class="md:text-lg text-center py-1 md:py-2">2428 Haywood Ave, West Vancouver, BC V7V 1Y1</p>
+                    <button id="ok-button" class="flex flex-col mx-auto mx-auto my-1 md:my-3 px-10 md:px-16 py1 md:py-3 border border-4 rounded border-yellow-300 text-yellow-300 font-bold text-xl md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500">OK</button>
+                </div>
+            </section>} */}
         </main>
     )
 }

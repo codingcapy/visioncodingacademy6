@@ -10,6 +10,7 @@ import { Outlet } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { ScrollToTop } from "../ScrollToTop";
+import FloatingNav from "./components/FloatingNav";
 
 export default function Layout() {
 
@@ -18,6 +19,7 @@ export default function Layout() {
             <ScrollToTop />
             <Header />
             <Outlet />
+            <FloatingNav />
             <Footer />
         </div>
     )
