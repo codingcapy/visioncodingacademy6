@@ -27,14 +27,14 @@ export default function ContactPage() {
                     <span className="text-5xl md:text-9xl">Code With Us</span>
                 </h1>
                 <p className="text-2xl pt-5">Coding isn't just for computers,</p>
-                <p className="text-2xl pt-5">it's the language of the <span className="text-teal-300 font-bold">future</span> ,
-                    and your fluency begins <span className="text-teal-300 font-bold">now!</span></p>
+                <p className="text-2xl pt-5">it's the language of the <span className="text-yellow-200 font-bold">future</span> ,
+                    and your fluency begins <span className="text-yellow-200 font-bold">now!</span></p>
                 <p className="text-2xl pt-5">English / 한국어</p>
             </section>
             <main className="flex-1 mx-auto">
                 <div className="bg-black text-white flex flex-col">
                     <section className="py-10 border-b">
-                        <h2 className="text-2xl md:text-4xl text-center py-5 text-teal-300">Contact Info</h2>
+                        <h2 className="text-2xl md:text-4xl text-center py-5 text-yellow-200">Contact Info</h2>
                         <div className="max-w-[1000px] mx-auto md:grid md:grid-cols-2 px-2">
                             <div className="flex md:py-7">
                                 <LuMapPin size={25} />

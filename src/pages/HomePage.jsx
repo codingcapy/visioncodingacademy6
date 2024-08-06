@@ -17,7 +17,9 @@ import techIcon2 from "/icon2.svg"
 import techIcon3 from "/icon3.svg"
 import techIcon4 from "/icon4.svg"
 import techIcon5 from "/icon5.svg"
+import bgVideo from '/bg2-6.mp4';
 import logoAlpha from "/logo_alpha.png"
+import homeBanner from "/home-banner.jpg"
 import visionCodingIcon from "/yellow1.png"
 import gallery1 from '/gallery1.png'
 import { LuMapPin } from "react-icons/lu";
@@ -29,6 +31,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { IoEyeOutline } from "react-icons/io5";
 import { TbTargetArrow } from "react-icons/tb";
 import FloatingNav from '../components/FloatingNav';
+
 
 export default function HomePage() {
 
@@ -93,32 +96,35 @@ export default function HomePage() {
 
     return (
         <main className="flex-1 mx-auto">
-            <section className="hero-banner bg-white">
-                <div className="timeline-content js--fadeInRight">
-                    <div className="flex pt-5 md:pt-0">
-                        <img src={logoAlpha} alt="Banner words" className="w-[90px] h-[100px] md:w-[360px] md:h-[405px]" />
+            <div>
+                <video id="background-video" autoPlay loop muted poster={homeBanner}
+                    className="h-[400px] md:h-[700px]">
+                    <source src={bgVideo} type="video/mp4"/>
+                </video>
+                <div className="timeline-content js--fadeInRight absolute top-[15%] md:left-[5%] z-10">
+                    <div className="flex pt-5 ">
+                        <img src={logoAlpha} alt="" className="w-[90px] h-[100px] md:w-[360px] md:h-[405px]"/>
                         <div className="flex flex-col md:my-24 md:ml-40 md:pl-10 md:border-l-8">
                             <h1 className="text-4xl md:text-8xl text-yellow-100">VISION CODING ACADEMY</h1>
-                            <p className="text-lg md:text-7xl py-2 md:py-10 pb-0 mulish-light">Premium IT Education</p>
+                            <p className="text-lg md:text-7xl py-2 md:pt-10 pb-0 mulish-light">Premium IT Education</p>
                         </div>
                     </div>
                     <p className="text-center text-lg md:text-2xl py-5 md:py-0 md:pb-5 drop-shadow">Discover the Power to
                         <span
-                            className="pl-2 bg-gradient-to-r from-yellow-400 to-yellow-100 inline-block text-transparent bg-clip-text">Transform
+                            className="bg-gradient-to-r from-yellow-400 to-yellow-100 inline-block text-transparent bg-clip-text">Transform
                             the Future</span> with
                         Every Line
                         of
                         <span
-                            className="pl-2 bg-gradient-to-r from-yellow-400 to-yellow-100 inline-block text-transparent bg-clip-text">Code</span>
+                            className="bg-gradient-to-r from-yellow-400 to-yellow-100 inline-block text-transparent bg-clip-text">Code</span>
                     </p>
-                    <p></p>
-                    <div className="flex flex-col mx-auto">
+                    <div className="flex flex-col mx-auto mt-10">
                         <a href="./courses/index.html"
-                            className="mx-auto px-3 py-3 border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500">View
+                            className="mx-auto px-3 py-3 border border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500">View
                             Courses</a>
                     </div>
                 </div>
-            </section>
+            </div>
             <section className="intro py-20 md:py-32">
                 <div className="md:max-w-[1400px] mx-auto">
                     <h2 className="timeline-content js--fadeInBottom text-4xl pb-4 text-yellow-200">
@@ -483,12 +489,12 @@ export default function HomePage() {
             </div>
             {/* {showPopUp && <section className='fixed top-0 left-0 w-[100vw] h-[100vh] z-[1000] bg-black bg-opacity-60' onClick={()=>setShowPopUp(false)}>
                 <div className="absolute left-[50%] top-[40%] md:top-[50%] max-w-[400px] md:max-w-[1000px] min-w-[300pxx] py-3 px-3 bg-neutral-800 border-2 transform -translate-x-1/2 -translate-y-1/2 rounded-xl border-yellow-300">
-                    <h2 class="text-4xl md:text-7xl text-yellow-200 text-center pt-1 md:pt-5 md:px-5">GRAND OPENING!</h2>
-                    <h2 class="text-2xl md:text-4xl text-yellow-200 text-center py-1 md:py-2">Vision Coding West Vancouver!</h2>
-                    <p class="text-xl md:text-2xl text-center pb-1 md:pb-2"><span class="text-yellow-300">Free Trial</span> Classes Available</p>
-                    <img src={gallery1} alt="" class="py-1 md:py-2 w-[400px] mx-auto" />
-                    <p class="md:text-lg text-center py-1 md:py-2">2428 Haywood Ave, West Vancouver, BC V7V 1Y1</p>
-                    <button id="ok-button" class="flex flex-col mx-auto mx-auto my-1 md:my-3 px-10 md:px-16 py1 md:py-3 border border-4 rounded border-yellow-300 text-yellow-300 font-bold text-xl md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500">OK</button>
+                    <h2 className="text-4xl md:text-7xl text-yellow-200 text-center pt-1 md:pt-5 md:px-5">GRAND OPENING!</h2>
+                    <h2 className="text-2xl md:text-4xl text-yellow-200 text-center py-1 md:py-2">Vision Coding West Vancouver!</h2>
+                    <p className="text-xl md:text-2xl text-center pb-1 md:pb-2"><span className="text-yellow-300">Free Trial</span> Classes Available</p>
+                    <img src={gallery1} alt="" className="py-1 md:py-2 w-[400px] mx-auto" />
+                    <p className="md:text-lg text-center py-1 md:py-2">2428 Haywood Ave, West Vancouver, BC V7V 1Y1</p>
+                    <button id="ok-button" className="flex flex-col mx-auto mx-auto my-1 md:my-3 px-10 md:px-16 py1 md:py-3 border border-4 rounded border-yellow-300 text-yellow-300 font-bold text-xl md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500">OK</button>
                 </div>
             </section>} */}
         </main>

@@ -56,10 +56,10 @@ export default function Header() {
                         className="px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">
                         <NavLink to="/courses" onClick={() => window.innerWidth < 700 && setNavVisible(false)}>Courses</NavLink>
                     </li>
-                    <li
+                    {/* <li
                         className="px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">
                         <NavLink to="/schedule" onClick={() => window.innerWidth < 700 && setNavVisible(false)}>Schedule</NavLink>
-                    </li>
+                    </li> */}
                     <li
                         className="px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">
                         <NavLink to="/gallery" onClick={() => window.innerWidth < 700 && setNavVisible(false)}>Gallery</NavLink>
