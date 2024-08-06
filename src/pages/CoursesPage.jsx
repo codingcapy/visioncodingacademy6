@@ -104,7 +104,7 @@ export default function CoursesPage() {
                 </section>
                 <div className="md:hidden h-[60px]">
                     <div
-                        className="static bg-gradient-to-r from-black via-yellow-400 via-white via-yellow-400 to-black h-[2px]">
+                        className="static bg-gradient-to-r from-black via-yellow-400 to-black h-[2px]">
                     </div>
                     <img src={visionCodingIcon} alt=""
                         className="relative bottom-[45px] md:bottom-[60px] left-[40%] md:left-[48%] w-[75px] md:w-[100px] bg-black" />
@@ -146,7 +146,7 @@ export default function CoursesPage() {
                                 </NavLink>
                             </div>
                             <div className="timeline-content js--fadeInRight mx-5 md:px-5 md:py-2 rounded-4xl">
-                                <NavLink to="../courses/webdev.html">
+                                <NavLink to="/courses/webdev">
                                     <div
                                         className="h-[450px] px-5 md:pr-20 py-5 pb-20 bg-black-700 rounded-3xl border-2 border-yellow-200 hover:bg-neutral-600 ease duration-300">
                                         <img src={icon39} alt="course1" className="w-[100px] mx-auto" />
@@ -324,7 +324,7 @@ export default function CoursesPage() {
                                 </NavLink>
                             </div>
                             <div className="timeline-content js--fadeInRight mx-5 md:px-5 md:py-2 rounded-4xl">
-                                <NavLink to="./comingsoon.html">
+                                <NavLink to="/courses/advancedcs">
                                     <div
                                         className="h-[450px] px-5 md:pr-20 py-5 pb-20 bg-black-700 rounded-3xl border-2 border-yellow-200 hover:bg-neutral-600 ease duration-300">
                                         <img src={icon44} alt="course1" className="w-[100px] mx-auto mx-center" />
@@ -339,7 +339,7 @@ export default function CoursesPage() {
                                 </NavLink>
                             </div>
                             <div className="timeline-content js--fadeInRight mx-5 md:px-5 md:py-2 rounded-4xl">
-                                <NavLink to="../courses/comingsoon.html">
+                                <NavLink to="/courses/devops">
                                     <div
                                         className="h-[450px] px-5 md:pr-20 py-5 pb-20 bg-black-700 rounded-3xl border-2 border-yellow-200 hover:bg-neutral-600 ease duration-300">
                                         <img src={devops} alt="course1" className="w-[150px] mx-auto" />

@@ -11,7 +11,7 @@ import $ from 'jquery';
 import ScrollReveal from 'scrollreveal'
 import comingSoon from "/icon67coming-soon.png"
 
-export default function InterviewPrepPage() {
+export default function AdvancedCsPage() {
 
     useEffect(() => {
         document.title = 'Coming Soon | Vision Coding';
@@ -80,7 +80,7 @@ export default function InterviewPrepPage() {
                 </video>
                 <h3
                     className="text-5xl md:text-6xl py-10 pb-2 text-center absolute top-[30%] left-[10%] md:left-[37%] z-10">
-                    TECH INTERVIEW PREP</h3>
+                    ADVANCED COMPUTER SCIENCE</h3>
                 <p className="text-lg text-center absolute top-[50%] md:top-[45%] md:left-[43%]">Contact us to discuss more about this program</p>
             </div>
         </main>

@@ -144,11 +144,11 @@ export default function ContactPage() {
                 <h1 className="">
                     <span className="text-5xl md:text-9xl">Code With Us</span>
                 </h1>
-                <p class="timeline-content js--fadeInRight text-md md:text-2xl pt-5">Coding isn't just for computers,</p>
-                <p class="timeline-content js--fadeInRight text-md md:text-2xl pt-5 text-center">it's the language of the <span
-                    class="text-yellow-200 font-bold">future</span> ,
-                    and your fluency begins <span class="text-yellow-200 font-bold">now!</span></p>
-                <p class="timeline-content js--fadeInRight text-lg md:text-2xl pt-5">English / 한국어</p>
+                <p className="timeline-content js--fadeInRight text-md md:text-2xl pt-5">Coding isn't just for computers,</p>
+                <p className="timeline-content js--fadeInRight text-md md:text-2xl pt-5 text-center">it's the language of the <span
+                    className="text-yellow-200 font-bold">future</span> ,
+                    and your fluency begins <span className="text-yellow-200 font-bold">now!</span></p>
+                <p className="timeline-content js--fadeInRight text-lg md:text-2xl pt-5">English / 한국어</p>
             </section>
             <main className="flex-1 mx-auto">
                 <div className="bg-black text-white flex flex-col">

@@ -1,229 +1,224 @@
 
 
+export default function WebDevPage() {
 
-export default function Python2Page(){
-
-    return(
+    return (
         <main className="flex-1 md:pl-20 md:max-w-[1400px]">
-            <div className="bg-black text-white md:flex md:pt-20 px-2">
+            <div className="bg-black text-white md:flex md:pt-20">
                 <section className="flex-1 mx-auto md:mx-20 py-10 md:px-10 px-2">
-                    <h3 className="timeline-content js--fadeInLeft text-5xl md:text-6xl py-10 pb-2">INTERMEDIATE PYTHON
-                    </h3>
+                    <h3 className="timeline-content js--fadeInLeft text-5xl md:text-6xl py-10 pb-2">WEB DEVELOPMENT</h3>
                     <h3 className="text-5xl md:text-6xl pb-5"></h3>
                     <p className="timeline-content js--fadeInLeft font-bold underline">Overview:</p>
-                    <p className="timeline-content js--fadeInLeft text-lg">This course assumes the student has learned
-                        the fundamentals of programming, including variables and constants, if statements, lists
-                        tuples sets and dictionaries, for and while loops, error handling using try/catch, and file
-                        input/output. This is a project-oriented course where students will use all the fundamentals
-                        of programming they know to build projects including 2D games with pygame and webservers
-                        with Flask. We begin with Object-Oriented Programming, then begin building large-scale
-                        projects.</p>
+                    <p className="timeline-content js--fadeInLeft text-lg">Learn to build and deploy websites using HTML, CSS and JavaScript.</p>
                 </section>
-                <div className="py-10 flex-1">
-                    <section className="flex-1 py-10">
-                        <div className="py-10 ">
-                            <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 1: Python Review and OOP</h3>
-                            <img src="../images/icon13pc.png" alt="logo" className="mx-auto md:float-right w-[75px]"/>
-                        </div>
-                        <ul className="list-disc list-inside pl-2 md:pl-5">
-                            <li className="text-lg">Topics:</li>
-                            <ul className="list-disc list-inside pl-7 pb-5">
-                                <li className="text-lg">Python Fundamentals Review</li>
-                                <li className="text-lg">Object-Oriented Programming</li>
-                                <li className="text-lg">First Project - User Account System</li>
-                            </ul>
-                            <li className="text-lg">Project:</li>
-                            <ul className="list-disc list-inside pl-7">
-                                <li className="text-lg">User Account System</li>
-                            </ul>
+                <section className="flex-1 py-10">
+                    <div className="py-10 ">
+                        <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 1: Introduction to Web Development
+                        </h3>
+                        <img src="../images/icon14internet.png" alt="scratch logo"
+                            className="mx-auto md:float-right w-[75px]" />
+                    </div>
+                    <ul className="list-disc list-inside pl-2 md:pl-5">
+                        <li className="text-lg">Topics:</li>
+                        <ul className="list-disc list-inside pl-7 pb-5">
+                            <li className="text-lg">Chapter 1: What is Web Development</li>
+                            <li className="text-lg">Chapter 2: What is HTML, CSS and JavaScript</li>
+                            <li className="text-lg">Chapter 3: Web Development Environment</li>
                         </ul>
-                        <div className="py-10 ">
-                            <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 2: User Account System Part 1
-                            </h3>
-                            <img src="../images/icon7python2.png" alt="logo" className="mx-auto md:float-right w-[75px]"/>
-                        </div>
-                        <ul className="list-disc list-inside pl-2 md:pl-5">
-                            <li className="text-lg">Topics:</li>
-                            <ul className="list-disc list-inside pl-7 pb-5">
-                                <li className="text-lg">User Class</li>
-                                <li className="text-lg">Create Users</li>
-                                <li className="text-lg">Display Users</li>
-                                <li className="text-lg">Delete Users</li>
-                            </ul>
-                            <li className="text-lg">Project:</li>
-                            <ul className="list-disc list-inside pl-7 pb-5">
-                                <li className="text-lg">User Account System</li>
-                            </ul>
+                    </ul>
+                    <div className="py-10 ">
+                        <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 2: Introduction to HTML</h3>
+                        <img src="../images/icon72html.svg" alt="logo" className="mx-auto md:float-right w-[75px]" />
+                    </div>
+                    <ul className="list-disc list-inside pl-2 md:pl-5">
+                        <li className="text-lg">Topics:</li>
+                        <ul className="list-disc list-inside pl-7 pb-5">
+                            <li className="text-lg">HyperText Markup Language</li>
+                            <li className="text-lg">Webpage Layouts</li>
+                            <li className="text-lg">HTML Tags (head, body, header, main, footer, headings, nav, ul, ol, li,
+                                p)</li>
                         </ul>
-                        <div className="py-10 ">
-                            <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">User Account System Part 2</h3>
-                            <img src="../images/icon7python2.png" alt="logo"
-                                className="mx-auto md:float-right w-[75px] md:my-2"/>
-                        </div>
-                        <ul className="list-disc list-inside pl-2 md:pl-5">
-                            <li className="text-lg">Topics:</li>
-                            <ul className="list-disc list-inside pl-7 pb-5">
-                                <li className="text-lg">Edit Users</li>
-                                <li className="text-lg">Save Data</li>
-                                <li className="text-lg">Load Data</li>
-                            </ul>
-                            <li className="text-lg">Project:</li>
-                            <ul className="list-disc list-inside pl-7 pb-5">
-                                <li className="text-lg">User Account System</li>
-                            </ul>
+                    </ul>
+                    <div className="py-10 ">
+                        <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 3: HTML Tags
+                        </h3>
+                        <img src="../images/icon72html.svg" alt="logo" className="mx-auto md:float-right w-[75px] md:my-2" />
+                    </div>
+                    <ul className="list-disc list-inside pl-2 md:pl-5">
+                        <li className="text-lg">Topics:</li>
+                        <ul className="list-disc list-inside pl-7 pb-5">
+                            <li className="text-lg">Video and iframe tags</li>
+                            <li className="text-lg">Block and inline tags</li>
                         </ul>
-                        <div className="py-10 ">
-                            <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 4: Pygame Part 1</h3>
-                            <img src="../images/icon7python2.png" alt="logo" className="mx-auto md:float-right w-[75px]"/>
-                        </div>
-                        <ul className="list-disc list-inside pl-2 md:pl-5">
-                            <li className="text-lg">Topics:</li>
-                            <ul className="list-disc list-inside pl-7 pb-5">
-                                <li className="text-lg">Pygame</li>
-                                <li className="text-lg">Render the Window</li>
-                                <li className="text-lg">Create Main Menu</li>
-                            </ul>
-                            <li className="text-lg">Project:</li>
-                            <ul className="list-disc list-inside pl-7 pb-5">
-                                <li className="text-lg">2D Game</li>
-                            </ul>
+                        <li className="text-lg">Project:</li>
+                        <ul className="list-disc list-inside pl-7 pb-5">
+                            <li className="text-lg">Build an HTML webpage!</li>
                         </ul>
-                        <div className="py-10 ">
-                            <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 5: Pygame Part 2</h3>
-                            <img src="../images/icon7python2.png" alt="logo" className="mx-auto md:float-right w-[75px]"/>
-                        </div>
-                        <ul className="list-disc list-inside pl-2 md:pl-5">
-                            <li className="text-lg">Topics:</li>
-                            <ul className="list-disc list-inside pl-7 pb-5">
-                                <li className="text-lg">Build the game logic</li>
-                                <li className="text-lg">Class Player</li>
-                                <li className="text-lg">Class World</li>
-                            </ul>
-                            <li className="text-lg">Project:</li>
-                            <ul className="list-disc list-inside pl-7 pb-5">
-                                <li className="text-lg">2D Game</li>
-                            </ul>
+                    </ul>
+                    <div className="py-10 ">
+                        <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 4: Introduction to CSS</h3>
+                        <img src="../images/icon72css.svg" alt="logo" className="mx-auto md:float-right w-[75px]" />
+                    </div>
+                    <ul className="list-disc list-inside pl-2 md:pl-5">
+                        <li className="text-lg">Topics:</li>
+                        <ul className="list-disc list-inside pl-7 pb-5">
+                            <li className="text-lg">Cascading Style Sheet</li>
+                            <li className="text-lg">Embedded, Inline, External CSS</li>
+                            <li className="text-lg">tag, id, class selectors</li>
+                            <li className="text-lg">text styling</li>
                         </ul>
-                        <div className="py-10 ">
-                            <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 6: Pygame Part 3</h3>
-                            <img src="../images/icon7python2.png" alt="logo" className="mx-auto md:float-right w-[75px]"/>
-                        </div>
-                        <ul className="list-disc list-inside pl-2 md:pl-5">
-                            <li className="text-lg">Topics:</li>
-                            <ul className="list-disc list-inside pl-7 pb-5">
-                                <li className="text-lg">Build the game logic part 2</li>
-                                <li className="text-lg">Level Mapping</li>
-                                <li className="text-lg">Collision Mechanics</li>
-                            </ul>
-                            <li className="text-lg">Project:</li>
-                            <ul className="list-disc list-inside pl-7 pb-5">
-                                <li className="text-lg">2D Game</li>
-                            </ul>
+                        <li className="text-lg">Projects:</li>
+                        <ul className="list-disc list-inside pl-7 pb-5">
+                            <li className="text-lg">Style your HTML webpage text!</li>
                         </ul>
-                        <div className="py-10 ">
-                            <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 7: Pygame Part 4</h3>
-                            <img src="../images/icon7python2.png" alt="logo" className="mx-auto md:float-right w-[75px]"/>
-                        </div>
-                        <ul className="list-disc list-inside pl-2 md:pl-5">
-                            <li className="text-lg">Topics:</li>
-                            <ul className="list-disc list-inside pl-7 pb-5">
-                                <li className="text-lg">Build the game logic part 3</li>
-                                <li className="text-lg">Class Enemy</li>
-                                <li className="text-lg">Damage Mechanics</li>
-                                <li className="text-lg">Importing Assets</li>
-                            </ul>
-                            <li className="text-lg">Project:</li>
-                            <ul className="list-disc list-inside pl-7 pb-5">
-                                <li className="text-lg">2D Game</li>
-                            </ul>
+                    </ul>
+                    <div className="py-10 ">
+                        <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 5: Styling with CSS</h3>
+                        <img src="../images/icon72css.svg" alt="logo" className="mx-auto md:float-right w-[75px]" />
+                    </div>
+                    <ul className="list-disc list-inside pl-2 md:pl-5">
+                        <li className="text-lg">Topics:</li>
+                        <ul className="list-disc list-inside pl-7 pb-5">
+                            <li className="text-lg">Styling Background</li>
+                            <li className="text-lg">Styling Border</li>
+                            <li className="text-lg">Styling Shadows</li>
+                            <li className="text-lg">Gradient</li>
                         </ul>
-                        <div className="py-10 ">
-                            <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 8: Pygame Part 5</h3>
-                            <img src="../images/icon7python2.png" alt="logo" className="mx-auto md:float-right w-[75px]"/>
-                        </div>
-                        <ul className="list-disc list-inside pl-2 md:pl-5">
-                            <li className="text-lg">Topics:</li>
-                            <ul className="list-disc list-inside pl-7 pb-5">
-                                <li className="text-lg">Animating the Assets</li>
-                                <li className="text-lg">Particle Effects</li>
-                            </ul>
-                            <li className="text-lg">Project:</li>
-                            <ul className="list-disc list-inside pl-7 pb-5">
-                                <li className="text-lg">2D Game</li>
-                            </ul>
+                        <li className="text-lg">Projects:</li>
+                        <ul className="list-disc list-inside pl-7 pb-5">
+                            <li className="text-lg">Create a button!</li>
                         </ul>
-                        <div className="py-10 ">
-                            <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 9: Flask Webserver
-                            </h3>
-                            <img src="../images/icon17algorithm.png" alt="logo" className="mx-auto md:float-right w-[75px]"/>
-                        </div>
-                        <ul className="list-disc list-inside pl-2 md:pl-5">
-                            <li className="text-lg">Topics:</li>
-                            <ul className="list-disc list-inside pl-7 pb-5">
-                                <li className="text-lg">Web Server</li>
-                                <li className="text-lg">Flask</li>
-                                <li className="text-lg">MVC (Model View Controller)</li>
-                            </ul>
-                            <li className="text-lg">Project:</li>
-                            <ul className="list-disc list-inside pl-7 pb-5">
-                                <li className="text-lg">Flask Web Server</li>
-                            </ul>
+                    </ul>
+                    <div className="py-10 ">
+                        <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">
+                            Week 6: CSS Box Model</h3>
+                        <img src="../images/icon72css.svg" alt="logo" className="mx-auto md:float-right w-[75px]" />
+                    </div>
+                    <ul className="list-disc list-inside pl-2 md:pl-5">
+                        <li className="text-lg">Topics:</li>
+                        <ul className="list-disc list-inside pl-7 pb-5">
+                            <li className="text-lg">Flexbox</li>
+                            <li className="text-lg">Grid</li>
                         </ul>
-                        <div className="py-10 ">
-                            <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 10: Flask Webserver part 2
-                            </h3>
-                            <img src="../images/icon17algorithm.png" alt="logo" className="mx-auto md:float-right w-[75px]"/>
-                        </div>
-                        <ul className="list-disc list-inside pl-2 md:pl-5">
-                            <li className="text-lg">Topics:</li>
-                            <ul className="list-disc list-inside pl-7 pb-5">
-                                <li className="text-lg">Build a Web Server using Flask</li>
-                                <li className="text-lg">Databases</li>
-                                <li className="text-lg">Postgres and Model</li>
-                                <li className="text-lg">Flask Web Server</li>
-                            </ul>
-                            <li className="text-lg">Project:</li>
-                            <ul className="list-disc list-inside pl-7 pb-5">
-                                <li className="text-lg">Social Media Project part 4</li>
-                            </ul>
+                        <li className="text-lg">Projects:</li>
+                        <ul className="list-disc list-inside pl-7 pb-5">
+                            <li className="text-lg">Style your HTML webpage layout!</li>
                         </ul>
-                        <div className="py-10 ">
-                            <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 11: Flask Webserver part 3
-                            </h3>
-                            <img src="../images/icon17algorithm.png" alt="logo" className="mx-auto md:float-right w-[75px]"/>
-                        </div>
-                        <ul className="list-disc list-inside pl-2 md:pl-5">
-                            <li className="text-lg">Topics:</li>
-                            <ul className="list-disc list-inside pl-7 pb-5">
-                                <li className="text-lg">Create</li>
-                                <li className="text-lg">Read</li>
-                                <li className="text-lg">Update</li>
-                                <li className="text-lg">Delete</li>
-                            </ul>
-                            <li className="text-lg">Project:</li>
-                            <ul className="list-disc list-inside pl-7 pb-5">
-                                <li className="text-lg">Flask Web Server</li>
-                            </ul>
+                    </ul>
+                    <div className="py-10 ">
+                        <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 7: Responsive Layout</h3>
+                        <img src="../images/icon72css.svg" alt="logo" className="mx-auto md:float-right w-[75px]" />
+                    </div>
+                    <ul className="list-disc list-inside pl-2 md:pl-5">
+                        <li className="text-lg">Topics:</li>
+                        <ul className="list-disc list-inside pl-7 pb-5">
+                            <li className="text-lg">Desktop, tablet and mobile viewports</li>
+                            <li className="text-lg">CSS Media Rule and Mobile-first development</li>
+                            <li className="text-lg">Responsive images</li>
+                            <li className="text-lg">Collapsible Menu</li>
                         </ul>
-                        <div className="py-10 ">
-                            <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 12: Review
-                            </h3>
-                            <img src="../images/icon17algorithm.png" alt="logo" className="mx-auto md:float-right w-[75px]"/>
-                        </div>
-                        <ul className="list-disc list-inside pl-2 md:pl-5">
-                            <li className="text-lg">Topics:</li>
-                            <ul className="list-disc list-inside pl-7 pb-5">
-                                <li className="text-lg">GitHub and Version Control</li>
-                                <li className="text-lg">Recap</li>
-                                <li className="text-lg">Introduction to Django</li>
-                            </ul>
-                            <li className="text-lg">Project:</li>
-                            <ul className="list-disc list-inside pl-7 pb-5">
-                                <li className="text-lg">Flask Web Server</li>
-                            </ul>
+                        <li className="text-lg">Projects:</li>
+                        <ul className="list-disc list-inside pl-7 pb-5">
+                            <li className="text-lg">Make your webpage responsive!</li>
                         </ul>
-                    </section>
-                </div>
+                    </ul>
+                    <div className="py-10 ">
+                        <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 8: Javascript</h3>
+                        <img src="../images/icon28js.png" alt="logo" className="mx-auto md:float-right w-[75px]" />
+                    </div>
+                    <ul className="list-disc list-inside pl-2 md:pl-5">
+                        <li className="text-lg">Topics:</li>
+                        <ul className="list-disc list-inside pl-7 pb-5">
+                            <li className="text-lg">Introduction to JavaScript ES06</li>
+                            <li className="text-lg">Noscript tag</li>
+                            <li className="text-lg">Embedded, inline and external JavaScript</li>
+                            <li className="text-lg">Console Log</li>
+                            <li className="text-lg">JS Comments</li>
+                        </ul>
+                    </ul>
+                    <div className="py-10 ">
+                        <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 9: DOM, variables, data types,
+                            conditionals</h3>
+                        <img src="../images/icon28js.png" alt="logo" className="mx-auto md:float-right w-[75px]" />
+                    </div>
+                    <ul className="list-disc list-inside pl-2 md:pl-5">
+                        <li className="text-lg">Topics:</li>
+                        <ul className="list-disc list-inside pl-7 pb-5">
+                            <li className="text-lg">Document Object Model</li>
+                            <li className="text-lg">Variables</li>
+                            <li className="text-lg">Data types</li>
+                            <li className="text-lg">If Statements</li>
+                            <li className="text-lg">Operators</li>
+                            <li className="text-lg">Boolean Logic</li>
+                        </ul>
+                    </ul>
+                    <div className="py-10 ">
+                        <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 10: Arrays and Functions</h3>
+                        <img src="../images/icon28js.png" alt="logo" className="mx-auto md:float-right w-[75px]" />
+                    </div>
+                    <ul className="list-disc list-inside pl-2 md:pl-5">
+                        <li className="text-lg">Topics:</li>
+                        <ul className="list-disc list-inside pl-7 pb-5">
+                            <li className="text-lg">Arrays</li>
+                            <li className="text-lg">Strings</li>
+                            <li className="text-lg">For Loop</li>
+                            <li className="text-lg">While Loop</li>
+                            <li className="text-lg">Nested Loops</li>
+                            <li className="text-lg">Functions</li>
+                            <li className="text-lg">Parameters</li>
+                            <li className="text-lg">Return Statement</li>
+                            <li className="text-lg">Built-in Functions</li>
+                            <li className="text-lg">Scope</li>
+                            <li className="text-lg">Arrow Functions</li>
+                        </ul>
+                        <li className="text-lg">Project:</li>
+                        <ul className="list-disc list-inside pl-7 pb-5">
+                            <li className="text-lg">Use JavaScript to generate lists!</li>
+                        </ul>
+                    </ul>
+                    <div className="py-10 ">
+                        <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 11: Elements and EventListeners</h3>
+                        <img src="../images/icon28js.png" alt="logo" className="mx-auto md:float-right w-[75px]" />
+                    </div>
+                    <ul className="list-disc list-inside pl-2 md:pl-5">
+                        <li className="text-lg">Topics:</li>
+                        <ul className="list-disc list-inside pl-7 pb-5">
+                            <li className="text-lg">Live Selectors</li>
+                            <li className="text-lg">Query Selectors</li>
+                            <li className="text-lg">Events</li>
+                            <li className="text-lg">Operators</li>
+                            <li className="text-lg">Boolean Logic</li>
+                        </ul>
+                        <li className="text-lg">Projects:</li>
+                        <ul className="list-disc list-inside pl-7 pb-5">
+                            <li className="text-lg">Toggle Menu</li>
+                            <li className="text-lg">Popups</li>
+                            <li className="text-lg">Form Validation</li>
+                        </ul>
+                    </ul>
+                    <div className="py-10 ">
+                        <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 12: Animations and jQuery</h3>
+                        <img src="../images/icon28js.png" alt="logo" className="mx-auto md:float-right w-[75px]" />
+                    </div>
+                    <ul className="list-disc list-inside pl-2 md:pl-5">
+                        <li className="text-lg">Topics:</li>
+                        <ul className="list-disc list-inside pl-7 pb-5">
+                            <li className="text-lg">jQuery CDN</li>
+                            <li className="text-lg">jQuery Local</li>
+                            <li className="text-lg">jQuery Selectors</li>
+                            <li className="text-lg">jQuery Events</li>
+                            <li className="text-lg">CSS Transitions</li>
+                            <li className="text-lg">setTimeout and setInterval</li>
+                            <li className="text-lg">requestAnimationFrame and jQuery animate</li>
+                        </ul>
+                        <li className="text-lg">Project:</li>
+                        <ul className="list-disc list-inside pl-7 pb-5">
+                            <li className="text-lg">Add animation to your website!</li>
+                            <li className="text-lg">Lightbox</li>
+                            <li className="text-lg">Slideshow</li>
+                        </ul>
+                    </ul>
+                </section>
             </div>
             <div className="fixed bottom-2 right-2 md:bottom-16 md:right-16 bg-transparent">
                 <div className="py-2 bg-transparent z-10">

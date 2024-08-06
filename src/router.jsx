@@ -20,6 +20,9 @@ import PythonPage from "./pages/PythonPage";
 import Python2Page from "./pages/Python2Page";
 import InterviewPrepPage from "./pages/InterviewPrepPage";
 import SummerCampPage from "./pages/SummerCampPage";
+import AdvancedCsPage from "./pages/AdvancedCsPage";
+import WebDevPage from "./pages/WebDevPage";
+import DevOpsPage from "./pages/DevOpsPage";
 
 export function Router() {
     const router = createBrowserRouter(
@@ -35,7 +38,10 @@ export function Router() {
                 <Route path="/signup" element={<SignupPage />} />
                 <Route path="/courses/python" element={<PythonPage />} />
                 <Route path="/courses/python2" element={<Python2Page />} />
+                <Route path="/courses/webdev" element={<WebDevPage />} />
                 <Route path="/courses/interviewprep" element={<InterviewPrepPage />} />
+                <Route path="/courses/advancedcs" element={<AdvancedCsPage />} />
+                <Route path="/courses/devops" element={<DevOpsPage />} />
                 <Route path="/schedule" element={<SchedulePage />} />
             </Route>
         )

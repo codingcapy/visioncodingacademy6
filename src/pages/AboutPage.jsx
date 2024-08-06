@@ -153,21 +153,21 @@ export default function AboutPage() {
     return (
         <>
             <section className="about">
-                <h1 class="">
-                    <span class="timeline-content js--fadeInRight text-5xl md:text-8xl">About Us</span>
+                <h1 className="">
+                    <span className="timeline-content js--fadeInRight text-5xl md:text-8xl">About Us</span>
                 </h1>
-                <p class="timeline-content js--fadeInRight text-md md:text-2xl pt-5 text-center">Code with <span
-                    class="text-yellow-200 font-bold">passion</span> and <span
-                        class="text-yellow-200 font-bold">excitement</span>
+                <p className="timeline-content js--fadeInRight text-md md:text-2xl pt-5 text-center">Code with <span
+                    className="text-yellow-200 font-bold">passion</span> and <span
+                        className="text-yellow-200 font-bold">excitement</span>
                 </p>
             </section>
             <main className="flex-1 mx-auto">
                 <div className="bg-black text-white flex flex-col">
                     <section className="py-10 max-w-[1000px] mx-auto">
                         <div className="py-5">
-                            <div class="py-5">
-                                <h2 class="text-4xl md:text-6xl text-center py-5 text-yellow-200">Our Story</h2>
-                                <p class="hidden md:block text-lg md:text-2xl px-10">Vision Coding Academy's story began with a
+                            <div className="py-5">
+                                <h2 className="text-4xl md:text-6xl text-center py-5 text-yellow-200">Our Story</h2>
+                                <p className="hidden md:block text-lg md:text-2xl px-10">Vision Coding Academy's story began with a
                                     simple yet
                                     powerful
                                     vision: to transform the way young minds interact with technology. Our director, Jay,
@@ -177,19 +177,19 @@ export default function AboutPage() {
                                     enrich our curriculum. Together, we have created a dynamic learning environment where
                                     students are encouraged to think critically, solve problems creatively, and prepare for a
                                     future where they can make a real difference in the world of technology</p>
-                                <p class="md:hidden text-lg md:text-2xl px-10">Vision Coding Academy's story began with a simple
+                                <p className="md:hidden text-lg md:text-2xl px-10">Vision Coding Academy's story began with a simple
                                     yet
                                     powerful
-                                    vision: to transform the way <span class="text-yellow-200">young minds</span> interact with
-                                    <span class="text-yellow-200">technology</span>.</p>
-                                <p class="md:hidden text-lg md:text-2xl px-10 py-5">Over the
+                                    vision: to transform the way <span className="text-yellow-200">young minds</span> interact with
+                                    <span className="text-yellow-200">technology</span>.</p>
+                                <p className="md:hidden text-lg md:text-2xl px-10 py-5">Over the
                                     years, our team of IT industry experts has expanded, each bringing their <span
-                                        class="text-yellow-200">unique expertise</span> to
+                                        className="text-yellow-200">unique expertise</span> to
                                     enrich our curriculum.</p>
-                                <p class="md:hidden text-lg md:text-2xl px-10">Together, we've created a dynamic learning
+                                <p className="md:hidden text-lg md:text-2xl px-10">Together, we've created a dynamic learning
                                     environment where
                                     students are encouraged to <span
-                                        class="text-yellow-200">think critically</span>, solve problems creatively, and prepare for a
+                                        className="text-yellow-200">think critically</span>, solve problems creatively, and prepare for a
                                     future where they can make a real difference in the world of technology</p>
                             </div>
                         </div>
@@ -277,22 +277,22 @@ export default function AboutPage() {
                             <img src={testimonial3} alt="Jay" className="image rounded-full border w-[300px] h-[300px] md:w-[350px] md:h-[350px] md:mx-3 cursor-pointer" />
                         </div>
                     </section>
-                    <section class="md:py-10">
-                        <h2 class="text-4xl md:text-6xl text-center py-10 text-yellow-200">Our Future Goals</h2>
-                        <div class="max-w-[1000px] mx-auto px-10 md:px-0">
-                            <div class="py-10">
-                                <h3 class="pl-2 text-2xl md:text-4xl text-yellow-200">Expansion of our location</h3>
-                                <p class="pl-2 text-lg md:text-2xl">We are expecting new locations in Surrey, UBC, Langley
+                    <section className="md:py-10">
+                        <h2 className="text-4xl md:text-6xl text-center py-10 text-yellow-200">Our Future Goals</h2>
+                        <div className="max-w-[1000px] mx-auto px-10 md:px-0">
+                            <div className="py-10">
+                                <h3 className="pl-2 text-2xl md:text-4xl text-yellow-200">Expansion of our location</h3>
+                                <p className="pl-2 text-lg md:text-2xl">We are expecting new locations in Surrey, UBC, Langley
                                     and
                                     West
                                     Vancouver in
                                     2024 and more in
                                     forthcoming years. </p>
                             </div>
-                            <div class="py-10">
-                                <h2 class="pl-2 md:pl-48 text-2xl md:text-4xl text-yellow-200">Expand Educational Reach
+                            <div className="py-10">
+                                <h2 className="pl-2 md:pl-48 text-2xl md:text-4xl text-yellow-200">Expand Educational Reach
                                 </h2>
-                                <p class="pl-2 md:pl-48 text-lg md:text-2xl">Broaden our curriculum to include emerging
+                                <p className="pl-2 md:pl-48 text-lg md:text-2xl">Broaden our curriculum to include emerging
                                     technologies
                                     like
                                     AI, robotics, and
@@ -300,10 +300,10 @@ export default function AboutPage() {
                                     catering
                                     to a wider range of interests and career paths.</p>
                             </div>
-                            <div class="py-10">
-                                <h2 class="pl-2 text-2xl md:text-4xl text-yellow-200">Enhance Online Learning Platforms
+                            <div className="py-10">
+                                <h2 className="pl-2 text-2xl md:text-4xl text-yellow-200">Enhance Online Learning Platforms
                                 </h2>
-                                <p class="pl-2 text-lg md:text-2xl">Develop a robust online learning platform to make our
+                                <p className="pl-2 text-lg md:text-2xl">Develop a robust online learning platform to make our
                                     courses
                                     accessible to
                                     students beyond
