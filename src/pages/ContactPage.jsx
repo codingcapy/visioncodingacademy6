@@ -6,6 +6,8 @@ version: 1.0
 description: Contact page for Vision Coding Academy
  */
 
+import $ from 'jquery';
+import ScrollReveal from 'scrollreveal'
 import { useEffect } from 'react';
 import { LuMapPin } from "react-icons/lu";
 import { FaInstagram } from "react-icons/fa";
@@ -20,16 +22,133 @@ export default function ContactPage() {
         document.title = 'Contact | Vision Coding';
     }, []);
 
+    $(function () {
+        window.sr = ScrollReveal();
+        if ($(window).width() < 768) {
+            if ($('.timeline-content').hasClass('js--fadeInLeft')) {
+                $('.timeline-content').removeClass('js--fadeInLeft').addClass('js--fadeInRight');
+            }
+            sr.reveal('.js--fadeInRight', {
+                origin: 'right',
+                distance: '300px',
+                easing: 'ease-in-out',
+                duration: 800,
+            });
+        }
+        else {
+            sr.reveal('.js--fadeInLeft', {
+                origin: 'left',
+                distance: '300px',
+                easing: 'ease-in-out',
+                duration: 800,
+            });
+            sr.reveal('.js--fadeInRight', {
+                origin: 'right',
+                distance: '300px',
+                easing: 'ease-in-out',
+                duration: 800,
+            });
+            sr.reveal('.js--fadeInBottom', {
+                origin: 'bottom',
+                distance: '300px',
+                easing: 'ease-in-out',
+                duration: 800,
+            });
+            sr.reveal('.js--fadeInTop', {
+                origin: 'top',
+                distance: '300px',
+                easing: 'ease-in-out',
+                duration: 800,
+            });
+        }
+        sr.reveal('.js--fadeInLeft', {
+            origin: 'left',
+            distance: '300px',
+            easing: 'ease-in-out',
+            duration: 800,
+        });
+        sr.reveal('.js--fadeInRight', {
+            origin: 'right',
+            distance: '300px',
+            easing: 'ease-in-out',
+            duration: 800,
+        });
+    });
+
+    useEffect(() => {
+        const $images = $('.image');
+
+        $images.each((index, image) => {
+            $(image).on('click', () => {
+                const lightbox = $('<div></div>').addClass('lightbox')[0];
+
+                const fullSizeImage = document.createElement('img');
+                fullSizeImage.src = image.src;
+                fullSizeImage.classList.add('lightbox-image');
+                lightbox.appendChild(fullSizeImage);
+
+                const leftArrow = document.createElement('div');
+                leftArrow.classList.add('arrow', 'left-arrow');
+                leftArrow.innerHTML = '&lt;';
+                lightbox.appendChild(leftArrow);
+
+                const rightArrow = document.createElement('div');
+                rightArrow.classList.add('arrow', 'right-arrow');
+                rightArrow.innerHTML = '&gt;';
+                lightbox.appendChild(rightArrow);
+
+                let currentIndex = index;
+
+                function showImage(index) {
+                    fullSizeImage.classList.add('fade-out');
+                    setTimeout(() => {
+                        fullSizeImage.src = $images.eq(index).attr('src');
+                        fullSizeImage.classList.remove('fade-out');
+                        fullSizeImage.classList.add('fade-in');
+                    }, 300);
+                }
+
+                $(leftArrow).on('click', (event) => {
+                    event.stopPropagation();
+                    currentIndex = (currentIndex - 1 + $images.length) % $images.length;
+                    showImage(currentIndex);
+                });
+
+                $(rightArrow).on('click', (event) => {
+                    event.stopPropagation();
+                    currentIndex = (currentIndex + 1) % $images.length;
+                    showImage(currentIndex);
+                });
+
+                $(lightbox).on('click', (event) => {
+                    if (event.target === lightbox) {
+                        lightbox.classList.add('fade-out');
+                        setTimeout(() => {
+                            document.body.removeChild(lightbox);
+                        }, 500);
+                    }
+                });
+
+                document.body.appendChild(lightbox);
+
+                setTimeout(() => {
+                    lightbox.classList.add('fade-in');
+                }, 50);
+            });
+        });
+    }, []);
+
     return (
         <>
             <section className="about">
                 <h1 className="">
                     <span className="text-5xl md:text-9xl">Code With Us</span>
                 </h1>
-                <p className="text-2xl pt-5">Coding isn't just for computers,</p>
-                <p className="text-2xl pt-5">it's the language of the <span className="text-yellow-200 font-bold">future</span> ,
-                    and your fluency begins <span className="text-yellow-200 font-bold">now!</span></p>
-                <p className="text-2xl pt-5">English / 한국어</p>
+                <p class="timeline-content js--fadeInRight text-md md:text-2xl pt-5">Coding isn't just for computers,</p>
+                <p class="timeline-content js--fadeInRight text-md md:text-2xl pt-5 text-center">it's the language of the <span
+                    class="text-yellow-200 font-bold">future</span> ,
+                    and your fluency begins <span class="text-yellow-200 font-bold">now!</span></p>
+                <p class="timeline-content js--fadeInRight text-lg md:text-2xl pt-5">English / 한국어</p>
             </section>
             <main className="flex-1 mx-auto">
                 <div className="bg-black text-white flex flex-col">

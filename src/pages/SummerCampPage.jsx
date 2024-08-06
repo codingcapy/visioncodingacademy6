@@ -1,12 +1,70 @@
 
 
-
+import $ from 'jquery';
+import ScrollReveal from 'scrollreveal'
+import { useEffect } from 'react';
 import codingClass from "/coding-class1.jpg"
 import arduino from "/arduino.jpg"
 import icon75 from "/icon75arduino.svg"
 
 export default function SummerCampPage() {
 
+    useEffect(() => {
+        document.title = 'Summer Camp | Vision Coding';
+    }, []);
+
+    $(function () {
+        window.sr = ScrollReveal();
+        if ($(window).width() < 768) {
+            if ($('.timeline-content').hasClass('js--fadeInLeft')) {
+                $('.timeline-content').removeClass('js--fadeInLeft').addClass('js--fadeInRight');
+            }
+            sr.reveal('.js--fadeInRight', {
+                origin: 'right',
+                distance: '300px',
+                easing: 'ease-in-out',
+                duration: 800,
+            });
+        }
+        else {
+            sr.reveal('.js--fadeInLeft', {
+                origin: 'left',
+                distance: '300px',
+                easing: 'ease-in-out',
+                duration: 800,
+            });
+            sr.reveal('.js--fadeInRight', {
+                origin: 'right',
+                distance: '300px',
+                easing: 'ease-in-out',
+                duration: 800,
+            });
+            sr.reveal('.js--fadeInBottom', {
+                origin: 'bottom',
+                distance: '300px',
+                easing: 'ease-in-out',
+                duration: 800,
+            });
+            sr.reveal('.js--fadeInTop', {
+                origin: 'top',
+                distance: '300px',
+                easing: 'ease-in-out',
+                duration: 800,
+            });
+        }
+        sr.reveal('.js--fadeInLeft', {
+            origin: 'left',
+            distance: '300px',
+            easing: 'ease-in-out',
+            duration: 800,
+        });
+        sr.reveal('.js--fadeInRight', {
+            origin: 'right',
+            distance: '300px',
+            easing: 'ease-in-out',
+            duration: 800,
+        });
+    });
 
     return (
         <>
