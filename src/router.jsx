@@ -15,8 +15,11 @@ import ContactPage from "./pages/ContactPage";
 import LoginPage from "./pages/LoginPage";
 import SignupPage from "./pages/SIgnupPage";
 import GalleryPage from "./pages/GalleryPage";
-import ComingSoonPage from "./pages/ComingSoonPage";
 import SchedulePage from "./pages/SchedulePage";
+import PythonPage from "./pages/PythonPage";
+import Python2Page from "./pages/Python2Page";
+import InterviewPrepPage from "./pages/InterviewPrepPage";
+import SummerCampPage from "./pages/SummerCampPage";
 
 export function Router() {
     const router = createBrowserRouter(
@@ -24,12 +27,15 @@ export function Router() {
             <Route element={<Layout />}>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/about" element={<AboutPage />} />
+                <Route path="/summer-camp" element={<SummerCampPage />} />
                 <Route path="/courses" element={<CoursesPage />} />
                 <Route path="/contact" element={<ContactPage />} />
                 <Route path="/gallery" element={<GalleryPage />} />
                 <Route path="/login" element={<LoginPage />} />
                 <Route path="/signup" element={<SignupPage />} />
-                <Route path="/comingsoon" element={<ComingSoonPage />} />
+                <Route path="/courses/python" element={<PythonPage />} />
+                <Route path="/courses/python2" element={<Python2Page />} />
+                <Route path="/courses/interviewprep" element={<InterviewPrepPage />} />
                 <Route path="/schedule" element={<SchedulePage />} />
             </Route>
         )

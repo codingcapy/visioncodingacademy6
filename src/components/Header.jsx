@@ -53,6 +53,11 @@ export default function Header() {
                         <NavLink to="/about" onClick={() => window.innerWidth < 700 && setNavVisible(false)}>About</NavLink>
                     </li>
                     <li
+                        class="px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300 text-lg md:text-2xl">
+                        <NavLink to="/summer-camp">Summer Camp<span
+                                class="text-green-500 px-2 pb-5 text-sm font-bold">NEW!</span></NavLink>
+                    </li>
+                    <li
                         className="px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">
                         <NavLink to="/courses" onClick={() => window.innerWidth < 700 && setNavVisible(false)}>Courses</NavLink>
                     </li>

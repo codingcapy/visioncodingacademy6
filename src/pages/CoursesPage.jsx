@@ -114,7 +114,7 @@ export default function CoursesPage() {
                         <h1 className="pb-10 text-4xl md:text-6xl text-yellow-200 text-center">K-12 Courses</h1>
                         <section className="md:w-[500px] mx-auto">
                             <div className="timeline-content js--fadeInRight mx-5 md:px-5 md:py-2 rounded-4xl">
-                                <a href="./python.html">
+                                <NavLink to="/courses/python">
                                     <div
                                         className="h-[450px] px-5 md:pr-20 py-5 pb-20 bg-black-700 rounded-3xl border-2 border-yellow-200 hover:bg-neutral-600 ease duration-300">
                                         <img src={icon7} alt="course1" className="w-[100px] mx-auto mx-center" />
@@ -127,10 +127,10 @@ export default function CoursesPage() {
                                         className="relative bottom-10 left-2 text-center md:left-[0px] w-[200px] mx-auto px-3 py-3 bg-black border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500">
                                         Learn More
                                     </div>
-                                </a>
+                                </NavLink>
                             </div>
                             <div className="timeline-content js--fadeInRight mx-5 md:px-5 md:py-2 rounded-4xl">
-                                <a href="./python2.html">
+                                <NavLink to="/courses/python2">
                                     <div
                                         className="h-[450px] px-5 md:pr-20 py-5 pb-20 bg-black-700 rounded-3xl border-2 border-yellow-200 hover:bg-neutral-600 ease duration-300">
                                         <img src={icon7} alt="course1" className="w-[100px] mx-auto mx-center" />
@@ -143,10 +143,10 @@ export default function CoursesPage() {
                                         className="relative bottom-10 left-2 text-center md:left-[0px] w-[200px] mx-auto px-3 py-3 bg-black border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500">
                                         Learn More
                                     </div>
-                                </a>
+                                </NavLink>
                             </div>
                             <div className="timeline-content js--fadeInRight mx-5 md:px-5 md:py-2 rounded-4xl">
-                                <a href="../courses/webdev.html">
+                                <NavLink to="../courses/webdev.html">
                                     <div
                                         className="h-[450px] px-5 md:pr-20 py-5 pb-20 bg-black-700 rounded-3xl border-2 border-yellow-200 hover:bg-neutral-600 ease duration-300">
                                         <img src={icon39} alt="course1" className="w-[100px] mx-auto" />
@@ -159,10 +159,10 @@ export default function CoursesPage() {
                                         className="relative bottom-10 left-2 text-center md:left-[0px] w-[200px] mx-auto px-3 py-3 bg-black border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500">
                                         Learn More
                                     </div>
-                                </a>
+                                </NavLink>
                             </div>
                             <div className="timeline-content js--fadeInRight mx-5 md:px-5 md:py-2 rounded-4xl">
-                                <a href="../courses/webdev2.html">
+                                <NavLink to="../courses/webdev2.html">
                                     <div
                                         className="h-[450px] px-5 md:pr-20 py-5 pb-20 bg-black-700 rounded-3xl border-2 border-yellow-200 hover:bg-neutral-600 ease duration-300">
                                         <img src={icon39} alt="course1" className="w-[100px] mx-auto" />
@@ -174,10 +174,10 @@ export default function CoursesPage() {
                                         className="relative bottom-10 left-2 text-center md:left-[0px] w-[200px] mx-auto px-3 py-3 bg-black border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500">
                                         Learn More
                                     </div>
-                                </a>
+                                </NavLink>
                             </div>
                             <div className="timeline-content js--fadeInRight mx-5 md:px-5 md:py-2 rounded-4xl">
-                                <a href="./cs.html">
+                                <NavLink to="./cs.html">
                                     <div
                                         className="h-[450px] px-5 md:pr-20 py-5 pb-20 bg-black-700 rounded-3xl border-2 border-yellow-200 hover:bg-neutral-600 ease duration-300">
                                         <img src={icon69} alt="course1" className="w-[100px] mx-auto" />
@@ -189,10 +189,10 @@ export default function CoursesPage() {
                                         className="relative bottom-10 left-2 text-center md:left-[0px] w-[200px] mx-auto px-3 py-3 bg-black border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500">
                                         Learn More
                                     </div>
-                                </a>
+                                </NavLink>
                             </div>
                             <div className="timeline-content js--fadeInRight mx-5 md:px-5 md:py-2 rounded-4xl">
-                                <a href="./roblox.html">
+                                <NavLink to="./roblox.html">
                                     <div
                                         className="h-[450px] px-5 md:pr-20 py-5 pb-20 bg-black-700 rounded-3xl border-2 border-yellow-200 hover:bg-neutral-600 ease duration-300">
                                         <img src={icon53} alt="course1" className="w-[100px] mx-auto mx-center" />
@@ -205,10 +205,10 @@ export default function CoursesPage() {
                                         className="relative bottom-10 left-2 text-center md:left-[0px] w-[200px] mx-auto px-3 py-3 bg-black border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500">
                                         Learn More
                                     </div>
-                                </a>
+                                </NavLink>
                             </div>
                             <div className="timeline-content js--fadeInRight mx-5 md:px-5 md:py-2 rounded-4xl">
-                                <a href="./arduino.html">
+                                <NavLink to="./arduino.html">
                                     <div
                                         className="h-[450px] px-5 md:pr-20 py-5 pb-20 bg-black-700 rounded-3xl border-2 border-yellow-200 hover:bg-neutral-600 ease duration-300">
                                         <img src={icon75} alt="course1"
@@ -222,10 +222,10 @@ export default function CoursesPage() {
                                         className="relative bottom-10 left-2 text-center md:left-[0px] w-[200px] mx-auto px-3 py-3 bg-black border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500">
                                         Learn More
                                     </div>
-                                </a>
+                                </NavLink>
                             </div>
                             <div className="timeline-content js--fadeInRight mx-5 md:px-5 md:py-2 rounded-4xl">
-                                <a href="./c.html">
+                                <NavLink to="./c.html">
                                     <div
                                         className="h-[450px] px-5 md:pr-20 py-5 pb-20 bg-black-700 rounded-3xl border-2 border-yellow-200 hover:bg-neutral-600 ease duration-300">
                                         <img src={icon71} alt="course1" className="w-[100px] mx-auto" />
@@ -239,10 +239,10 @@ export default function CoursesPage() {
                                         className="relative bottom-10 left-2 text-center md:left-[0px] w-[200px] mx-auto px-3 py-3 bg-black border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500">
                                         Learn More
                                     </div>
-                                </a>
+                                </NavLink>
                             </div>
                             <div className="timeline-content js--fadeInRight mx-5 md:px-5 md:py-2 rounded-4xl">
-                                <a href="./cpp.html">
+                                <NavLink to="./cpp.html">
                                     <div
                                         className="h-[450px] px-5 md:pr-20 py-5 pb-20 bg-black-700 rounded-3xl border-2 border-yellow-200 hover:bg-neutral-600 ease duration-300">
                                         <img src={icon70} alt="course1" className="w-[80px] mx-auto" />
@@ -257,10 +257,10 @@ export default function CoursesPage() {
                                         className="relative bottom-10 left-2 text-center md:left-[0px] w-[200px] mx-auto px-3 py-3 bg-black border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500">
                                         Learn More
                                     </div>
-                                </a>
+                                </NavLink>
                             </div>
                             <div className="timeline-content js--fadeInRight mx-5 md:px-5 md:py-2 rounded-4xl">
-                                <a href="./apcs.html">
+                                <NavLink to="./apcs.html">
                                     <div
                                         className="h-[450px] px-5 md:pr-20 py-5 pb-20 bg-black-700 rounded-3xl border-2 border-yellow-200 hover:bg-neutral-600 ease duration-300">
                                         <img src={icon23} alt="course1" className="w-[80px] mx-auto" />
@@ -274,10 +274,10 @@ export default function CoursesPage() {
                                         className="relative bottom-10 left-2 text-center md:left-[0px] w-[200px] mx-auto px-3 py-3 bg-black border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500">
                                         Learn More
                                     </div>
-                                </a>
+                                </NavLink>
                             </div>
                             <div className="timeline-content js--fadeInRight mx-5 md:px-5 md:py-2 rounded-4xl">
-                                <a href="./ccc.html">
+                                <NavLink to="./ccc.html">
                                     <div
                                         className="h-[450px] px-5 md:pr-20 py-5 pb-20 bg-black-700 rounded-3xl border-2 border-yellow-200 hover:bg-neutral-600 ease duration-300">
                                         <img src={icon59} alt="course1" className="w-[80px] mx-auto" />
@@ -291,7 +291,7 @@ export default function CoursesPage() {
                                         className="relative bottom-10 left-2 text-center md:left-[0px] w-[200px] mx-auto px-3 py-3 bg-black border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500">
                                         Learn More
                                     </div>
-                                </a>
+                                </NavLink>
                             </div>
                             <div className="md:hidden mt-16 h-[30px]">
                                 <div
@@ -307,7 +307,7 @@ export default function CoursesPage() {
                             Courses</h1>
                         <section className="md:w-[500px] mx-auto">
                             <div className="timeline-content js--fadeInRight mx-5 md:px-5 md:py-2 rounded-4xl">
-                                <a href="./comingsoon.html">
+                                <NavLink to="/courses/interviewprep">
                                     <div
                                         className="h-[450px] px-5 md:pr-20 py-5 pb-20 bg-black-700 rounded-3xl border-2 border-yellow-200 hover:bg-neutral-600 ease duration-300">
                                         <img src={icon18} alt="course1" className="w-[100px] mx-auto" />
@@ -321,10 +321,10 @@ export default function CoursesPage() {
                                         className="relative bottom-10 left-2 text-center md:left-[0px] w-[200px] mx-auto px-3 py-3 bg-black border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500">
                                         Learn More
                                     </div>
-                                </a>
+                                </NavLink>
                             </div>
                             <div className="timeline-content js--fadeInRight mx-5 md:px-5 md:py-2 rounded-4xl">
-                                <a href="./comingsoon.html">
+                                <NavLink to="./comingsoon.html">
                                     <div
                                         className="h-[450px] px-5 md:pr-20 py-5 pb-20 bg-black-700 rounded-3xl border-2 border-yellow-200 hover:bg-neutral-600 ease duration-300">
                                         <img src={icon44} alt="course1" className="w-[100px] mx-auto mx-center" />
@@ -336,10 +336,10 @@ export default function CoursesPage() {
                                         className="relative bottom-10 left-2 text-center md:left-[0px] w-[200px] mx-auto px-3 py-3 bg-black border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500">
                                         Learn More
                                     </div>
-                                </a>
+                                </NavLink>
                             </div>
                             <div className="timeline-content js--fadeInRight mx-5 md:px-5 md:py-2 rounded-4xl">
-                                <a href="../courses/comingsoon.html">
+                                <NavLink to="../courses/comingsoon.html">
                                     <div
                                         className="h-[450px] px-5 md:pr-20 py-5 pb-20 bg-black-700 rounded-3xl border-2 border-yellow-200 hover:bg-neutral-600 ease duration-300">
                                         <img src={devops} alt="course1" className="w-[150px] mx-auto" />
@@ -351,10 +351,10 @@ export default function CoursesPage() {
                                         className="relative bottom-10 left-2 text-center md:left-[0px] w-[200px] mx-auto px-3 py-3 bg-black border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500">
                                         Learn More
                                     </div>
-                                </a>
+                                </NavLink>
                             </div>
                             <div className="timeline-content js--fadeInRight mx-5 md:px-5 md:py-2 rounded-4xl">
-                                <a href="./c.html">
+                                <NavLink to="./c.html">
                                     <div
                                         className="h-[450px] px-5 md:pr-20 py-5 pb-20 bg-black-700 rounded-3xl border-2 border-yellow-200 hover:bg-neutral-600 ease duration-300">
                                         <img src={icon71} alt="course1" className="w-[100px] mx-auto" />
@@ -368,10 +368,10 @@ export default function CoursesPage() {
                                         className="relative bottom-10 left-2 text-center md:left-[0px] w-[200px] mx-auto px-3 py-3 bg-black border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500">
                                         Learn More
                                     </div>
-                                </a>
+                                </NavLink>
                             </div>
                             <div className="timeline-content js--fadeInRight mx-5 md:px-5 md:py-2 rounded-4xl">
-                                <a href="./cpp.html">
+                                <NavLink to="./cpp.html">
                                     <div
                                         className="h-[450px] px-5 md:pr-20 py-5 pb-20 bg-black-700 rounded-3xl border-2 border-yellow-200 hover:bg-neutral-600 ease duration-300">
                                         <img src={icon70} alt="course1" className="w-[80px] mx-auto" />
@@ -386,10 +386,10 @@ export default function CoursesPage() {
                                         className="relative bottom-10 left-2 text-center md:left-[0px] w-[200px] mx-auto px-3 py-3 bg-black border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500">
                                         Learn More
                                     </div>
-                                </a>
+                                </NavLink>
                             </div>
                             <div className="timeline-content js--fadeInRight mx-5 md:px-5 md:py-2 rounded-4xl">
-                                <a href="./python.html">
+                                <NavLink to="./python.html">
                                     <div
                                         className="h-[450px] px-5 md:pr-20 py-5 pb-20 bg-black-700 rounded-3xl border-2 border-yellow-200 hover:bg-neutral-600 ease duration-300">
                                         <img src={icon7} alt="course1" className="w-[100px] mx-auto mx-center" />
@@ -402,10 +402,10 @@ export default function CoursesPage() {
                                         className="relative bottom-10 left-2 text-center md:left-[0px] w-[200px] mx-auto px-3 py-3 bg-black border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500">
                                         Learn More
                                     </div>
-                                </a>
+                                </NavLink>
                             </div>
                             <div className="timeline-content js--fadeInRight mx-5 md:px-5 md:py-2 rounded-4xl">
-                                <a href="./python2.html">
+                                <NavLink to="./python2.html">
                                     <div
                                         className="h-[450px] px-5 md:pr-20 py-5 pb-20 bg-black-700 rounded-3xl border-2 border-yellow-200 hover:bg-neutral-600 ease duration-300">
                                         <img src={icon7} alt="course1" className="w-[100px] mx-auto mx-center" />
@@ -418,10 +418,10 @@ export default function CoursesPage() {
                                         className="relative bottom-10 left-2 text-center md:left-[0px] w-[200px] mx-auto px-3 py-3 bg-black border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500">
                                         Learn More
                                     </div>
-                                </a>
+                                </NavLink>
                             </div>
                             <div className="timeline-content js--fadeInRight mx-5 md:px-5 md:py-2 rounded-4xl">
-                                <a href="../courses/webdev.html">
+                                <NavLink to="../courses/webdev.html">
                                     <div
                                         className="h-[450px] px-5 md:pr-20 py-5 pb-20 bg-black-700 rounded-3xl border-2 border-yellow-200 hover:bg-neutral-600 ease duration-300">
                                         <img src={icon39} alt="course1" className="w-[100px] mx-auto" />
@@ -434,10 +434,10 @@ export default function CoursesPage() {
                                         className="relative bottom-10 left-2 text-center md:left-[0px] w-[200px] mx-auto px-3 py-3 bg-black border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500">
                                         Learn More
                                     </div>
-                                </a>
+                                </NavLink>
                             </div>
                             <div className="timeline-content js--fadeInRight mx-5 md:px-5 md:py-2 rounded-4xl">
-                                <a href="../courses/webdev2.html">
+                                <NavLink to="../courses/webdev2.html">
                                     <div
                                         className="h-[450px] px-5 md:pr-20 py-5 pb-20 bg-black-700 rounded-3xl border-2 border-yellow-200 hover:bg-neutral-600 ease duration-300">
                                         <img src={icon39} alt="course1" className="w-[100px] mx-auto" />
@@ -449,10 +449,10 @@ export default function CoursesPage() {
                                         className="relative bottom-10 left-2 text-center md:left-[0px] w-[200px] mx-auto px-3 py-3 bg-black border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500">
                                         Learn More
                                     </div>
-                                </a>
+                                </NavLink>
                             </div>
                             <div className="timeline-content js--fadeInRight mx-5 md:px-5 md:py-2 rounded-4xl">
-                                <a href="./cs.html">
+                                <NavLink to="./cs.html">
                                     <div
                                         className="h-[450px] px-5 md:pr-20 py-5 pb-20 bg-black-700 rounded-3xl border-2 border-yellow-200 hover:bg-neutral-600 ease duration-300">
                                         <img src={icon69} alt="course1" className="w-[100px] mx-auto" />
@@ -464,7 +464,7 @@ export default function CoursesPage() {
                                         className="relative bottom-10 left-2 text-center md:left-[0px] w-[200px] mx-auto px-3 py-3 bg-black border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500">
                                         Learn More
                                     </div>
-                                </a>
+                                </NavLink>
                             </div>
                         </section>
                     </div>
@@ -472,7 +472,7 @@ export default function CoursesPage() {
             </div>
             <div className="fixed bottom-2 right-2 md:bottom-16 md:right-16 bg-transparent">
                 <div className="py-2 bg-transparent z-10">
-                    <a href="https://www.instagram.com/vision.coding/"
+                    <NavLink to="https://www.instagram.com/vision.coding/"
                         className="nav-element py-2 text-lg md:text-2xl bg-transparent" target="_blank">
                         <div className="bg-yellow-300 rounded-full h-[50px] w-[50px] md:h-[75px] md:w-[75px]">
                             <svg fill="#000000" width="65px" height="65px" viewBox="0 0 256 256" id="Flat"
@@ -486,10 +486,10 @@ export default function CoursesPage() {
                                     d="M128,84a44,44,0,1,0,44,44A44.04978,44.04978,0,0,0,128,84Zm0,80a36,36,0,1,1,36-36A36.04061,36.04061,0,0,1,128,164ZM172,32H84A52.059,52.059,0,0,0,32,84v88a52.059,52.059,0,0,0,52,52h88a52.059,52.059,0,0,0,52-52V84A52.059,52.059,0,0,0,172,32Zm44,140a44.04978,44.04978,0,0,1-44,44H84a44.04978,44.04978,0,0,1-44-44V84A44.04978,44.04978,0,0,1,84,40h88a44.04978,44.04978,0,0,1,44,44ZM188,76a8,8,0,1,1-8-8A8.00917,8.00917,0,0,1,188,76Z" />
                             </svg>
                         </div>
-                    </a>
+                    </NavLink>
                 </div>
                 <div className="py-2">
-                    <a href="https://www.facebook.com/profile.php?id=61556365105748" target="_blank"
+                    <NavLink to="https://www.facebook.com/profile.php?id=61556365105748" target="_blank"
                         className="nav-element py-2 text-lg md:text-2xl">
                         <div className="bg-yellow-300 rounded-full h-[50px] w-[50px] md:h-[75px] md:w-[75px]">
                             <svg fill="#000000" height="65px" width="65px" version="1.1" id="Layer_1"
@@ -515,10 +515,10 @@ export default function CoursesPage() {
                                 </g>
                             </svg>
                         </div>
-                    </a>
+                    </NavLink>
                 </div>
                 <div className="py-2">
-                    <a href="http://pf.kakao.com/_LaRxfxj" target="_blank" className="nav-element py-2 text-lg md:text-2xl">
+                    <NavLink to="http://pf.kakao.com/_LaRxfxj" target="_blank" className="nav-element py-2 text-lg md:text-2xl">
                         <div className="bg-yellow-300 rounded-full h-[50px] w-[50px] md:h-[75px] md:w-[75px]">
                             <svg fill="#000000" width="100px" height="100px" viewBox="0 0 24 24" role="img"
                                 xmlns="http://www.w3.org/2000/svg" className="hidden md:block ml-1 pt-2">
@@ -533,10 +533,10 @@ export default function CoursesPage() {
                                     fill="#001018" />
                             </svg>
                         </div>
-                    </a>
+                    </NavLink>
                 </div>
                 <div className="py-2">
-                    <a href="http://wa.me/+16049003707" target="_blank" className="nav-element py-2 text-lg md:text-2xl">
+                    <NavLink to="http://wa.me/+16049003707" target="_blank" className="nav-element py-2 text-lg md:text-2xl">
                         <div className="bg-yellow-300 rounded-full h-[50px] w-[50px] md:h-[75px] md:w-[75px]">
                             <svg fill="#000000" height="60px" width="60px" version="1.1" id="Layer_1"
                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -585,7 +585,7 @@ export default function CoursesPage() {
                                 </g>
                             </svg>
                         </div>
-                    </a>
+                    </NavLink>
                 </div>
             </div>
         </main>

@@ -329,6 +329,61 @@ main {
     /* Ensure text and button are above the overlay */
 }
 
+.summercamp {
+    height: 500px;
+    padding: 30px;
+    background-image: url("/summercamp.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 0 5px #000;
+}
+
+.summercamp::before {
+    height: 500px;
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.summercamp h1,
+.summercamp p {
+    z-index: 1;
+}
+
+.summercamp2 {
+    height: 500px;
+    padding: 30px;
+    background-image: url("/arduino.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 0 5px #000;
+}
+
+.summercamp2::before {
+    height: 500px;
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+
+.summercamp2 h1,
+.summercamp2 p {
+    z-index: 1;
+}
+
 #background-video {
     width: 100vw;
     object-fit: cover;
@@ -373,12 +428,12 @@ main {
         height: 700px;
     }
 
-    .summercamp-korean {
-        height: 2000px;
+    .summercamp2 {
+        height: 700px;
     }
 
-    .summercamp-korean::before {
-        height: 2000px;
+    .summercamp2::before {
+        height: 700px;
     }
 
     .arrow {
