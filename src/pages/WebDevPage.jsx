@@ -1,4 +1,7 @@
 
+import { useEffect } from "react";
+import $ from 'jquery';
+import ScrollReveal from 'scrollreveal'
 import icon14 from "/icon14internet.png"
 import icon28 from "/icon28js.png"
 import icon72 from "/icon72html.svg"
@@ -6,10 +9,67 @@ import icon72css from "/icon72css.svg"
 
 export default function WebDevPage() {
 
+    useEffect(() => {
+        document.title = 'Web Dev | Vision Coding';
+    }, []);
+
+    $(function () {
+        window.sr = ScrollReveal();
+        if ($(window).width() < 768) {
+            if ($('.timeline-content').hasClass('js--fadeInLeft')) {
+                $('.timeline-content').removeClass('js--fadeInLeft').addClass('js--fadeInRight');
+            }
+            sr.reveal('.js--fadeInRight', {
+                origin: 'right',
+                distance: '300px',
+                easing: 'ease-in-out',
+                duration: 800,
+            });
+        }
+        else {
+            sr.reveal('.js--fadeInLeft', {
+                origin: 'left',
+                distance: '300px',
+                easing: 'ease-in-out',
+                duration: 800,
+            });
+            sr.reveal('.js--fadeInRight', {
+                origin: 'right',
+                distance: '300px',
+                easing: 'ease-in-out',
+                duration: 800,
+            });
+            sr.reveal('.js--fadeInBottom', {
+                origin: 'bottom',
+                distance: '300px',
+                easing: 'ease-in-out',
+                duration: 800,
+            });
+            sr.reveal('.js--fadeInTop', {
+                origin: 'top',
+                distance: '300px',
+                easing: 'ease-in-out',
+                duration: 800,
+            });
+        }
+        sr.reveal('.js--fadeInLeft', {
+            origin: 'left',
+            distance: '300px',
+            easing: 'ease-in-out',
+            duration: 800,
+        });
+        sr.reveal('.js--fadeInRight', {
+            origin: 'right',
+            distance: '300px',
+            easing: 'ease-in-out',
+            duration: 800,
+        });
+    });
+
     return (
         <main className="flex-1 md:pl-20 md:max-w-[1400px]">
             <div className="bg-black text-white md:flex md:pt-20">
-                <section className="flex-1 mx-auto md:mx-20 py-10 md:px-10 px-2">
+                <section className="js--fadeInLeft flex-1 mx-auto md:mx-20 py-10 md:px-10 px-2">
                     <h3 className="timeline-content js--fadeInLeft text-5xl md:text-6xl py-10 pb-2">WEB DEVELOPMENT</h3>
                     <h3 className="text-5xl md:text-6xl pb-5"></h3>
                     <p className="timeline-content js--fadeInLeft font-bold underline">Overview:</p>

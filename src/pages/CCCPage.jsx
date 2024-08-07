@@ -1,14 +1,74 @@
 
+import { useEffect } from "react";
+import $ from 'jquery';
+import ScrollReveal from 'scrollreveal'
 import icon8 from "/icon8settings.png"
 import icon17 from "/icon17algorithm.png"
 import icon59 from "/icon59hacker.png"
 
 export default function CCCPage() {
 
+    useEffect(() => {
+        document.title = 'CCC | Vision Coding';
+    }, []);
+
+    $(function () {
+        window.sr = ScrollReveal();
+        if ($(window).width() < 768) {
+            if ($('.timeline-content').hasClass('js--fadeInLeft')) {
+                $('.timeline-content').removeClass('js--fadeInLeft').addClass('js--fadeInRight');
+            }
+            sr.reveal('.js--fadeInRight', {
+                origin: 'right',
+                distance: '300px',
+                easing: 'ease-in-out',
+                duration: 800,
+            });
+        }
+        else {
+            sr.reveal('.js--fadeInLeft', {
+                origin: 'left',
+                distance: '300px',
+                easing: 'ease-in-out',
+                duration: 800,
+            });
+            sr.reveal('.js--fadeInRight', {
+                origin: 'right',
+                distance: '300px',
+                easing: 'ease-in-out',
+                duration: 800,
+            });
+            sr.reveal('.js--fadeInBottom', {
+                origin: 'bottom',
+                distance: '300px',
+                easing: 'ease-in-out',
+                duration: 800,
+            });
+            sr.reveal('.js--fadeInTop', {
+                origin: 'top',
+                distance: '300px',
+                easing: 'ease-in-out',
+                duration: 800,
+            });
+        }
+        sr.reveal('.js--fadeInLeft', {
+            origin: 'left',
+            distance: '300px',
+            easing: 'ease-in-out',
+            duration: 800,
+        });
+        sr.reveal('.js--fadeInRight', {
+            origin: 'right',
+            distance: '300px',
+            easing: 'ease-in-out',
+            duration: 800,
+        });
+    });
+
     return (
         <main class="flex-1 md:pl-20 md:max-w-[1400px]">
             <div class="bg-black text-white md:flex md:pt-20 px-2">
-                <section class="flex-1 mx-auto md:mx-20 py-10 md:px-10">
+                <section class="js--fadeInLeft flex-1 mx-auto md:mx-20 py-10 md:px-10">
                     <h3 class="text-5xl md:text-6xl py-10 pb-2">Canadian Computing Competition</h3>
                     <h3 class="text-5xl md:text-6xl pb-5"></h3>
                     <p class="font-bold underline">Overview:</p>

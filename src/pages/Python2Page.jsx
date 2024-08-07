@@ -1,9 +1,132 @@
 
+import { useEffect } from "react";
+import $ from 'jquery';
+import ScrollReveal from 'scrollreveal'
 import icon7 from "/icon7python2.png"
 import icon13 from "/icon13pc.png"
 import icon17 from "/icon17algorithm.png"
 
 export default function Python2Page(){
+
+    useEffect(() => {
+        document.title = 'Python 2 | Vision Coding';
+    }, []);
+
+    $(function () {
+        window.sr = ScrollReveal();
+        if ($(window).width() < 768) {
+            if ($('.timeline-content').hasClass('js--fadeInLeft')) {
+                $('.timeline-content').removeClass('js--fadeInLeft').addClass('js--fadeInRight');
+            }
+            sr.reveal('.js--fadeInRight', {
+                origin: 'right',
+                distance: '300px',
+                easing: 'ease-in-out',
+                duration: 800,
+            });
+        }
+        else {
+            sr.reveal('.js--fadeInLeft', {
+                origin: 'left',
+                distance: '300px',
+                easing: 'ease-in-out',
+                duration: 800,
+            });
+            sr.reveal('.js--fadeInRight', {
+                origin: 'right',
+                distance: '300px',
+                easing: 'ease-in-out',
+                duration: 800,
+            });
+            sr.reveal('.js--fadeInBottom', {
+                origin: 'bottom',
+                distance: '300px',
+                easing: 'ease-in-out',
+                duration: 800,
+            });
+            sr.reveal('.js--fadeInTop', {
+                origin: 'top',
+                distance: '300px',
+                easing: 'ease-in-out',
+                duration: 800,
+            });
+        }
+        sr.reveal('.js--fadeInLeft', {
+            origin: 'left',
+            distance: '300px',
+            easing: 'ease-in-out',
+            duration: 800,
+        });
+        sr.reveal('.js--fadeInRight', {
+            origin: 'right',
+            distance: '300px',
+            easing: 'ease-in-out',
+            duration: 800,
+        });
+    });
+
+    useEffect(() => {
+        const $images = $('.image');
+
+        $images.each((index, image) => {
+            $(image).on('click', () => {
+                const lightbox = $('<div></div>').addClass('lightbox')[0];
+
+                const fullSizeImage = document.createElement('img');
+                fullSizeImage.src = image.src;
+                fullSizeImage.classList.add('lightbox-image');
+                lightbox.appendChild(fullSizeImage);
+
+                const leftArrow = document.createElement('div');
+                leftArrow.classList.add('arrow', 'left-arrow');
+                leftArrow.innerHTML = '&lt;';
+                lightbox.appendChild(leftArrow);
+
+                const rightArrow = document.createElement('div');
+                rightArrow.classList.add('arrow', 'right-arrow');
+                rightArrow.innerHTML = '&gt;';
+                lightbox.appendChild(rightArrow);
+
+                let currentIndex = index;
+
+                function showImage(index) {
+                    fullSizeImage.classList.add('fade-out');
+                    setTimeout(() => {
+                        fullSizeImage.src = $images.eq(index).attr('src');
+                        fullSizeImage.classList.remove('fade-out');
+                        fullSizeImage.classList.add('fade-in');
+                    }, 300);
+                }
+
+                $(leftArrow).on('click', (event) => {
+                    event.stopPropagation();
+                    currentIndex = (currentIndex - 1 + $images.length) % $images.length;
+                    showImage(currentIndex);
+                });
+
+                $(rightArrow).on('click', (event) => {
+                    event.stopPropagation();
+                    currentIndex = (currentIndex + 1) % $images.length;
+                    showImage(currentIndex);
+                });
+
+                $(lightbox).on('click', (event) => {
+                    if (event.target === lightbox) {
+                        lightbox.classList.add('fade-out');
+                        setTimeout(() => {
+                            document.body.removeChild(lightbox);
+                        }, 500);
+                    }
+                });
+
+                document.body.appendChild(lightbox);
+
+                setTimeout(() => {
+                    lightbox.classList.add('fade-in');
+                }, 50);
+            });
+        });
+    }, []);
 
     return(
         <main className="flex-1 md:pl-20 md:max-w-[1400px]">

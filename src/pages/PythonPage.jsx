@@ -1,8 +1,12 @@
 
+import { useEffect } from "react";
 import icon7 from "/icon7python2.png"
 
 export default function PythonPage() {
 
+    useEffect(() => {
+        document.title = 'Python | Vision Coding';
+    }, []);
 
     return (
         <main className="flex-1">
