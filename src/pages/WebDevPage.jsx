@@ -1,4 +1,6 @@
 
+import icon14 from "/icon14internet.png"
+import icon72 from "/icon72html.svg"
 
 export default function WebDevPage() {
 
@@ -15,7 +17,7 @@ export default function WebDevPage() {
                     <div className="py-10 ">
                         <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 1: Introduction to Web Development
                         </h3>
-                        <img src="../images/icon14internet.png" alt="scratch logo"
+                        <img src={icon14} alt="scratch logo"
                             className="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul className="list-disc list-inside pl-2 md:pl-5">
@@ -28,7 +30,7 @@ export default function WebDevPage() {
                     </ul>
                     <div className="py-10 ">
                         <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 2: Introduction to HTML</h3>
-                        <img src="../images/icon72html.svg" alt="logo" className="mx-auto md:float-right w-[75px]" />
+                        <img src={icon72} alt="logo" className="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul className="list-disc list-inside pl-2 md:pl-5">
                         <li className="text-lg">Topics:</li>
@@ -42,7 +44,7 @@ export default function WebDevPage() {
                     <div className="py-10 ">
                         <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 3: HTML Tags
                         </h3>
-                        <img src="../images/icon72html.svg" alt="logo" className="mx-auto md:float-right w-[75px] md:my-2" />
+                        <img src={icon72} alt="logo" className="mx-auto md:float-right w-[75px] md:my-2" />
                     </div>
                     <ul className="list-disc list-inside pl-2 md:pl-5">
                         <li className="text-lg">Topics:</li>

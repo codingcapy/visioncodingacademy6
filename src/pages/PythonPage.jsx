@@ -1,4 +1,5 @@
 
+import icon7 from "/icon7python2.png"
 
 export default function PythonPage() {
 
@@ -35,7 +36,7 @@ export default function PythonPage() {
                     <p className="text-sm md:text-lg">Comments and documentation</p>
                     <h4 className="text-lg font-bold py-2 md:py-4">Project:</h4>
                     <p className="text-sm md:text-lg">Build a calculator level 1</p>
-                    <img src="../images/icon7python2.png" alt="logo" className="w-[75px] pt-5"/>
+                    <img src={icon7} alt="logo" className="w-[75px] pt-5"/>
                 </div>
                 <div className="bg-white text-black px-10 py-10 rounded-xl shadow-2xl shadow-white mx-5 md:mx-auto md:w-[600px] my-10">
                     <h3 className="text-xl text-red-400 font-bold md:pb-5">Week 2: Comparisons, Conditional, Data
@@ -50,11 +51,11 @@ export default function PythonPage() {
                     <p className="text-sm md:text-lg">Comments and documentation</p>
                     <h4 className="text-lg font-bold py-2 md:py-4">Project:</h4>
                     <p className="text-sm md:text-lg">Build a calculator level 2</p>
-                    <img src="../images/icon7python2.png" alt="logo" className="w-[75px] pt-5"/>
+                    <img src={icon7} alt="logo" className="w-[75px] pt-5"/>
                 </div>
                 <div className="py-10 ">
                     <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 3: Loops continued</h3>
-                    <img src="../images/icon7python2.png" alt="logo" className="mx-auto md:float-right w-[75px] md:my-2"/>
+                    <img src={icon7} alt="logo" className="mx-auto md:float-right w-[75px] md:my-2"/>
                 </div>
                 <ul className="list-disc list-inside pl-2 md:pl-5">
                     <li className="text-lg">Topics:</li>
@@ -71,7 +72,7 @@ export default function PythonPage() {
                 </ul>
                 <div className="py-10 ">
                     <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 4: Functions</h3>
-                    <img src="../images/icon7python2.png" alt="logo" className="mx-auto md:float-right w-[75px]"/>
+                    <img src={icon7} alt="logo" className="mx-auto md:float-right w-[75px]"/>
                 </div>
                 <ul className="list-disc list-inside pl-2 md:pl-5">
                     <li className="text-lg">Topics:</li>
@@ -87,7 +88,7 @@ export default function PythonPage() {
                 </ul>
                 <div className="py-10 ">
                     <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 5: Libraries</h3>
-                    <img src="../images/icon7python2.png" alt="logo" className="mx-auto md:float-right w-[75px]"/>
+                    <img src={icon7} alt="logo" className="mx-auto md:float-right w-[75px]"/>
                 </div>
                 <ul className="list-disc list-inside pl-2 md:pl-5">
                     <li className="text-lg">Topics:</li>
@@ -105,7 +106,7 @@ export default function PythonPage() {
                 </ul>
                 <div className="py-10 ">
                     <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 6: Data Structures</h3>
-                    <img src="../images/icon7python2.png" alt="logo" className="mx-auto md:float-right w-[75px]"/>
+                    <img src={icon7} alt="logo" className="mx-auto md:float-right w-[75px]"/>
                 </div>
                 <ul className="list-disc list-inside pl-2 md:pl-5">
                     <li className="text-lg">Topics:</li>
@@ -120,7 +121,7 @@ export default function PythonPage() {
                 </ul>
                 <div className="py-10 ">
                     <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 7: Dictionaries and String</h3>
-                    <img src="../images/icon7python2.png" alt="logo" className="mx-auto md:float-right w-[75px]"/>
+                    <img src={icon7} alt="logo" className="mx-auto md:float-right w-[75px]"/>
                 </div>
                 <ul className="list-disc list-inside pl-2 md:pl-5">
                     <li className="text-lg">Topics:</li>
@@ -137,7 +138,7 @@ export default function PythonPage() {
                 </ul>
                 <div className="py-10 ">
                     <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 8: Type Conversion and File I/O</h3>
-                    <img src="../images/icon7python2.png" alt="logo" className="mx-auto md:float-right w-[75px]"/>
+                    <img src={icon7} alt="logo" className="mx-auto md:float-right w-[75px]"/>
                 </div>
                 <ul className="list-disc list-inside pl-2 md:pl-5">
                     <li className="text-lg">Topics:</li>

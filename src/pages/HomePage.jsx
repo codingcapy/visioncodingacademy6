@@ -106,7 +106,7 @@ export default function HomePage() {
                         <img src={logoAlpha} alt="" className="w-[90px] h-[100px] md:w-[360px] md:h-[405px]"/>
                         <div className="flex flex-col md:my-24 md:ml-40 md:pl-10 md:border-l-8">
                             <h1 className="text-4xl md:text-8xl text-yellow-100">VISION CODING ACADEMY</h1>
-                            <p className="text-lg md:text-7xl py-2 md:pt-10 pb-0 mulish-light">Premium IT Education</p>
+                            <p className="text-lg md:text-7xl py-2 md:pt-10 pb-0 mulish-light">Become a Great Engineer</p>
                         </div>
                     </div>
                     <p className="text-center text-lg md:text-2xl py-5 md:py-0 md:pb-5 drop-shadow">Discover the Power to

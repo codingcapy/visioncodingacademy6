@@ -1,5 +1,7 @@
 
-
+import icon7 from "/icon7python2.png"
+import icon13 from "/icon13pc.png"
+import icon17 from "/icon17algorithm.png"
 
 export default function Python2Page(){
 
@@ -23,7 +25,7 @@ export default function Python2Page(){
                     <section className="flex-1 py-10">
                         <div className="py-10 ">
                             <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 1: Python Review and OOP</h3>
-                            <img src="../images/icon13pc.png" alt="logo" className="mx-auto md:float-right w-[75px]"/>
+                            <img src={icon13} alt="logo" className="mx-auto md:float-right w-[75px]"/>
                         </div>
                         <ul className="list-disc list-inside pl-2 md:pl-5">
                             <li className="text-lg">Topics:</li>
@@ -40,7 +42,7 @@ export default function Python2Page(){
                         <div className="py-10 ">
                             <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 2: User Account System Part 1
                             </h3>
-                            <img src="../images/icon7python2.png" alt="logo" className="mx-auto md:float-right w-[75px]"/>
+                            <img src={icon7} alt="logo" className="mx-auto md:float-right w-[75px]"/>
                         </div>
                         <ul className="list-disc list-inside pl-2 md:pl-5">
                             <li className="text-lg">Topics:</li>
@@ -57,7 +59,7 @@ export default function Python2Page(){
                         </ul>
                         <div className="py-10 ">
                             <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">User Account System Part 2</h3>
-                            <img src="../images/icon7python2.png" alt="logo"
+                            <img src={icon7} alt="logo"
                                 className="mx-auto md:float-right w-[75px] md:my-2"/>
                         </div>
                         <ul className="list-disc list-inside pl-2 md:pl-5">
@@ -74,7 +76,7 @@ export default function Python2Page(){
                         </ul>
                         <div className="py-10 ">
                             <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 4: Pygame Part 1</h3>
-                            <img src="../images/icon7python2.png" alt="logo" className="mx-auto md:float-right w-[75px]"/>
+                            <img src={icon7} alt="logo" className="mx-auto md:float-right w-[75px]"/>
                         </div>
                         <ul className="list-disc list-inside pl-2 md:pl-5">
                             <li className="text-lg">Topics:</li>
@@ -90,7 +92,7 @@ export default function Python2Page(){
                         </ul>
                         <div className="py-10 ">
                             <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 5: Pygame Part 2</h3>
-                            <img src="../images/icon7python2.png" alt="logo" className="mx-auto md:float-right w-[75px]"/>
+                            <img src={icon7} alt="logo" className="mx-auto md:float-right w-[75px]"/>
                         </div>
                         <ul className="list-disc list-inside pl-2 md:pl-5">
                             <li className="text-lg">Topics:</li>
@@ -106,7 +108,7 @@ export default function Python2Page(){
                         </ul>
                         <div className="py-10 ">
                             <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 6: Pygame Part 3</h3>
-                            <img src="../images/icon7python2.png" alt="logo" className="mx-auto md:float-right w-[75px]"/>
+                            <img src={icon7} alt="logo" className="mx-auto md:float-right w-[75px]"/>
                         </div>
                         <ul className="list-disc list-inside pl-2 md:pl-5">
                             <li className="text-lg">Topics:</li>
@@ -122,7 +124,7 @@ export default function Python2Page(){
                         </ul>
                         <div className="py-10 ">
                             <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 7: Pygame Part 4</h3>
-                            <img src="../images/icon7python2.png" alt="logo" className="mx-auto md:float-right w-[75px]"/>
+                            <img src={icon7} alt="logo" className="mx-auto md:float-right w-[75px]"/>
                         </div>
                         <ul className="list-disc list-inside pl-2 md:pl-5">
                             <li className="text-lg">Topics:</li>
@@ -139,7 +141,7 @@ export default function Python2Page(){
                         </ul>
                         <div className="py-10 ">
                             <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 8: Pygame Part 5</h3>
-                            <img src="../images/icon7python2.png" alt="logo" className="mx-auto md:float-right w-[75px]"/>
+                            <img src={icon7} alt="logo" className="mx-auto md:float-right w-[75px]"/>
                         </div>
                         <ul className="list-disc list-inside pl-2 md:pl-5">
                             <li className="text-lg">Topics:</li>
@@ -155,7 +157,7 @@ export default function Python2Page(){
                         <div className="py-10 ">
                             <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 9: Flask Webserver
                             </h3>
-                            <img src="../images/icon17algorithm.png" alt="logo" className="mx-auto md:float-right w-[75px]"/>
+                            <img src={icon17} alt="logo" className="mx-auto md:float-right w-[75px]"/>
                         </div>
                         <ul className="list-disc list-inside pl-2 md:pl-5">
                             <li className="text-lg">Topics:</li>
@@ -172,7 +174,7 @@ export default function Python2Page(){
                         <div className="py-10 ">
                             <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 10: Flask Webserver part 2
                             </h3>
-                            <img src="../images/icon17algorithm.png" alt="logo" className="mx-auto md:float-right w-[75px]"/>
+                            <img src={icon17} alt="logo" className="mx-auto md:float-right w-[75px]"/>
                         </div>
                         <ul className="list-disc list-inside pl-2 md:pl-5">
                             <li className="text-lg">Topics:</li>
@@ -190,7 +192,7 @@ export default function Python2Page(){
                         <div className="py-10 ">
                             <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 11: Flask Webserver part 3
                             </h3>
-                            <img src="../images/icon17algorithm.png" alt="logo" className="mx-auto md:float-right w-[75px]"/>
+                            <img src={icon17} alt="logo" className="mx-auto md:float-right w-[75px]"/>
                         </div>
                         <ul className="list-disc list-inside pl-2 md:pl-5">
                             <li className="text-lg">Topics:</li>
@@ -208,7 +210,7 @@ export default function Python2Page(){
                         <div className="py-10 ">
                             <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 12: Review
                             </h3>
-                            <img src="../images/icon17algorithm.png" alt="logo" className="mx-auto md:float-right w-[75px]"/>
+                            <img src={icon17} alt="logo" className="mx-auto md:float-right w-[75px]"/>
                         </div>
                         <ul className="list-disc list-inside pl-2 md:pl-5">
                             <li className="text-lg">Topics:</li>
