@@ -111,12 +111,12 @@ export default function HomePage() {
                     </div>
                     <p className="text-center text-lg md:text-2xl py-5 md:py-0 md:pb-5 drop-shadow">Discover the Power to
                         <span
-                            className="bg-gradient-to-r from-yellow-400 to-yellow-100 inline-block text-transparent bg-clip-text">Transform
+                            className="pl-2 bg-gradient-to-r from-yellow-400 to-yellow-100 inline-block text-transparent bg-clip-text">Transform
                             the Future</span> with
                         Every Line
                         of
                         <span
-                            className="bg-gradient-to-r from-yellow-400 to-yellow-100 inline-block text-transparent bg-clip-text">Code</span>
+                            className="pl-2 bg-gradient-to-r from-yellow-400 to-yellow-100 inline-block text-transparent bg-clip-text">Code</span>
                     </p>
                     <div className="flex flex-col mx-auto mt-10">
                         <a href="./courses/index.html"

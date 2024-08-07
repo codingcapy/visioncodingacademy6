@@ -19,9 +19,9 @@ export default function SignupPage() {
             <div className="bg-black text-white flex flex-col mx-auto">
                 <section className="max-w-[1000px] mx-auto py-5">
                     <h3 className="pl-2 text-5xl md:text-6xl py-10 text-center">Signup</h3>
-                    <p className="text-center md:text-lg">Sign up to take <span className="text-teal-300">full advantage</span>
-                        of our <span className="text-teal-300">features</span></p>
-                    <p className="text-center md:text-lg">as a member of <span className="text-teal-300">Vision Coding
+                    <p className="text-center md:text-lg">Sign up to take <span className="text-yellow-200 pr-1">full advantage</span>
+                        of our <span className="text-yellow-200">features</span></p>
+                    <p className="text-center md:text-lg">as a member of <span className="text-yellow-200">Vision Coding
                         Academy</span></p>
                 </section>
                 <section className="py-5 md:pl-20 mx-auto">
@@ -50,7 +50,7 @@ export default function SignupPage() {
                             className="px-3 py-3 my-7 border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500">Sign
                             Up</button>
                         <p className="text-lg text-center">or <a href="../login/index.html"
-                            className="text-teal-300 font-bold">Login</a>
+                            className="text-yellow-200 font-bold">Login</a>
                         </p>
                     </form>
                 </section>

@@ -210,7 +210,7 @@ export default function AboutPage() {
                 <section className="max-w-[1000px] mx-auto py-10">
                     <h3 className="pl-2 text-2xl md:text-6xl py-10 text-yellow-200">Meet The Team</h3>
                 </section>
-                <section className="py-10 md:grid md:grid-cols-5 md:pl-20">
+                <section className="py-10 md:grid md:grid-cols-5 md:pl-20 mx-auto">
                     <div>
                         <img src={dannyImg} alt="Danny" className="timeline-content js--fadeInRight w-[250px] px-2 cursor-pointer" />
                         <h3 className="timeline-content js--fadeInRight pl-2 text-2xl">Danny</h3>

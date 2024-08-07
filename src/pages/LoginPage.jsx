@@ -19,9 +19,9 @@ export default function LoginPage() {
             <div className="bg-black text-white flex flex-col mx-auto">
                 <section className="max-w-[1000px] mx-auto py-5">
                     <h3 className="pl-2 text-5xl md:text-6xl py-5 text-center">Login</h3>
-                    <p className="text-center md:text-lg">Login to take <span className="text-teal-300">full advantage</span>
-                        of our <span className="text-teal-300">features</span></p>
-                    <p className="text-center md:text-lg">as a member of <span className="text-teal-300">Vision Coding
+                    <p className="text-center md:text-lg">Login to take <span className="pr-1 text-yellow-200">full advantage</span>
+                        of our <span className=" text-yellow-200">features</span></p>
+                    <p className="text-center md:text-lg">as a member of <span className="text-yellow-200">Vision Coding
                         Academy</span></p>
                 </section>
                 <section className="py-10 md:pl-20 mx-auto">
@@ -49,9 +49,9 @@ export default function LoginPage() {
                         <button
                             className="px-3 py-3 my-7 border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500">Login</button>
                         <p className="text-lg text-center">New User? <a href="../signup/index.html"
-                            className="text-teal-300 font-bold">Sign Up</a></p>
+                            className="text-yellow-200 font-bold">Sign Up</a></p>
                         <p className="text-lg text-center">Forgot Password? <a href="#"
-                            className="text-teal-300 font-bold">Recovery</a></p>
+                            className="text-yellow-200 font-bold">Recovery</a></p>
                     </form>
                 </section>
             </div>

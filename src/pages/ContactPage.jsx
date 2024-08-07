@@ -146,7 +146,7 @@ export default function ContactPage() {
                 </h1>
                 <p className="timeline-content js--fadeInRight text-md md:text-2xl pt-5">Coding isn't just for computers,</p>
                 <p className="timeline-content js--fadeInRight text-md md:text-2xl pt-5 text-center">it's the language of the <span
-                    className="text-yellow-200 font-bold">future</span> ,
+                    className="text-yellow-200 font-bold">future</span>,
                     and your fluency begins <span className="text-yellow-200 font-bold">now!</span></p>
                 <p className="timeline-content js--fadeInRight text-lg md:text-2xl pt-5">English / 한국어</p>
             </section>
@@ -187,7 +187,7 @@ export default function ContactPage() {
                     </section>
                     <section className="mx-auto">
                         <form action="#" className="flex flex-col mx-auto">
-                            <h1 className="text-center text-4xl">Questions?</h1>
+                            <h1 className="text-center text-4xl py-10">Questions?</h1>
                             <div className="flex flex-col">
                                 <label htmlFor="title">First Name</label>
                                 <input type="text" name='title' id='title' placeholder="First Name" required
