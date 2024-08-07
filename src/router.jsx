@@ -27,6 +27,10 @@ import WebDev2Page from "./pages/WebDev2Page";
 import CSharpPage from "./pages/CSharpPage";
 import RobloxPage from "./pages/RobloxPage";
 import ArduinoPage from "./pages/ArduinoPage";
+import CPage from "./pages/CPage";
+import CPlusPlusPage from "./pages/CPlusPlusPage";
+import APCSPage from "./pages/APCSPage";
+import CCCPage from "./pages/CCCPage";
 
 export function Router() {
     const router = createBrowserRouter(
@@ -47,6 +51,10 @@ export function Router() {
                 <Route path="/courses/csharp" element={<CSharpPage />} />
                 <Route path="/courses/roblox" element={<RobloxPage />} />
                 <Route path="/courses/arduino" element={<ArduinoPage />} />
+                <Route path="/courses/c" element={<CPage />} />
+                <Route path="/courses/cpp" element={<CPlusPlusPage />} />
+                <Route path="/courses/apcs" element={<APCSPage />} />
+                <Route path="/courses/ccc" element={<CCCPage />} />
                 <Route path="/courses/interviewprep" element={<InterviewPrepPage />} />
                 <Route path="/courses/advancedcs" element={<AdvancedCsPage />} />
                 <Route path="/courses/devops" element={<DevOpsPage />} />

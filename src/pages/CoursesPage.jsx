@@ -452,7 +452,7 @@ export default function CoursesPage() {
                                 </NavLink>
                             </div>
                             <div className="timeline-content js--fadeInRight mx-5 md:px-5 md:py-2 rounded-4xl">
-                                <NavLink to="./cs">
+                                <NavLink to="/courses/csharp">
                                     <div
                                         className="h-[450px] px-5 md:pr-20 py-5 pb-20 bg-black-700 rounded-3xl border-2 border-yellow-200 hover:bg-neutral-600 ease duration-300">
                                         <img src={icon69} alt="course1" className="w-[100px] mx-auto" />
