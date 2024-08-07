@@ -1,5 +1,11 @@
 
 
+import icon14 from "/icon14internet.png"
+import icon28 from "/icon28js.png"
+import icon29 from "/icon29nodejs.png"
+import icon76 from "/icon76react.svg"
+import icon40 from "/icon40database-storage.png"
+
 export default function WebDev2Page() {
 
 
@@ -18,7 +24,7 @@ export default function WebDev2Page() {
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 1: HTML5 CSS3 and JS ES06 Review
                         </h3>
-                        <img src="../images/icon14internet.png" alt="scratch logo"
+                        <img src={icon14} alt="scratch logo"
                             class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
@@ -32,7 +38,7 @@ export default function WebDev2Page() {
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 2: Introduction to React.js</h3>
-                        <img src="../images/icon76react.svg" alt="logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon76} alt="logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -44,7 +50,7 @@ export default function WebDev2Page() {
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 3: Bundlers and Components</h3>
-                        <img src="../images/icon76react.svg" alt="logo" class="mx-auto md:float-right w-[75px] md:my-2" />
+                        <img src={icon76} alt="logo" class="mx-auto md:float-right w-[75px] md:my-2" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -64,7 +70,7 @@ export default function WebDev2Page() {
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 4: Introduction to Tailwind and
                             React Hooks</h3>
-                        <img src="../images/icon76react.svg" alt="logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon76} alt="logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -83,7 +89,7 @@ export default function WebDev2Page() {
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 5: State Management and React Router
                         </h3>
-                        <img src="../images/icon76react.svg" alt="logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon76} alt="logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -101,7 +107,7 @@ export default function WebDev2Page() {
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">
                             Week 6: Introduction to Node.js</h3>
-                        <img src="../images/icon29nodejs.png" alt="logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon29} alt="logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -117,7 +123,7 @@ export default function WebDev2Page() {
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 7: HTTP Webserver</h3>
-                        <img src="../images/icon29nodejs.png" alt="logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon29} alt="logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -133,7 +139,7 @@ export default function WebDev2Page() {
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 8: Introduction to Databases</h3>
-                        <img src="../images/icon40database-storage.png" alt="logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon40} alt="logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -151,7 +157,7 @@ export default function WebDev2Page() {
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 9: Express.js and Asynchronous Functions</h3>
-                        <img src="../images/icon29nodejs.png" alt="logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon29} alt="logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -168,7 +174,7 @@ export default function WebDev2Page() {
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 10: Axios and Full Stack Integration</h3>
-                        <img src="../images/icon28js.png" alt="logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon28} alt="logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -184,7 +190,7 @@ export default function WebDev2Page() {
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 11: Authentication</h3>
-                        <img src="../images/icon28js.png" alt="logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon28} alt="logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -202,7 +208,7 @@ export default function WebDev2Page() {
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 12: Final Project</h3>
-                        <img src="../images/icon28js.png" alt="logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon28} alt="logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>

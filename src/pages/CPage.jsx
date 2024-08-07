@@ -1,4 +1,5 @@
 
+import icon71 from "/icon71c.png"
 
 export default function CPage(){
 
@@ -19,7 +20,7 @@ export default function CPage(){
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 1: Introduction to Programming /
                             Input & Output / Variables and Data Types
                         </h3>
-                        <img src="../images/icon71c.png" alt="scratch logo" class="mx-auto md:float-right w-[75px]"/>
+                        <img src={icon71} alt="scratch logo" class="mx-auto md:float-right w-[75px]"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -39,7 +40,7 @@ export default function CPage(){
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 2: Conditional Statements (if/else)
                         </h3>
-                        <img src="../images/icon71c.png" alt="scratch logo" class="mx-auto md:float-right w-[75px]"/>
+                        <img src={icon71} alt="scratch logo" class="mx-auto md:float-right w-[75px]"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -56,7 +57,7 @@ export default function CPage(){
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 3: Loops (for, while)</h3>
-                        <img src="../images/icon71c.png" alt="logo" class="mx-auto md:float-right w-[75px]"/>
+                        <img src={icon71} alt="logo" class="mx-auto md:float-right w-[75px]"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -76,7 +77,7 @@ export default function CPage(){
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 4: Functions (defining and calling
                             functions)</h3>
-                        <img src="../images/icon71c.png" alt="logo" class="mx-auto md:float-right w-[75px] md:my-2"/>
+                        <img src={icon71} alt="logo" class="mx-auto md:float-right w-[75px] md:my-2"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -93,7 +94,7 @@ export default function CPage(){
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 5: Arrays (One-Dimensional)</h3>
-                        <img src="../images/icon71c.png" alt="logo" class="mx-auto md:float-right w-[75px]"/>
+                        <img src={icon71} alt="logo" class="mx-auto md:float-right w-[75px]"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -112,7 +113,7 @@ export default function CPage(){
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 6: Strings (String
                             Manipulation)Strings (String Manipulation)</h3>
-                        <img src="../images/icon71c.png" alt="logo" class="mx-auto md:float-right w-[75px]"/>
+                        <img src={icon71} alt="logo" class="mx-auto md:float-right w-[75px]"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -123,7 +124,7 @@ export default function CPage(){
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 7: Pointers</h3>
-                        <img src="../images/icon71c.png" alt="logo" class="mx-auto md:float-right w-[75px]"/>
+                        <img src={icon71} alt="logo" class="mx-auto md:float-right w-[75px]"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -138,7 +139,7 @@ export default function CPage(){
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 8: Structures</h3>
-                        <img src="../images/icon71c.png" alt="logo" class="mx-auto md:float-right w-[75px]"/>
+                        <img src={icon71} alt="logo" class="mx-auto md:float-right w-[75px]"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -153,7 +154,7 @@ export default function CPage(){
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 9: Time for projects</h3>
-                        <img src="../images/icon71c.png" alt="logo" class="mx-auto md:float-right w-[75px]"/>
+                        <img src={icon71} alt="logo" class="mx-auto md:float-right w-[75px]"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -170,7 +171,7 @@ export default function CPage(){
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 10: Multidimensional Arrays</h3>
-                        <img src="../images/icon71c.png" alt="logo" class="mx-auto md:float-right w-[75px]"/>
+                        <img src={icon71} alt="logo" class="mx-auto md:float-right w-[75px]"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -186,7 +187,7 @@ export default function CPage(){
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 11: Dynamic Memory Allocation</h3>
-                        <img src="../images/icon71c.png" alt="logo" class="mx-auto md:float-right w-[75px]"/>
+                        <img src={icon71} alt="logo" class="mx-auto md:float-right w-[75px]"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -203,7 +204,7 @@ export default function CPage(){
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 12: Review and Projects</h3>
-                        <img src="../images/icon71c.png" alt="logo" class="mx-auto md:float-right w-[75px]"/>
+                        <img src={icon71} alt="logo" class="mx-auto md:float-right w-[75px]"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>

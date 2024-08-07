@@ -1,6 +1,8 @@
 
 import icon14 from "/icon14internet.png"
+import icon28 from "/icon28js.png"
 import icon72 from "/icon72html.svg"
+import icon72css from "/icon72css.svg"
 
 export default function WebDevPage() {
 
@@ -59,7 +61,7 @@ export default function WebDevPage() {
                     </ul>
                     <div className="py-10 ">
                         <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 4: Introduction to CSS</h3>
-                        <img src="../images/icon72css.svg" alt="logo" className="mx-auto md:float-right w-[75px]" />
+                        <img src={icon72css} alt="logo" className="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul className="list-disc list-inside pl-2 md:pl-5">
                         <li className="text-lg">Topics:</li>
@@ -76,7 +78,7 @@ export default function WebDevPage() {
                     </ul>
                     <div className="py-10 ">
                         <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 5: Styling with CSS</h3>
-                        <img src="../images/icon72css.svg" alt="logo" className="mx-auto md:float-right w-[75px]" />
+                        <img src={icon72css} alt="logo" className="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul className="list-disc list-inside pl-2 md:pl-5">
                         <li className="text-lg">Topics:</li>
@@ -94,7 +96,7 @@ export default function WebDevPage() {
                     <div className="py-10 ">
                         <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">
                             Week 6: CSS Box Model</h3>
-                        <img src="../images/icon72css.svg" alt="logo" className="mx-auto md:float-right w-[75px]" />
+                        <img src={icon72css} alt="logo" className="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul className="list-disc list-inside pl-2 md:pl-5">
                         <li className="text-lg">Topics:</li>
@@ -109,7 +111,7 @@ export default function WebDevPage() {
                     </ul>
                     <div className="py-10 ">
                         <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 7: Responsive Layout</h3>
-                        <img src="../images/icon72css.svg" alt="logo" className="mx-auto md:float-right w-[75px]" />
+                        <img src={icon72css} alt="logo" className="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul className="list-disc list-inside pl-2 md:pl-5">
                         <li className="text-lg">Topics:</li>
@@ -126,7 +128,7 @@ export default function WebDevPage() {
                     </ul>
                     <div className="py-10 ">
                         <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 8: Javascript</h3>
-                        <img src="../images/icon28js.png" alt="logo" className="mx-auto md:float-right w-[75px]" />
+                        <img src={icon28} alt="logo" className="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul className="list-disc list-inside pl-2 md:pl-5">
                         <li className="text-lg">Topics:</li>
@@ -141,7 +143,7 @@ export default function WebDevPage() {
                     <div className="py-10 ">
                         <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 9: DOM, variables, data types,
                             conditionals</h3>
-                        <img src="../images/icon28js.png" alt="logo" className="mx-auto md:float-right w-[75px]" />
+                        <img src={icon28} alt="logo" className="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul className="list-disc list-inside pl-2 md:pl-5">
                         <li className="text-lg">Topics:</li>
@@ -156,7 +158,7 @@ export default function WebDevPage() {
                     </ul>
                     <div className="py-10 ">
                         <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 10: Arrays and Functions</h3>
-                        <img src="../images/icon28js.png" alt="logo" className="mx-auto md:float-right w-[75px]" />
+                        <img src={icon28} alt="logo" className="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul className="list-disc list-inside pl-2 md:pl-5">
                         <li className="text-lg">Topics:</li>
@@ -180,7 +182,7 @@ export default function WebDevPage() {
                     </ul>
                     <div className="py-10 ">
                         <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 11: Elements and EventListeners</h3>
-                        <img src="../images/icon28js.png" alt="logo" className="mx-auto md:float-right w-[75px]" />
+                        <img src={icon28} alt="logo" className="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul className="list-disc list-inside pl-2 md:pl-5">
                         <li className="text-lg">Topics:</li>
@@ -200,7 +202,7 @@ export default function WebDevPage() {
                     </ul>
                     <div className="py-10 ">
                         <h3 className="text-xl text-yellow-400 md:border-l-2 pl-5">Week 12: Animations and jQuery</h3>
-                        <img src="../images/icon28js.png" alt="logo" className="mx-auto md:float-right w-[75px]" />
+                        <img src={icon28} alt="logo" className="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul className="list-disc list-inside pl-2 md:pl-5">
                         <li className="text-lg">Topics:</li>

@@ -1,5 +1,7 @@
 
 
+import icon75 from "/icon75arduino.svg"
+
 export default function ArduinoPage() {
 
 
@@ -15,7 +17,7 @@ export default function ArduinoPage() {
                 <section class="flex-1 py-10">
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Course Overview and Introduction to Arduino</h3>
-                        <img src="../images/icon75arduino.svg" alt="scratch logo"
+                        <img src={icon75} alt="scratch logo"
                             class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
@@ -35,7 +37,7 @@ export default function ArduinoPage() {
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 2: Understanding Basic Circuits and Block Coding</h3>
-                        <img src="../images/icon75arduino.svg" alt="logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon75} alt="logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Arduino Project: Understanding Basic Circuits</li>
@@ -52,7 +54,7 @@ export default function ArduinoPage() {
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 3: Controlling LED with Code</h3>
-                        <img src="../images/icon75arduino.svg" alt="logo" class="mx-auto md:float-right w-[75px] md:my-2" />
+                        <img src={icon75} alt="logo" class="mx-auto md:float-right w-[75px] md:my-2" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Arduino Project: Controlling LED with Code
@@ -70,7 +72,7 @@ export default function ArduinoPage() {
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 4: Using a Button to Control LED and Buoyancy Basics</h3>
-                        <img src="../images/icon75arduino.svg" alt="logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon75} alt="logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Arduino Project: Using a Button to Control LED</li>
@@ -86,7 +88,7 @@ export default function ArduinoPage() {
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 5: Understanding the While Loop and Building a Water Rocket </h3>
-                        <img src="../images/icon75arduino.svg" alt="logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon75} alt="logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Arduino Project: Understanding the While Loop</li>
@@ -103,7 +105,7 @@ export default function ArduinoPage() {
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">
                             Week 6: LED Sequence with While Loop and Water Science</h3>
-                        <img src="../images/icon75arduino.svg" alt="logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon75} alt="logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Arduino Project: LED Sequence with While Loop</li>
@@ -120,7 +122,7 @@ export default function ArduinoPage() {
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 7: Advanced LED Control and Engineering Basics</h3>
-                        <img src="../images/icon75arduino.svg" alt="logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon75} alt="logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Arduino Project: Advanced LED Control</li>
@@ -136,7 +138,7 @@ export default function ArduinoPage() {
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 8: Introduction to Seven-Segment Display and Math Magic</h3>
-                        <img src="../images/icon75arduino.svg" alt="logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon75} alt="logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Arduino Project: Introduction to Seven-Segment Display </li>
@@ -152,7 +154,7 @@ export default function ArduinoPage() {
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 9: Controlling Seven-Segment Display and Water Filtration</h3>
-                        <img src="../images/icon75arduino.svg" alt="logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon75} alt="logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Arduino Project: Controlling Seven-Segment Display</li>
@@ -168,7 +170,7 @@ export default function ArduinoPage() {
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 10: Planning the Project and Exploring Gravity</h3>
-                        <img src="../images/icon75arduino.svg" alt="logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon75} alt="logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Arduino Project: Planning the Project </li>
@@ -185,7 +187,7 @@ export default function ArduinoPage() {
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 11: Building the Project and Preparing for the Science Fair</h3>
-                        <img src="../images/icon75arduino.svg" alt="logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon75} alt="logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Arduino Project: Building the Project </li>
@@ -202,7 +204,7 @@ export default function ArduinoPage() {
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 12: Finalizing and Presenting the Project and Science Fair Presentation</h3>
-                        <img src="../images/icon75arduino.svg" alt="logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon75} alt="logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Arduino Project: Finalizing and Presenting the Project </li>

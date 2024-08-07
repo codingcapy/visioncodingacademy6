@@ -1,4 +1,5 @@
 
+import icon68 from "/icon68java.png"
 
 export default function APCSPage(){
 
@@ -18,7 +19,7 @@ export default function APCSPage(){
                 <section class="flex-1 py-10">
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 1: Course Introduction</h3>
-                        <img src="../images/icon68java.png" alt="scratch logo"
+                        <img src={icon68} alt="scratch logo"
                             class="mx-auto md:float-right w-[75px]"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
@@ -34,7 +35,7 @@ export default function APCSPage(){
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 2: Variables and Data Types</h3>
-                        <img src="../images/icon68java.png" alt="logo" class="mx-auto md:float-right w-[75px]"/>
+                        <img src={icon68} alt="logo" class="mx-auto md:float-right w-[75px]"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -46,7 +47,7 @@ export default function APCSPage(){
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 3: Arithmetic Operations</h3>
-                        <img src="../images/icon68java.png" alt="logo" class="mx-auto md:float-right w-[75px] md:my-2"/>
+                        <img src={icon68} alt="logo" class="mx-auto md:float-right w-[75px] md:my-2"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -65,7 +66,7 @@ export default function APCSPage(){
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 4: Object Oriented Programming</h3>
-                        <img src="../images/icon68java.png" alt="logo" class="mx-auto md:float-right w-[75px]"/>
+                        <img src={icon68} alt="logo" class="mx-auto md:float-right w-[75px]"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -85,7 +86,7 @@ export default function APCSPage(){
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 5: Constructor Overloading and
                             Methods
                         </h3>
-                        <img src="../images/icon68java.png" alt="logo" class="mx-auto md:float-right w-[75px]"/>
+                        <img src={icon68} alt="logo" class="mx-auto md:float-right w-[75px]"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -99,7 +100,7 @@ export default function APCSPage(){
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">
                             Week 6: AP CSA Big Ideas</h3>
-                        <img src="../images/icon68java.png" alt="logo" class="mx-auto md:float-right w-[75px]"/>
+                        <img src={icon68} alt="logo" class="mx-auto md:float-right w-[75px]"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -115,7 +116,7 @@ export default function APCSPage(){
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 7: Overloading Methods</h3>
-                        <img src="../images/icon68java.png" alt="logo" class="mx-auto md:float-right w-[75px]"/>
+                        <img src={icon68} alt="logo" class="mx-auto md:float-right w-[75px]"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -127,7 +128,7 @@ export default function APCSPage(){
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 8: Return Values and Strings</h3>
-                        <img src="../images/icon68java.png" alt="logo"
+                        <img src={icon68} alt="logo"
                             class="mx-auto md:float-right w-[75px]"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
@@ -150,7 +151,7 @@ export default function APCSPage(){
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 9: Strings Continued and Wrapper
                             Classes
                             Functions</h3>
-                        <img src="../images/icon68java.png" alt="logo" class="mx-auto md:float-right w-[75px]"/>
+                        <img src={icon68} alt="logo" class="mx-auto md:float-right w-[75px]"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -164,7 +165,7 @@ export default function APCSPage(){
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 10: Math Classes
                         </h3>
-                        <img src="../images/icon68java.png" alt="logo" class="mx-auto md:float-right w-[75px]"/>
+                        <img src={icon68} alt="logo" class="mx-auto md:float-right w-[75px]"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>

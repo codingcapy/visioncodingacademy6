@@ -1,4 +1,7 @@
 
+import icon8 from "/icon8settings.png"
+import icon17 from "/icon17algorithm.png"
+import icon59 from "/icon59hacker.png"
 
 export default function CCCPage() {
 
@@ -16,7 +19,7 @@ export default function CCCPage() {
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 1: Introduction to Programming
                             Concepts, Input/Output, Conditional Statements (if/else), Loops (for, while)</h3>
-                        <img src="../images/icon8settings.png" alt="logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon8} alt="logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -38,7 +41,7 @@ export default function CCCPage() {
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 2: Arrays (One-Dimensional)</h3>
-                        <img src="../images/icon8settings.png" alt="logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon8} alt="logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -55,7 +58,7 @@ export default function CCCPage() {
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 3: Functions (defining and calling
                             functions), Recursion</h3>
-                        <img src="../images/icon8settings.png" alt="logo"
+                        <img src={icon8} alt="logo"
                             class="mx-auto md:float-right w-[75px] md:my-2" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
@@ -78,7 +81,7 @@ export default function CCCPage() {
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 4: Strings (String Manipulation)
                         </h3>
-                        <img src="../images/icon8settings.png" alt="logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon8} alt="logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -95,7 +98,7 @@ export default function CCCPage() {
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 5: Two pointers</h3>
-                        <img src="../images/icon17algorithm.png" alt="logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon17} alt="logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -110,7 +113,7 @@ export default function CCCPage() {
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 6-7: Stack & Queue</h3>
-                        <img src="../images/icon17algorithm.png" alt="logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon17} alt="logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -126,7 +129,7 @@ export default function CCCPage() {
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 8: List</h3>
-                        <img src="../images/icon17algorithm.png" alt="logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon17} alt="logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -143,7 +146,7 @@ export default function CCCPage() {
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 9-11: Depth-First Search (DFS) &
                             Breadth-First Search (BFS)</h3>
-                        <img src="../images/icon17algorithm.png" alt="logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon17} alt="logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -159,7 +162,7 @@ export default function CCCPage() {
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 12: Problem-Solving Techniques
                         </h3>
-                        <img src="../images/icon17algorithm.png" alt="logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon17} alt="logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -176,7 +179,7 @@ export default function CCCPage() {
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 13-14: Efficiency Analysis (Basic
                             Understanding)
                         </h3>
-                        <img src="../images/icon17algorithm.png" alt="logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon17} alt="logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -195,7 +198,7 @@ export default function CCCPage() {
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 11: Templates
                         </h3>
-                        <img src="../images/icon17algorithm.png" alt="logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon17} alt="logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -211,7 +214,7 @@ export default function CCCPage() {
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 12: STL Libraries
                         </h3>
-                        <img src="../images/icon17algorithm.png" alt="logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon17} alt="logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -228,7 +231,7 @@ export default function CCCPage() {
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Weeks 15-18: Past CCC Problems and
                             Practice
                         </h3>
-                        <img src="../images/icon59hacker.png" alt="logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon59} alt="logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -246,7 +249,7 @@ export default function CCCPage() {
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Weeks 19-20: Test Cases and Debugging
                         </h3>
-                        <img src="../images/icon59hacker.png" alt="logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon59} alt="logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Focus:</li>
@@ -265,7 +268,7 @@ export default function CCCPage() {
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Weeks 21-22: Mock Contests and Time
                             Management
                         </h3>
-                        <img src="../images/icon59hacker.png" alt="logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon59} alt="logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Focus:</li>
@@ -281,7 +284,7 @@ export default function CCCPage() {
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Weeks 23-24: Review and CCC Patterns
                         </h3>
-                        <img src="../images/icon59hacker.png" alt="logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon59} alt="logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Focus:</li>

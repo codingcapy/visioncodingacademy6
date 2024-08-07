@@ -1,7 +1,7 @@
 
+import icon70 from "/icon70cpp.svg"
 
 export default function CPlusPlusPage(){
-
 
     return(
         <main class="flex-1 md:pl-20 md:max-w-[1400px]">
@@ -18,7 +18,7 @@ export default function CPlusPlusPage(){
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 1: Introduction to Programming /
                             Input & Output / Variables and Data Types / Conditional Statements (if/else)</h3>
-                        <img src="../images/icon70cpp.svg" alt="logo" class="mx-auto md:float-right w-[75px]"/>
+                        <img src={icon70} alt="logo" class="mx-auto md:float-right w-[75px]"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -43,7 +43,7 @@ export default function CPlusPlusPage(){
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 2: Concept of of class / static
                             function & variable</h3>
-                        <img src="../images/icon70cpp.svg" alt="logo" class="mx-auto md:float-right w-[75px]"/>
+                        <img src={icon70} alt="logo" class="mx-auto md:float-right w-[75px]"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -67,7 +67,7 @@ export default function CPlusPlusPage(){
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 3: Loops (for, while) Function
                             Pointer</h3>
-                        <img src="../images/icon70cpp.svg" alt="logo" class="mx-auto md:float-right w-[75px] md:my-2"/>
+                        <img src={icon70} alt="logo" class="mx-auto md:float-right w-[75px] md:my-2"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -90,7 +90,7 @@ export default function CPlusPlusPage(){
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 4: Functions (Defining and Calling
                             Functions) & Array Function Pointers</h3>
-                        <img src="../images/icon70cpp.svg" alt="logo" class="mx-auto md:float-right w-[75px]"/>
+                        <img src={icon70} alt="logo" class="mx-auto md:float-right w-[75px]"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -112,7 +112,7 @@ export default function CPlusPlusPage(){
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 5: Constructors and Destructors</h3>
-                        <img src="../images/icon70cpp.svg" alt="logo" class="mx-auto md:float-right w-[75px]"/>
+                        <img src={icon70} alt="logo" class="mx-auto md:float-right w-[75px]"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -129,7 +129,7 @@ export default function CPlusPlusPage(){
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 6: Polymorphism</h3>
-                        <img src="../images/icon70cpp.svg" alt="logo" class="mx-auto md:float-right w-[75px]"/>
+                        <img src={icon70} alt="logo" class="mx-auto md:float-right w-[75px]"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -146,7 +146,7 @@ export default function CPlusPlusPage(){
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 7: Inheritance</h3>
-                        <img src="../images/icon70cpp.svg" alt="logo" class="mx-auto md:float-right w-[75px]"/>
+                        <img src={icon70} alt="logo" class="mx-auto md:float-right w-[75px]"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -163,7 +163,7 @@ export default function CPlusPlusPage(){
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 8: Abstract Classes and Interfaces
                         </h3>
-                        <img src="../images/icon70cpp.svg" alt="logo" class="mx-auto md:float-right w-[75px]"/>
+                        <img src={icon70} alt="logo" class="mx-auto md:float-right w-[75px]"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -179,7 +179,7 @@ export default function CPlusPlusPage(){
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 9: Exception Handling (try, catch)
                         </h3>
-                        <img src="../images/icon70cpp.svg" alt="logo" class="mx-auto md:float-right w-[75px]"/>
+                        <img src={icon70} alt="logo" class="mx-auto md:float-right w-[75px]"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -195,7 +195,7 @@ export default function CPlusPlusPage(){
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 10: Type Casting
                         </h3>
-                        <img src="../images/icon70cpp.svg" alt="logo" class="mx-auto md:float-right w-[75px]"/>
+                        <img src={icon70} alt="logo" class="mx-auto md:float-right w-[75px]"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -212,7 +212,7 @@ export default function CPlusPlusPage(){
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 11: Templates
                         </h3>
-                        <img src="../images/icon70cpp.svg" alt="logo" class="mx-auto md:float-right w-[75px]"/>
+                        <img src={icon70} alt="logo" class="mx-auto md:float-right w-[75px]"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -228,7 +228,7 @@ export default function CPlusPlusPage(){
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 12: STL Libraries
                         </h3>
-                        <img src="../images/icon70cpp.svg" alt="logo" class="mx-auto md:float-right w-[75px]"/>
+                        <img src={icon70} alt="logo" class="mx-auto md:float-right w-[75px]"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -244,7 +244,7 @@ export default function CPlusPlusPage(){
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 13: Review and Projects
                         </h3>
-                        <img src="../images/icon70cpp.svg" alt="logo" class="mx-auto md:float-right w-[75px]"/>
+                        <img src={icon70} alt="logo" class="mx-auto md:float-right w-[75px]"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>

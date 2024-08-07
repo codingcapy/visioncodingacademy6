@@ -1,8 +1,9 @@
 
 
+import icon69 from "/icon69cs.png"
+
 export default function CSharpPage() {
-
-
+    
     return (
         <main class="flex-1 md:pl-20 md:max-w-[1400px]">
             <div class="bg-black text-white md:flex md:pt-20">
@@ -16,7 +17,7 @@ export default function CSharpPage() {
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 1: Introduction to Programming and C#
                         </h3>
-                        <img src="../images/icon69cs.png" alt="scratch logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon69} alt="scratch logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -39,7 +40,7 @@ export default function CSharpPage() {
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 2: Conditional Statements (if/else)
                         </h3>
-                        <img src="../images/icon69cs.png" alt="scratch logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon69} alt="scratch logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -58,7 +59,7 @@ export default function CSharpPage() {
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 3: Loops (for, while)</h3>
-                        <img src="../images/icon69cs.png" alt="logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon69} alt="logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -78,7 +79,7 @@ export default function CSharpPage() {
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 4: Methods (defining and calling
                             methods)</h3>
-                        <img src="../images/icon69cs.png" alt="logo" class="mx-auto md:float-right w-[75px] md:my-2" />
+                        <img src={icon69} alt="logo" class="mx-auto md:float-right w-[75px] md:my-2" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -95,7 +96,7 @@ export default function CSharpPage() {
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 5: Arrays (One-Dimensional)</h3>
-                        <img src="../images/icon69cs.png" alt="logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon69} alt="logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -114,7 +115,7 @@ export default function CSharpPage() {
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 6: Strings (String
                             Manipulation)Strings (String Manipulation)</h3>
-                        <img src="../images/icon69cs.png" alt="logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon69} alt="logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -125,7 +126,7 @@ export default function CSharpPage() {
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 7: Pointers</h3>
-                        <img src="../images/icon69cs.png" alt="logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon69} alt="logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -140,7 +141,7 @@ export default function CSharpPage() {
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 8: Structures</h3>
-                        <img src="../images/icon69cs.png" alt="logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon69} alt="logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -155,7 +156,7 @@ export default function CSharpPage() {
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 9: Time for projects</h3>
-                        <img src="../images/icon69cs.png" alt="logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon69} alt="logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -172,7 +173,7 @@ export default function CSharpPage() {
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 10: Multidimensional Arrays</h3>
-                        <img src="../images/icon69cs.png" alt="logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon69} alt="logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -188,7 +189,7 @@ export default function CSharpPage() {
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 11: Dynamic Memory Allocation</h3>
-                        <img src="../images/icon69cs.png" alt="logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon69} alt="logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -205,7 +206,7 @@ export default function CSharpPage() {
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 12: Review and Projects</h3>
-                        <img src="../images/icon69cs.png" alt="logo" class="mx-auto md:float-right w-[75px]" />
+                        <img src={icon69} alt="logo" class="mx-auto md:float-right w-[75px]" />
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>

@@ -1,5 +1,7 @@
 
 
+import icon12 from "/icon12roblox.png"
+
 export default function RobloxPage(){
 
     return(
@@ -16,7 +18,7 @@ export default function RobloxPage(){
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 1: Introduction to Roblox
                         </h3>
-                        <img src="../images/icon12roblox.png" alt="scratch logo"
+                        <img src={icon12} alt="scratch logo"
                             class="mx-auto md:float-right w-[75px]"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
@@ -33,7 +35,7 @@ export default function RobloxPage(){
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 2: Modeling in Roblox</h3>
-                        <img src="../images/icon12roblox.png" alt="logo" class="mx-auto md:float-right w-[75px]"/>
+                        <img src={icon12} alt="logo" class="mx-auto md:float-right w-[75px]"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -51,7 +53,7 @@ export default function RobloxPage(){
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 3: Modeling Continued</h3>
-                        <img src="../images/icon12roblox.png" alt="logo" class="mx-auto md:float-right w-[75px] md:my-2"/>
+                        <img src={icon12} alt="logo" class="mx-auto md:float-right w-[75px] md:my-2"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -62,7 +64,7 @@ export default function RobloxPage(){
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 4: Hide And Seek</h3>
-                        <img src="../images/icon12roblox.png" alt="logo" class="mx-auto md:float-right w-[75px]"/>
+                        <img src={icon12} alt="logo" class="mx-auto md:float-right w-[75px]"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -75,7 +77,7 @@ export default function RobloxPage(){
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 5: Make a Bonfire</h3>
-                        <img src="../images/icon12roblox.png" alt="logo" class="mx-auto md:float-right w-[75px]"/>
+                        <img src={icon12} alt="logo" class="mx-auto md:float-right w-[75px]"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -87,7 +89,7 @@ export default function RobloxPage(){
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">
                             Make Sound!</h3>
-                        <img src="../images/icon12roblox.png" alt="logo" class="mx-auto md:float-right w-[75px]"/>
+                        <img src={icon12} alt="logo" class="mx-auto md:float-right w-[75px]"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -101,7 +103,7 @@ export default function RobloxPage(){
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 7: GUI and Scripting</h3>
-                        <img src="../images/icon12roblox.png" alt="logo" class="mx-auto md:float-right w-[75px]"/>
+                        <img src={icon12} alt="logo" class="mx-auto md:float-right w-[75px]"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -112,7 +114,7 @@ export default function RobloxPage(){
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 8: Linking GUI with Game Object</h3>
-                        <img src="../images/icon12roblox.png" alt="logo" class="mx-auto md:float-right w-[75px]"/>
+                        <img src={icon12} alt="logo" class="mx-auto md:float-right w-[75px]"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -123,7 +125,7 @@ export default function RobloxPage(){
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 9: Proximity Prompts</h3>
-                        <img src="../images/icon12roblox.png" alt="logo" class="mx-auto md:float-right w-[75px]"/>
+                        <img src={icon12} alt="logo" class="mx-auto md:float-right w-[75px]"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -136,7 +138,7 @@ export default function RobloxPage(){
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 10: Learning How To Use BillBoardGUIs</h3>
-                        <img src="../images/icon12roblox.png" alt="logo" class="mx-auto md:float-right w-[75px]"/>
+                        <img src={icon12} alt="logo" class="mx-auto md:float-right w-[75px]"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -148,7 +150,7 @@ export default function RobloxPage(){
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 11: Detecting Keyboard Events</h3>
-                        <img src="../images/icon12roblox.png" alt="logo" class="mx-auto md:float-right w-[75px]"/>
+                        <img src={icon12} alt="logo" class="mx-auto md:float-right w-[75px]"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
@@ -158,7 +160,7 @@ export default function RobloxPage(){
                     </ul>
                     <div class="py-10 ">
                         <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 12: Final Project</h3>
-                        <img src="../images/icon12roblox.png" alt="logo" class="mx-auto md:float-right w-[75px]"/>
+                        <img src={icon12} alt="logo" class="mx-auto md:float-right w-[75px]"/>
                     </div>
                     <ul class="list-disc list-inside pl-2 md:pl-5">
                         <li class="text-lg">Topics:</li>
