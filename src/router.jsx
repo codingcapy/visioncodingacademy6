@@ -23,6 +23,8 @@ import SummerCampPage from "./pages/SummerCampPage";
 import AdvancedCsPage from "./pages/AdvancedCsPage";
 import WebDevPage from "./pages/WebDevPage";
 import DevOpsPage from "./pages/DevOpsPage";
+import WebDev2Page from "./pages/WebDev2Page";
+import CSharpPage from "./pages/CSharpPage";
 
 export function Router() {
     const router = createBrowserRouter(
@@ -39,6 +41,8 @@ export function Router() {
                 <Route path="/courses/python" element={<PythonPage />} />
                 <Route path="/courses/python2" element={<Python2Page />} />
                 <Route path="/courses/webdev" element={<WebDevPage />} />
+                <Route path="/courses/webdev2" element={<WebDev2Page />} />
+                <Route path="/courses/csharp" element={<CSharpPage />} />
                 <Route path="/courses/interviewprep" element={<InterviewPrepPage />} />
                 <Route path="/courses/advancedcs" element={<AdvancedCsPage />} />
                 <Route path="/courses/devops" element={<DevOpsPage />} />

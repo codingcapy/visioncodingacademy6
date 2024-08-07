@@ -104,7 +104,7 @@ export default function SummerCampPage() {
                     Program Overview</h2>
                 <div className="static py-5 md:py-20">
                     <img src={codingClass} alt="Coding Class"
-                        className="timeline-content js--fadeInRight md:max-w-[500px] border rounded-xl border-white border-4 float-left md:mr-5" />
+                        className="timeline-content js--fadeInRight md:max-w-[500px] rounded-xl border-white border-4 float-left md:mr-5" />
                     <div className="relative top-0 left-0">
                         <p className="timeline-content js--fadeInRight pb-10 text-lg md:text-2xl">The 12-Week Robotics (Arduino)
                             and STEM Curriculum for G1-3 Students is a comprehensive program designed to introduce young
@@ -119,7 +119,7 @@ export default function SummerCampPage() {
                     Program Objectives</h2>
                 <div className="static py-5 md:py-20">
                     <img src={arduino} alt="Coding Class"
-                        className="timeline-content js--fadeInLeft md:max-w-[500px] border rounded-xl border-white border-4 float-right md:mr-5" />
+                        className="timeline-content js--fadeInLeft md:max-w-[500px] rounded-xl border-white border-4 float-right md:mr-5" />
                     <div className="relative top-0 left-0">
                         <p className="timeline-content js--fadeInRight pb-10 text-lg md:text-2xl">Introduce students to the
                             basics of robotics using Arduino</p>
@@ -348,7 +348,7 @@ export default function SummerCampPage() {
                                         d="M128,84a44,44,0,1,0,44,44A44.04978,44.04978,0,0,0,128,84Zm0,80a36,36,0,1,1,36-36A36.04061,36.04061,0,0,1,128,164ZM172,32H84A52.059,52.059,0,0,0,32,84v88a52.059,52.059,0,0,0,52,52h88a52.059,52.059,0,0,0,52-52V84A52.059,52.059,0,0,0,172,32Zm44,140a44.04978,44.04978,0,0,1-44,44H84a44.04978,44.04978,0,0,1-44-44V84A44.04978,44.04978,0,0,1,84,40h88a44.04978,44.04978,0,0,1,44,44ZM188,76a8,8,0,1,1-8-8A8.00917,8.00917,0,0,1,188,76Z" />
                                 </svg>
                                 <svg fill="#000000" width="50px" height="50px" viewBox="0 0 256 256" id="Flat"
-                                    xmlns="http://www.w3.org/2000/svg" className="md:hidden md:block mx-auto">
+                                    xmlns="http://www.w3.org/2000/svg" className="hidden md:block mx-auto">
                                     <path
                                         d="M128,84a44,44,0,1,0,44,44A44.04978,44.04978,0,0,0,128,84Zm0,80a36,36,0,1,1,36-36A36.04061,36.04061,0,0,1,128,164ZM172,32H84A52.059,52.059,0,0,0,32,84v88a52.059,52.059,0,0,0,52,52h88a52.059,52.059,0,0,0,52-52V84A52.059,52.059,0,0,0,172,32Zm44,140a44.04978,44.04978,0,0,1-44,44H84a44.04978,44.04978,0,0,1-44-44V84A44.04978,44.04978,0,0,1,84,40h88a44.04978,44.04978,0,0,1,44,44ZM188,76a8,8,0,1,1-8-8A8.00917,8.00917,0,0,1,188,76Z" />
                                 </svg>

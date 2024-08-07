@@ -162,7 +162,7 @@ export default function CoursesPage() {
                                 </NavLink>
                             </div>
                             <div className="timeline-content js--fadeInRight mx-5 md:px-5 md:py-2 rounded-4xl">
-                                <NavLink to="../courses/webdev2.html">
+                                <NavLink to="/courses/webdev2">
                                     <div
                                         className="h-[450px] px-5 md:pr-20 py-5 pb-20 bg-black-700 rounded-3xl border-2 border-yellow-200 hover:bg-neutral-600 ease duration-300">
                                         <img src={icon39} alt="course1" className="w-[100px] mx-auto" />
@@ -177,7 +177,7 @@ export default function CoursesPage() {
                                 </NavLink>
                             </div>
                             <div className="timeline-content js--fadeInRight mx-5 md:px-5 md:py-2 rounded-4xl">
-                                <NavLink to="./cs.html">
+                                <NavLink to="/courses/csharp">
                                     <div
                                         className="h-[450px] px-5 md:pr-20 py-5 pb-20 bg-black-700 rounded-3xl border-2 border-yellow-200 hover:bg-neutral-600 ease duration-300">
                                         <img src={icon69} alt="course1" className="w-[100px] mx-auto" />
@@ -192,7 +192,7 @@ export default function CoursesPage() {
                                 </NavLink>
                             </div>
                             <div className="timeline-content js--fadeInRight mx-5 md:px-5 md:py-2 rounded-4xl">
-                                <NavLink to="./roblox.html">
+                                <NavLink to="/courses/roblox">
                                     <div
                                         className="h-[450px] px-5 md:pr-20 py-5 pb-20 bg-black-700 rounded-3xl border-2 border-yellow-200 hover:bg-neutral-600 ease duration-300">
                                         <img src={icon53} alt="course1" className="w-[100px] mx-auto mx-center" />
@@ -208,7 +208,7 @@ export default function CoursesPage() {
                                 </NavLink>
                             </div>
                             <div className="timeline-content js--fadeInRight mx-5 md:px-5 md:py-2 rounded-4xl">
-                                <NavLink to="./arduino.html">
+                                <NavLink to="/courses/arduino">
                                     <div
                                         className="h-[450px] px-5 md:pr-20 py-5 pb-20 bg-black-700 rounded-3xl border-2 border-yellow-200 hover:bg-neutral-600 ease duration-300">
                                         <img src={icon75} alt="course1"
@@ -225,7 +225,7 @@ export default function CoursesPage() {
                                 </NavLink>
                             </div>
                             <div className="timeline-content js--fadeInRight mx-5 md:px-5 md:py-2 rounded-4xl">
-                                <NavLink to="./c.html">
+                                <NavLink to="/courses/c">
                                     <div
                                         className="h-[450px] px-5 md:pr-20 py-5 pb-20 bg-black-700 rounded-3xl border-2 border-yellow-200 hover:bg-neutral-600 ease duration-300">
                                         <img src={icon71} alt="course1" className="w-[100px] mx-auto" />
@@ -242,7 +242,7 @@ export default function CoursesPage() {
                                 </NavLink>
                             </div>
                             <div className="timeline-content js--fadeInRight mx-5 md:px-5 md:py-2 rounded-4xl">
-                                <NavLink to="./cpp.html">
+                                <NavLink to="/courses/cpp">
                                     <div
                                         className="h-[450px] px-5 md:pr-20 py-5 pb-20 bg-black-700 rounded-3xl border-2 border-yellow-200 hover:bg-neutral-600 ease duration-300">
                                         <img src={icon70} alt="course1" className="w-[80px] mx-auto" />
@@ -260,7 +260,7 @@ export default function CoursesPage() {
                                 </NavLink>
                             </div>
                             <div className="timeline-content js--fadeInRight mx-5 md:px-5 md:py-2 rounded-4xl">
-                                <NavLink to="./apcs.html">
+                                <NavLink to="./apcs">
                                     <div
                                         className="h-[450px] px-5 md:pr-20 py-5 pb-20 bg-black-700 rounded-3xl border-2 border-yellow-200 hover:bg-neutral-600 ease duration-300">
                                         <img src={icon23} alt="course1" className="w-[80px] mx-auto" />
@@ -277,7 +277,7 @@ export default function CoursesPage() {
                                 </NavLink>
                             </div>
                             <div className="timeline-content js--fadeInRight mx-5 md:px-5 md:py-2 rounded-4xl">
-                                <NavLink to="./ccc.html">
+                                <NavLink to="./ccc">
                                     <div
                                         className="h-[450px] px-5 md:pr-20 py-5 pb-20 bg-black-700 rounded-3xl border-2 border-yellow-200 hover:bg-neutral-600 ease duration-300">
                                         <img src={icon59} alt="course1" className="w-[80px] mx-auto" />
@@ -295,7 +295,7 @@ export default function CoursesPage() {
                             </div>
                             <div className="md:hidden mt-16 h-[30px]">
                                 <div
-                                    className="static bg-gradient-to-r from-black via-yellow-400 via-white via-yellow-400 to-black h-[2px]">
+                                    className="static bg-gradient-to-r from-black via-yellow-400 to-black h-[2px]">
                                 </div>
                                 <img src="../images/yellow1.png" alt=""
                                     className="relative bottom-[45px] md:bottom-[60px] left-[40%] md:left-[48%] w-[75px] md:w-[100px] bg-black" />
@@ -354,7 +354,7 @@ export default function CoursesPage() {
                                 </NavLink>
                             </div>
                             <div className="timeline-content js--fadeInRight mx-5 md:px-5 md:py-2 rounded-4xl">
-                                <NavLink to="./c.html">
+                                <NavLink to="./c">
                                     <div
                                         className="h-[450px] px-5 md:pr-20 py-5 pb-20 bg-black-700 rounded-3xl border-2 border-yellow-200 hover:bg-neutral-600 ease duration-300">
                                         <img src={icon71} alt="course1" className="w-[100px] mx-auto" />
@@ -371,7 +371,7 @@ export default function CoursesPage() {
                                 </NavLink>
                             </div>
                             <div className="timeline-content js--fadeInRight mx-5 md:px-5 md:py-2 rounded-4xl">
-                                <NavLink to="./cpp.html">
+                                <NavLink to="./cpp">
                                     <div
                                         className="h-[450px] px-5 md:pr-20 py-5 pb-20 bg-black-700 rounded-3xl border-2 border-yellow-200 hover:bg-neutral-600 ease duration-300">
                                         <img src={icon70} alt="course1" className="w-[80px] mx-auto" />
@@ -389,7 +389,7 @@ export default function CoursesPage() {
                                 </NavLink>
                             </div>
                             <div className="timeline-content js--fadeInRight mx-5 md:px-5 md:py-2 rounded-4xl">
-                                <NavLink to="./python.html">
+                                <NavLink to="./python">
                                     <div
                                         className="h-[450px] px-5 md:pr-20 py-5 pb-20 bg-black-700 rounded-3xl border-2 border-yellow-200 hover:bg-neutral-600 ease duration-300">
                                         <img src={icon7} alt="course1" className="w-[100px] mx-auto mx-center" />
@@ -405,7 +405,7 @@ export default function CoursesPage() {
                                 </NavLink>
                             </div>
                             <div className="timeline-content js--fadeInRight mx-5 md:px-5 md:py-2 rounded-4xl">
-                                <NavLink to="./python2.html">
+                                <NavLink to="./python2">
                                     <div
                                         className="h-[450px] px-5 md:pr-20 py-5 pb-20 bg-black-700 rounded-3xl border-2 border-yellow-200 hover:bg-neutral-600 ease duration-300">
                                         <img src={icon7} alt="course1" className="w-[100px] mx-auto mx-center" />
@@ -421,7 +421,7 @@ export default function CoursesPage() {
                                 </NavLink>
                             </div>
                             <div className="timeline-content js--fadeInRight mx-5 md:px-5 md:py-2 rounded-4xl">
-                                <NavLink to="../courses/webdev.html">
+                                <NavLink to="../courses/webdev">
                                     <div
                                         className="h-[450px] px-5 md:pr-20 py-5 pb-20 bg-black-700 rounded-3xl border-2 border-yellow-200 hover:bg-neutral-600 ease duration-300">
                                         <img src={icon39} alt="course1" className="w-[100px] mx-auto" />
@@ -437,7 +437,7 @@ export default function CoursesPage() {
                                 </NavLink>
                             </div>
                             <div className="timeline-content js--fadeInRight mx-5 md:px-5 md:py-2 rounded-4xl">
-                                <NavLink to="../courses/webdev2.html">
+                                <NavLink to="../courses/webdev2">
                                     <div
                                         className="h-[450px] px-5 md:pr-20 py-5 pb-20 bg-black-700 rounded-3xl border-2 border-yellow-200 hover:bg-neutral-600 ease duration-300">
                                         <img src={icon39} alt="course1" className="w-[100px] mx-auto" />
@@ -452,7 +452,7 @@ export default function CoursesPage() {
                                 </NavLink>
                             </div>
                             <div className="timeline-content js--fadeInRight mx-5 md:px-5 md:py-2 rounded-4xl">
-                                <NavLink to="./cs.html">
+                                <NavLink to="./cs">
                                     <div
                                         className="h-[450px] px-5 md:pr-20 py-5 pb-20 bg-black-700 rounded-3xl border-2 border-yellow-200 hover:bg-neutral-600 ease duration-300">
                                         <img src={icon69} alt="course1" className="w-[100px] mx-auto" />
@@ -481,7 +481,7 @@ export default function CoursesPage() {
                                     d="M128,84a44,44,0,1,0,44,44A44.04978,44.04978,0,0,0,128,84Zm0,80a36,36,0,1,1,36-36A36.04061,36.04061,0,0,1,128,164ZM172,32H84A52.059,52.059,0,0,0,32,84v88a52.059,52.059,0,0,0,52,52h88a52.059,52.059,0,0,0,52-52V84A52.059,52.059,0,0,0,172,32Zm44,140a44.04978,44.04978,0,0,1-44,44H84a44.04978,44.04978,0,0,1-44-44V84A44.04978,44.04978,0,0,1,84,40h88a44.04978,44.04978,0,0,1,44,44ZM188,76a8,8,0,1,1-8-8A8.00917,8.00917,0,0,1,188,76Z" />
                             </svg>
                             <svg fill="#000000" width="50px" height="50px" viewBox="0 0 256 256" id="Flat"
-                                xmlns="http://www.w3.org/2000/svg" className="md:hidden md:block mx-auto">
+                                xmlns="http://www.w3.org/2000/svg" className="hidden md:block mx-auto">
                                 <path
                                     d="M128,84a44,44,0,1,0,44,44A44.04978,44.04978,0,0,0,128,84Zm0,80a36,36,0,1,1,36-36A36.04061,36.04061,0,0,1,128,164ZM172,32H84A52.059,52.059,0,0,0,32,84v88a52.059,52.059,0,0,0,52,52h88a52.059,52.059,0,0,0,52-52V84A52.059,52.059,0,0,0,172,32Zm44,140a44.04978,44.04978,0,0,1-44,44H84a44.04978,44.04978,0,0,1-44-44V84A44.04978,44.04978,0,0,1,84,40h88a44.04978,44.04978,0,0,1,44,44ZM188,76a8,8,0,1,1-8-8A8.00917,8.00917,0,0,1,188,76Z" />
                             </svg>

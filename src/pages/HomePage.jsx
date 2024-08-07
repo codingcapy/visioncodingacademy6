@@ -120,7 +120,7 @@ export default function HomePage() {
                     </p>
                     <div className="flex flex-col mx-auto mt-10">
                         <a href="./courses/index.html"
-                            className="mx-auto px-3 py-3 border border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500">View
+                            className="mx-auto px-3 py-3 border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500">View
                             Courses</a>
                     </div>
                 </div>
@@ -197,7 +197,7 @@ export default function HomePage() {
                 </div>
                 <div className="md:hidden mt-16 mb-7 h-[60px]">
                     <div
-                        className="static bg-gradient-to-r from-black via-yellow-400 via-white via-yellow-400 to-black h-[2px]">
+                        className="static bg-gradient-to-r from-black via-yellow-400 to-black h-[2px]">
                     </div>
                     <img src={visionCodingIcon} alt=""
                         className="relative bottom-[45px] md:bottom-[60px] left-[40%] md:left-[48%] w-[75px] md:w-[100px] bg-black" />
@@ -229,7 +229,7 @@ export default function HomePage() {
                 </div>
                 <div className="md:hidden mt-20 h-[60px]">
                     <div
-                        className="static bg-gradient-to-r from-black via-yellow-400 via-white via-yellow-400 to-black h-[2px]">
+                        className="static bg-gradient-to-r from-black via-yellow-400 to-black h-[2px]">
                     </div>
                     <img src={visionCodingIcon} alt=""
                         className="relative bottom-[45px] md:bottom-[60px] left-[40%] md:left-[48%] w-[75px] md:w-[100px] bg-black" />
@@ -264,7 +264,7 @@ export default function HomePage() {
                 </div>
                 <div className="md:hidden mt-20 h-[60px]">
                     <div
-                        className="static bg-gradient-to-r from-black via-yellow-400 via-white via-yellow-400 to-black h-[2px]">
+                        className="static bg-gradient-to-r from-black via-yellow-400 to-black h-[2px]">
                     </div>
                     <img src={visionCodingIcon} alt=""
                         className="relative bottom-[45px] md:bottom-[60px] left-[40%] md:left-[48%] w-[75px] md:w-[100px] bg-black" />
@@ -299,7 +299,7 @@ export default function HomePage() {
                 </div>
                 <div className="md:hidden mt-20 h-[60px]">
                     <div
-                        className="static bg-gradient-to-r from-black via-yellow-400 via-white via-yellow-400 to-black h-[2px]">
+                        className="static bg-gradient-to-r from-black via-yellow-400 to-black h-[2px]">
                     </div>
                     <img src={visionCodingIcon} alt=""
                         className="relative bottom-[45px] md:bottom-[60px] left-[40%] md:left-[48%] w-[75px] md:w-[100px] bg-black" />
@@ -333,7 +333,7 @@ export default function HomePage() {
                 </div>
                 <div className="md:hidden mt-20 h-[50px]">
                     <div
-                        className="static bg-gradient-to-r from-black via-yellow-400 via-white via-yellow-400 to-black h-[2px]">
+                        className="static bg-gradient-to-r from-black via-yellow-400 to-black h-[2px]">
                     </div>
                     <img src={visionCodingIcon} alt=""
                         className="relative bottom-[45px] md:bottom-[60px] left-[40%] md:left-[48%] w-[75px] md:w-[100px] bg-black" />
@@ -370,20 +370,20 @@ export default function HomePage() {
                 </div>
                 <div className="md:hidden mt-20 h-[70px]">
                     <div
-                        className="static bg-gradient-to-r from-black via-yellow-400 via-white via-yellow-400 to-black h-[2px]">
+                        className="static bg-gradient-to-r from-black via-yellow-400 to-black h-[2px]">
                     </div>
                     <img src={visionCodingIcon} alt=""
                         className="relative bottom-[45px] md:bottom-[60px] left-[40%] md:left-[48%] w-[75px] md:w-[100px] bg-black" />
                 </div>
                 <div className="flex flex-col py-30 mx-auto">
                     <a href="./courses/index.html"
-                        className=" text-center px-3 py-3 border border-4 rounded border-yellow-300 text-yellow-300 font-bold text-lg md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500 mx-auto w-[200px]">
+                        className=" text-center px-3 py-3 border-4 rounded border-yellow-300 text-yellow-300 font-bold text-lg md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500 mx-auto w-[200px]">
                         More Courses</a>
                 </div>
             </section>
             <div className="bg-black text-white flex flex-col">
                 <section className="md:flex py-10">
-                    <div className="ad1 md:px-2 mx-2 md:px-20 md:h-96 md:rounded-3xl">
+                    <div className="ad1 mx-2 md:px-20 md:h-96 md:rounded-3xl">
                         <h2 className="text-2xl md:text-4xl md:text-center text-yellow-200">Industry Expertise in Every
                             Classroom
                         </h2>
@@ -395,7 +395,7 @@ export default function HomePage() {
                             coding as a subject, but as a practical, applied skill relevant to today’s tech industry.
                         </p>
                     </div>
-                    <div className="ad2 md:px-2 mx-2 md:px-20 md:rounded-3xl">
+                    <div className="ad2 mx-2 md:px-20 md:rounded-3xl">
                         <div></div>
                         <h2 className="text-2xl md:text-4xl md:text-center text-yellow-200">Practical, Hands-On Curriculum
                         </h2>
@@ -407,7 +407,7 @@ export default function HomePage() {
                             them
                             creatively in real-world scenarios.</p>
                     </div>
-                    <div className="ad3 md:px-2 mx-2 md:px-20 md:rounded-3xl">
+                    <div className="ad3 mx-2 md:px-20 md:rounded-3xl">
                         <h2 className="text-2xl md:text-4xl md:text-center text-yellow-200">From Learning to Application
                         </h2>
                         <p className="md:text-center text-lg md:text-2xl">We bridge the gap between theory and practice. Our
@@ -431,7 +431,7 @@ export default function HomePage() {
                     more about us</NavLink>
                 <div className="mt-20">
                     <div
-                        className="static bg-gradient-to-r from-black via-yellow-400 via-white via-yellow-400 to-black h-[2px]">
+                        className="static bg-gradient-to-r from-black via-yellow-400 to-black h-[2px]">
                     </div>
                     <img src={visionCodingIcon} alt=""
                         className="relative bottom-[45px] md:bottom-[60px] left-[40%] md:left-[48%] w-[75px] md:w-[100px] bg-black" />
