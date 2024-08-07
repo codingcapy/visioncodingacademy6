@@ -25,6 +25,8 @@ import WebDevPage from "./pages/WebDevPage";
 import DevOpsPage from "./pages/DevOpsPage";
 import WebDev2Page from "./pages/WebDev2Page";
 import CSharpPage from "./pages/CSharpPage";
+import RobloxPage from "./pages/RobloxPage";
+import ArduinoPage from "./pages/ArduinoPage";
 
 export function Router() {
     const router = createBrowserRouter(
@@ -43,6 +45,8 @@ export function Router() {
                 <Route path="/courses/webdev" element={<WebDevPage />} />
                 <Route path="/courses/webdev2" element={<WebDev2Page />} />
                 <Route path="/courses/csharp" element={<CSharpPage />} />
+                <Route path="/courses/roblox" element={<RobloxPage />} />
+                <Route path="/courses/arduino" element={<ArduinoPage />} />
                 <Route path="/courses/interviewprep" element={<InterviewPrepPage />} />
                 <Route path="/courses/advancedcs" element={<AdvancedCsPage />} />
                 <Route path="/courses/devops" element={<DevOpsPage />} />
