@@ -394,6 +394,30 @@ main {
     z-index: -1;
  }
 
+ #pop-up{
+    position:fixed;
+    top:0px;
+    left:0px;    
+    width:100vw;
+    height:100vh;
+	z-index:1000;
+	background-color: rgba(0, 0, 0, 0.6);    
+	font-size:.85em;
+}
+
+#pop-up-div{
+	position:absolute;
+	left:50%;
+	top:40%;
+	transform:translate(-50%, -50%);
+	max-width:400px;
+	min-width:300px;
+	padding:10px;
+	border-radius:10px;
+	background-color: rgb(46, 46, 46);
+	color:white;
+}
+
 @media(min-width:720px) {
     .hero-banner {
         height: 700px;
@@ -452,6 +476,11 @@ main {
 
     .right-arrow {
         right: 100px;
+    }
+
+    #pop-up-div{
+        max-width:1000px;
+        top:50%;
     }
 }
 
