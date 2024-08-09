@@ -15,6 +15,10 @@ export default function SignupPage() {
         document.title = 'Signup | Vision Coding';
       }, []);
 
+      async function handleSubmit(e){
+        e.preventDefault();
+      }
+
     return (
         <main className="flex-1 mx-auto">
             <div className="bg-black text-white flex flex-col mx-auto">
@@ -26,10 +30,10 @@ export default function SignupPage() {
                         Academy</span></p>
                 </section>
                 <section className="py-5 md:pl-20 mx-auto">
-                    <form action="#" className="flex flex-col mx-auto">
+                    <form onSubmit={handleSubmit} className="flex flex-col mx-auto">
                         <div className="flex flex-col">
                             <label htmlFor="title">Email</label>
-                            <input type="text" name='title' id='title' placeholder="Email" required
+                            <input type="email" name='title' id='title' placeholder="Email" required
                                 className="px-2 border rounded-lg border-slate-700 py-1 w-[300px] text-black" />
                         </div>
                         <div className="flex flex-col my-2">
@@ -39,12 +43,12 @@ export default function SignupPage() {
                         </div>
                         <div className="flex flex-col my-2">
                             <label htmlFor="content">Password</label>
-                            <input type="text" name='content' id='content' placeholder='Password' required rows="10"
+                            <input type="password" name='content' id='content' placeholder='Password' required rows="10"
                                 cols="40" className="px-2 border rounded-lg border-slate-700 py-1 w-[300px] text-black" />
                         </div>
                         <div className="flex flex-col my-2">
                             <label htmlFor="content">Confirm Password</label>
-                            <input type="text" name='content' id='content' placeholder='Confirm Password' required
+                            <input type="password" name='content' id='content' placeholder='Confirm Password' required
                                 rows="10" cols="40" className="px-2 border rounded-lg border-slate-700 py-1 w-[300px] text-black" />
                         </div>
                         <button
