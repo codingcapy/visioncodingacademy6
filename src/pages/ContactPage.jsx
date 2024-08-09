@@ -140,9 +140,9 @@ export default function ContactPage() {
 
     return (
         <>
-            <section className="about">
+            <section className="about overflow-x-hidden">
                 <h1 className="">
-                    <span className="text-5xl md:text-9xl">Code With Us</span>
+                    <span className="timeline-content js--fadeInRight text-4xl md:text-8xl text-center">Code With Us</span>
                 </h1>
                 <p className="timeline-content js--fadeInRight text-md md:text-2xl pt-5">Coding isn't just for computers,</p>
                 <p className="timeline-content js--fadeInRight text-md md:text-2xl pt-5 text-center">it's the language of the <span
@@ -150,10 +150,10 @@ export default function ContactPage() {
                     and your fluency begins <span className="text-yellow-200 font-bold">now!</span></p>
                 <p className="timeline-content js--fadeInRight text-lg md:text-2xl pt-5">English / 한국어</p>
             </section>
-            <main className="flex-1 mx-auto">
-                <div className="bg-black text-white flex flex-col">
+            <main className="flex-1 overflow-x-hidden">
+                <div className="bg-black text-white flex flex-col px-2">
                     <section className="py-10 border-b">
-                        <h2 className="text-2xl md:text-4xl text-center py-5 text-yellow-200">Contact Info</h2>
+                        <h2 className="text-4xl md:text-6xl text-center py-5 text-yellow-200">Contact Info</h2>
                         <div className="max-w-[1000px] mx-auto md:grid md:grid-cols-2 px-2">
                             <div className="flex md:py-7">
                                 <LuMapPin size={25} />
@@ -217,7 +217,7 @@ export default function ContactPage() {
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.918591896756!2d-122.80519882320316!3d49.27793977108967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548678cc852829e7%3A0x417feb8745527bef!2s2885%20Barnet%20Hwy%2C%20Coquitlam%2C%20BC%20V3B%201C1!5e0!3m2!1sen!2sca!4v1715144121249!5m2!1sen!2sca"
                                 width="300" height="450" allowFullScreen="" loading="lazy"
-                                referrerPolicy="no-referrer-when-downgrade" className="map"></iframe>
+                                referrerPolicy="no-referrer-when-downgrade" className="map mx-auto"></iframe>
 
                         </div>
                         <div className="mx-2 py-10 md:py-0 w-[100%]">
@@ -225,7 +225,7 @@ export default function ContactPage() {
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83196.59938726886!2d-123.33264520273437!3d49.33523070000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54866f5e357e6601%3A0xfe3a1182e56f9edb!2sVision%20Coding%20Academy!5e0!3m2!1sen!2sca!4v1715361821515!5m2!1sen!2sca"
                                 width="300" height="450" allowFullScreen="" loading="lazy"
-                                referrerPolicy="no-referrer-when-downgrade" className="map"></iframe>
+                                referrerPolicy="no-referrer-when-downgrade" className="map mx-auto"></iframe>
                         </div>
                     </section>
                 </div>
