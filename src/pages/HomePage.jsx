@@ -417,8 +417,8 @@ export default function HomePage() {
                     </div>
                 </section>
                 <section className="max-w-[1000px] mx-auto py-10">
-                    <h3 className="pl-2 text-2xl md:text-6xl py-10 text-center text-yellow-200">Our Team</h3>
-                    <p className="pl-2 px-10 text-lg md:text-2xl">Meet the driving force behind Vision Coding Academy - a diverse team of IT
+                    <h3 className="pl-2 text-4xl md:text-6xl py-10 text-center text-yellow-200">Our Team</h3>
+                    <p className="px-10 text-lg md:text-2xl">Meet the driving force behind Vision Coding Academy - a diverse team of IT
                         industry
                         experts
                         specializing in software, hardware, frontend, backend, automation, UI/UX, and web design. Each
@@ -437,8 +437,8 @@ export default function HomePage() {
                         className="relative bottom-[45px] md:bottom-[60px] left-[40%] md:left-[48%] w-[75px] md:w-[100px] bg-black" />
                 </div>
                 <section className="py-10 border-b">
-                    <h2 className="glow text-2xl md:text-6xl text-center pb-10 text-yellow-200">Code with us</h2>
-                    <div className="max-w-[1000px] mx-auto md:grid md:grid-cols-2 px-2">
+                    <h2 className="glow text-4xl md:text-6xl text-center pb-10 text-yellow-200">Code with us</h2>
+                    <div className="max-w-[1000px] mx-auto md:grid md:grid-cols-2 px-5">
                         <div className="flex md:py-7">
                             <LuMapPin size={25} />
                             <p className="text-lg pl-2">2885 Barnet Hwy, Coquitlam, BC V3B 1C1</p>

@@ -151,7 +151,7 @@ export default function AboutPage() {
     }, []);
 
     return (
-        <main className="flex-1 overflow-x-auto">
+        <main className="flex-1 overflow-x-hidden">
             <section className="about">
                 <h1 className="">
                     <span className="timeline-content js--fadeInRight text-5xl md:text-8xl">About Us</span>
@@ -164,51 +164,53 @@ export default function AboutPage() {
             <div className="bg-black text-white flex flex-col">
                 <section className="py-10 max-w-[1000px] mx-auto">
                     <div className="py-5">
-                        <div className="py-5">
-                            <h2 className="text-4xl md:text-6xl text-center py-5 text-yellow-200">Our Story</h2>
-                            <p className="hidden md:block text-lg md:text-2xl px-10">Vision Coding Academy's story began with a
-                                simple yet
-                                powerful
-                                vision: to transform the way young minds interact with technology. Our director, Jay,
-                                combined his extensive experience in tech and education to establish an academy where coding
-                                is more than a subject - it's a gateway to innovation and future possibilities. Over the
-                                years, our team of IT industry experts has expanded, each bringing their unique expertise to
-                                enrich our curriculum. Together, we have created a dynamic learning environment where
-                                students are encouraged to think critically, solve problems creatively, and prepare for a
-                                future where they can make a real difference in the world of technology</p>
-                            <p className="md:hidden text-lg md:text-2xl px-10">Vision Coding Academy's story began with a simple
-                                yet
-                                powerful
-                                vision: to transform the way <span className="text-yellow-200">young minds</span> interact with
-                                <span className="text-yellow-200">technology</span>.</p>
-                            <p className="md:hidden text-lg md:text-2xl px-10 py-5">Over the
-                                years, our team of IT industry experts has expanded, each bringing their <span
-                                    className="text-yellow-200">unique expertise</span> to
-                                enrich our curriculum.</p>
-                            <p className="md:hidden text-lg md:text-2xl px-10">Together, we've created a dynamic learning
-                                environment where
-                                students are encouraged to <span
-                                    className="text-yellow-200">think critically</span>, solve problems creatively, and prepare for a
-                                future where they can make a real difference in the world of technology</p>
-                        </div>
+                        <h2 className="text-4xl md:text-6xl text-center py-5 text-yellow-200">Our Story</h2>
+                        <p className="hidden md:block text-lg md:text-2xl px-10">Vision Coding Academy's story began with a
+                            simple yet
+                            powerful
+                            vision: to transform the way young minds interact with technology. Our director, Jay,
+                            combined his extensive experience in tech and education to establish an academy where coding
+                            is more than a subject - it's a gateway to innovation and future possibilities. Over the
+                            years, our team of IT industry experts has expanded, each bringing their unique expertise to
+                            enrich our curriculum. Together, we have created a dynamic learning environment where
+                            students are encouraged to think critically, solve problems creatively, and prepare for a
+                            future where they can make a real difference in the world of technology</p>
+                        <p className="md:hidden text-lg md:text-2xl px-10">Vision Coding Academy's story began with a simple
+                            yet
+                            powerful
+                            vision: to transform the way <span className="text-yellow-200">young minds</span> interact with
+                            <span className="pl-1 text-yellow-200">technology</span>.</p>
+                        <p className="md:hidden text-lg md:text-2xl px-10 py-5">Over the
+                            years, our team of IT industry experts has expanded, each bringing their <span
+                                className="text-yellow-200">unique expertise</span> to
+                            enrich our curriculum.</p>
+                        <p className="md:hidden text-lg md:text-2xl px-10">Together, we've created a dynamic learning
+                            environment where
+                            students are encouraged to <span
+                                className="text-yellow-200">think critically</span>, solve problems creatively, and prepare for a
+                            future where they can make a real difference in the world of technology</p>
                     </div>
                 </section>
-                <section className="md:max-w-[1000px] mx-auto py-10 md:py-20">
+                <section className="md:max-w-[1000px] mx-auto pb-10 md:py-20">
+                    <h2 className="timeline-content js--fadeInLeft text-center pl-2 text-4xl md:text-6xl pb-10 text-yellow-200">Meet Our Director</h2>
                     <div className="timeline-content js--fadeInRight md:float-right ml-10">
                         <img src={jayImg} className="w-[250px] mx-auto rounded-full" />
-                        <h1 className="pl-2 text-3xl text-center">Jay</h1>
-                        <div className="pl-2 text-lg md:text-xl">Director and DevOps Engineer</div>
+                        <h1 className="md:pl-2 text-3xl text-center">Jay</h1>
+                        <div className="md:pl-2 text-lg md:text-xl py-5">Director and DevOps Engineer</div>
                     </div>
-                    <h2 className="timeline-content js--fadeInLeft pl-2 text-4xl md:text-6xl py-10 text-yellow-200">Meet Our Director</h2>
-                    <p className="timeline-content js--fadeInLeft pl-2 text-lg md:text-xl">At Vision Coding Academy, I, Jay, blend my tech know-how with educational
-                        insights
-                        to create a
-                        dynamic learning environment. My journey in tech and teaching isn't just about imparting
+                    <p class="timeline-content js--fadeInLeft px-2 text-lg md:text-2xl text-center md:text-left">
+                        At Vision Coding Academy, I, Jay, blend
+                        my <span class="text-yellow-200">tech know-how</span> with <span
+                            class="text-yellow-200">educational
+                            insights</span> to create a <span class="text-yellow-200">dynamic learning environment</span>. My journey in tech and
+                        teaching isn't just about imparting
                         knowledge;
-                        it's about igniting a passion for innovation and problem-solving in our students.</p>
+                        it's about <span class="text-yellow-200">igniting a passion for innovation and
+                            problem-solving</span> in our students.
+                    </p>
                 </section>
                 <section className="max-w-[1000px] mx-auto py-10">
-                    <h3 className="pl-2 text-2xl md:text-6xl py-10 text-yellow-200">Meet The Team</h3>
+                    <h3 className="pl-2 text-4xl md:text-6xl text-yellow-200">Meet The Team</h3>
                 </section>
                 <section className="py-10 md:grid md:grid-cols-5 md:pl-20 mx-auto">
                     <div>
@@ -267,8 +269,8 @@ export default function AboutPage() {
                 </section>
                 <section className="py-10 max-w-[1000px] mx-auto">
                     <div className="py-5">
-                        <h2 className="text-2xl md:text-6xl text-center text-yellow-200 py-5">Our Students</h2>
-                        <p className="text-center md:text-lg">Testimonial reviews & comments</p>
+                        <h2 className="text-4xl md:text-6xl text-center text-yellow-200 py-5">Our Students</h2>
+                        <p className="text-center text-lg md:text-2xl">Testimonial reviews & comments</p>
                     </div>
                     <div className="md:flex mx-auto py-10">
                         <img src={testimonial1} alt="Jay" className="image rounded-full border w-[300px] h-[300px] md:w-[350px] md:h-[350px] md:mx-3 cursor-pointer" />
@@ -311,8 +313,8 @@ export default function AboutPage() {
                     </div>
                 </section>
                 <section className="py-10 border-b">
-                    <h2 className="glow text-2xl md:text-6xl text-center py-10">Code with us</h2>
-                    <div className="max-w-[1000px] mx-auto md:grid md:grid-cols-2 px-2">
+                    <h2 className="glow text-4xl md:text-6xl text-center py-10 text-yellow-200">Code with us</h2>
+                    <div className="max-w-[1000px] mx-auto md:grid md:grid-cols-2 px-5">
                         <div className="flex md:py-7">
                             <LuMapPin size={25} />
                             <p className="text-lg pl-2">2885 Barnet Hwy, Coquitlam, BC V3B 1C1</p>

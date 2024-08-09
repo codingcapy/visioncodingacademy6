@@ -180,7 +180,7 @@ main {
 .hero-banner2 {
     height: 300px;
     padding: 30px;
-    background-image: url("../banner-bg.png");
+    background-image: url("/banner-bg.png");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -245,8 +245,8 @@ main {
 }
 
 .intro {
-    padding: 30px;
-    background-image: url("./background2.jpg");
+    padding: 20px;
+    background-image: url("/background2.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -254,7 +254,7 @@ main {
 .ad1 {
     position: relative;
     padding: 30px;
-    background-image: url("./ad1.jpg");
+    background-image: url("/ad1.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -273,14 +273,14 @@ main {
 .ad1 p,
 .ad1 a {
     position: relative;
-    z-index: 99;
+    z-index: 2;
     /* Ensure text and button are above the overlay */
 }
 
 .ad2 {
     position: relative;
     padding: 30px;
-    background-image: url("./ad2.jpg");
+    background-image: url("/ad2.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -299,14 +299,14 @@ main {
 .ad2 p,
 .ad2 a {
     position: relative;
-    z-index: 99;
+    z-index: 2;
     /* Ensure text and button are above the overlay */
 }
 
 .ad3 {
     position: relative;
     padding: 30px;
-    background-image: url("./ad3.jpg");
+    background-image: url("/ad3.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -325,7 +325,7 @@ main {
 .ad3 p,
 .ad3 a {
     position: relative;
-    z-index: 99;
+    z-index: 2;
     /* Ensure text and button are above the overlay */
 }
 
@@ -456,9 +456,9 @@ main {
 }
 
 .about {
-    height: 500px;
+    height: 300px;
     padding: 30px;
-    background-image: url("./about2.jpg");
+    background-image: url("/about2.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -475,7 +475,7 @@ main {
 
     left: 0;
     width: 100%;
-    height: 500px;
+    height: 300px;
     background-color: rgba(0, 0, 0, 0.65);
     /* Adjust the opacity to darken/lighten */
 }
