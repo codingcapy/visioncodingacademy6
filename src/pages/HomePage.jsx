@@ -17,11 +17,10 @@ import techIcon2 from "/icon2.svg"
 import techIcon3 from "/icon3.svg"
 import techIcon4 from "/icon4.svg"
 import techIcon5 from "/icon5.svg"
-import bgVideo from '/bg2-6.mp4';
+import bgVideo from '/bg2-7.mp4';
 import logoAlpha from "/logo_alpha.png"
 import homeBanner from "/home-banner.jpg"
 import visionCodingIcon from "/yellow1.png"
-import gallery1 from '/gallery1.png'
 import { LuMapPin } from "react-icons/lu";
 import { FaInstagram } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
@@ -30,8 +29,6 @@ import { TfiEmail } from "react-icons/tfi";
 import { FaWhatsapp } from "react-icons/fa";
 import { IoEyeOutline } from "react-icons/io5";
 import { TbTargetArrow } from "react-icons/tb";
-import FloatingNav from '../components/FloatingNav';
-
 
 export default function HomePage() {
 
@@ -97,13 +94,13 @@ export default function HomePage() {
     return (
         <main className="flex-1 mx-auto">
             <div>
-                <video id="background-video" autoPlay loop muted poster={homeBanner}
+                <video id="background-video" autoPlay loop muted preload="auto" poster={homeBanner}
                     className="h-[400px] md:h-[700px]">
-                    <source src={bgVideo} type="video/mp4"/>
+                    <source src={bgVideo} type="video/mp4" />
                 </video>
                 <div className="timeline-content js--fadeInRight absolute top-[15%] md:left-[5%] z-10">
                     <div className="flex pt-5 ">
-                        <img src={logoAlpha} alt="" className="w-[90px] h-[100px] md:w-[360px] md:h-[405px]"/>
+                        <img src={logoAlpha} alt="" className="w-[90px] h-[100px] md:w-[360px] md:h-[405px]" />
                         <div className="flex flex-col md:my-24 md:ml-40 md:pl-10 md:border-l-8">
                             <h1 className="text-4xl md:text-8xl text-yellow-100">VISION CODING ACADEMY</h1>
                             <p className="text-lg md:text-7xl py-2 md:pt-10 pb-0 mulish-light">Become a Great Engineer</p>
@@ -119,9 +116,9 @@ export default function HomePage() {
                             className="pl-2 bg-gradient-to-r from-yellow-400 to-yellow-100 inline-block text-transparent bg-clip-text">Code</span>
                     </p>
                     <div className="flex flex-col mx-auto mt-10">
-                        <a href="./courses/index.html"
+                        <NavLink to="/courses"
                             className="mx-auto px-3 py-3 border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500">View
-                            Courses</a>
+                            Courses</NavLink>
                     </div>
                 </div>
             </div>
@@ -205,7 +202,7 @@ export default function HomePage() {
                 <div
                     className="relative md:bg-gradient-to-r from-yellow-400 via-white to-yellow-400 rounded-tr-3xl rounded-bl-3xl md:py-[2px] px-[2px] md:my-10 hover:transform hover:scale-110 transition-all ease duration-300">
                     <div className="bg-black rounded-tr-3xl rounded-bl-3xl md:py-5 px-5">
-                        <a href="./courses/index.html">
+                        <NavLink to="/courses">
                             <p
                                 className="md:absolute md:top-[-20px] md:left-[50px] md:px-5 md:z-[5] md:bg-black timeline-content js--fadeInRight text-lg md:text-2xl text-yellow-200 text-center md:text-left">
                                 All Levels</p>
@@ -224,7 +221,7 @@ export default function HomePage() {
                                 Python, Java, C, C++, C#, and JavaScript. Learn the fundamentals of programming such as
                                 Object-Oriented Programming, data structures and algorithms, and
                                 more.</p>
-                        </a>
+                        </NavLink>
                     </div>
                 </div>
                 <div className="md:hidden mt-20 h-[60px]">
@@ -237,7 +234,7 @@ export default function HomePage() {
                 <div
                     className="relative md:bg-gradient-to-r from-yellow-400 via-white to-yellow-400 rounded-tr-3xl rounded-bl-3xl md:py-[2px] px-[2px] md:my-10 hover:transform hover:scale-110 transition-all ease duration-300">
                     <div className="bg-black rounded-tr-3xl rounded-bl-3xl md:py-5 px-5">
-                        <a href="./courses/index.html#computer-science">
+                        <NavLink to="/courses">
                             <p
                                 className="md:absolute md:top-[-20px] md:left-[50px] md:px-5 md:z-[5] md:bg-black timeline-content js--fadeInRight text-lg md:text-2xl text-yellow-200 text-center md:text-left">
                                 All Levels</p>
@@ -259,7 +256,7 @@ export default function HomePage() {
                                 taught at schools such as CS 10, CS 11, CS 12 and AP CS A. Receive training for
                                 competitive
                                 computing events like the Canadian Computing Competition.</p>
-                        </a>
+                        </NavLink>
                     </div>
                 </div>
                 <div className="md:hidden mt-20 h-[60px]">
@@ -272,7 +269,7 @@ export default function HomePage() {
                 <div
                     className="relative md:bg-gradient-to-r from-yellow-400 via-white to-yellow-400 rounded-tr-3xl rounded-bl-3xl md:py-[2px] px-[2px] md:my-10 hover:transform hover:scale-110 transition-all ease duration-300">
                     <div className="bg-black rounded-tr-3xl rounded-bl-3xl md:py-5 px-5">
-                        <a href="./courses/index.html">
+                        <NavLink to="/courses/interviewprep">
                             <p
                                 className="md:absolute md:top-[-20px] md:left-[50px] md:px-5 md:z-[5] md:bg-black timeline-content js--fadeInRight text-lg md:text-2xl text-yellow-200 text-center md:text-left">
                                 Intermediate</p>
@@ -294,7 +291,7 @@ export default function HomePage() {
                                 and update capstone projects in an agile Scrum environment and add them to your GitHub
                                 and
                                 portfolio to enhance hireability.</p>
-                        </a>
+                        </NavLink>
                     </div>
                 </div>
                 <div className="md:hidden mt-20 h-[60px]">
@@ -307,7 +304,7 @@ export default function HomePage() {
                 <div
                     className="relative md:bg-gradient-to-r from-yellow-400 via-white to-yellow-400 rounded-tr-3xl rounded-bl-3xl md:py-[2px] px-[2px] md:my-10 hover:transform hover:scale-110 transition-all ease duration-300">
                     <div className="bg-black rounded-tr-3xl rounded-bl-3xl md:py-5 px-5">
-                        <a href="./courses/index.html">
+                        <NavLink to="/courses/ccc">
                             <p
                                 className="md:absolute md:top-[-20px] md:left-[50px] md:px-5 md:z-[5] md:bg-black timeline-content js--fadeInRight text-lg md:text-2xl text-yellow-200 text-center md:text-left">
                                 Advanced</p>
@@ -328,7 +325,7 @@ export default function HomePage() {
                                 helps
                                 students code fast in a high pressure environment by solving large amounts of complex
                                 computing problems.</p>
-                        </a>
+                        </NavLink>
                     </div>
                 </div>
                 <div className="md:hidden mt-20 h-[50px]">
@@ -341,7 +338,7 @@ export default function HomePage() {
                 <div
                     className="relative md:bg-gradient-to-r from-yellow-400 via-white to-yellow-400 rounded-tr-3xl rounded-bl-3xl md:py-[2px] px-[2px] md:my-10 hover:transform hover:scale-110 transition-all ease duration-300">
                     <div className="bg-black rounded-tr-3xl rounded-bl-3xl md:py-5 px-5">
-                        <a href="./courses/index.html#interview-prep">
+                        <NavLink to="/courses/interviewprep">
                             <p
                                 className="md:absolute md:top-[-20px] md:left-[50px] md:px-5 md:z-[5] md:bg-black timeline-content js--fadeInRight text-lg md:text-2xl text-yellow-200 text-center md:text-left">
                                 Career</p>
@@ -365,7 +362,7 @@ export default function HomePage() {
                                 applications with
                                 focus in Computer Science. It includes guidance on creating a compelling portfolio with
                                 multiple GitHub projects and strategies for career advancement in the tech field.</p>
-                        </a>
+                        </NavLink>
                     </div>
                 </div>
                 <div className="md:hidden mt-20 h-[70px]">
@@ -376,9 +373,9 @@ export default function HomePage() {
                         className="relative bottom-[45px] md:bottom-[60px] left-[40%] md:left-[48%] w-[75px] md:w-[100px] bg-black" />
                 </div>
                 <div className="flex flex-col py-30 mx-auto">
-                    <a href="./courses/index.html"
+                    <NavLink to="/courses"
                         className=" text-center px-3 py-3 border-4 rounded border-yellow-300 text-yellow-300 font-bold text-lg md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500 mx-auto w-[200px]">
-                        More Courses</a>
+                        More Courses</NavLink>
                 </div>
             </section>
             <div className="bg-black text-white flex flex-col">
@@ -487,16 +484,6 @@ export default function HomePage() {
                     </div>
                 </section>
             </div>
-            {/* {showPopUp && <section className='fixed top-0 left-0 w-[100vw] h-[100vh] z-[1000] bg-black bg-opacity-60' onClick={()=>setShowPopUp(false)}>
-                <div className="absolute left-[50%] top-[40%] md:top-[50%] max-w-[400px] md:max-w-[1000px] min-w-[300pxx] py-3 px-3 bg-neutral-800 border-2 transform -translate-x-1/2 -translate-y-1/2 rounded-xl border-yellow-300">
-                    <h2 className="text-4xl md:text-7xl text-yellow-200 text-center pt-1 md:pt-5 md:px-5">GRAND OPENING!</h2>
-                    <h2 className="text-2xl md:text-4xl text-yellow-200 text-center py-1 md:py-2">Vision Coding West Vancouver!</h2>
-                    <p className="text-xl md:text-2xl text-center pb-1 md:pb-2"><span className="text-yellow-300">Free Trial</span> Classes Available</p>
-                    <img src={gallery1} alt="" className="py-1 md:py-2 w-[400px] mx-auto" />
-                    <p className="md:text-lg text-center py-1 md:py-2">2428 Haywood Ave, West Vancouver, BC V7V 1Y1</p>
-                    <button id="ok-button" className="flex flex-col mx-auto mx-auto my-1 md:my-3 px-10 md:px-16 py1 md:py-3 border border-4 rounded border-yellow-300 text-yellow-300 font-bold text-xl md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500">OK</button>
-                </div>
-            </section>} */}
         </main>
     )
 }

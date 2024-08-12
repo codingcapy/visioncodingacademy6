@@ -1,4 +1,10 @@
 
+/*
+author: Paul Kim
+date: May 8, 2024
+version: 1.0
+description: summer camp page for Vision Coding Academy
+ */
 
 import $ from 'jquery';
 import ScrollReveal from 'scrollreveal'
@@ -6,6 +12,7 @@ import { useEffect } from 'react';
 import codingClass from "/coding-class1.jpg"
 import arduino from "/arduino.jpg"
 import icon75 from "/icon75arduino.svg"
+import { NavLink } from 'react-router-dom';
 
 export default function SummerCampPage() {
 
@@ -93,10 +100,10 @@ export default function SummerCampPage() {
                 <h1 className="hidden md:block timeline-content js--fadeInRight text-center text-5xl md:text-8xl">for G1-3
                     Students</h1>
                 <p className="hidden md:block timeline-content js--fadeInRight text-2xl pt-5 md:pt-10">12-Week Program</p>
-                <p
+                <NavLink to="/courses/arduino"
                     className="z-10 my-10 px-10 py-5 bg-red-500 rounded-xl text-white flex flex-col mx-auto hover:cursor-pointer hover:bg-red-400 transition all-ease duration-300">
                     Apply Now
-                </p>
+                </NavLink>
             </section>
             <main className="flex-1 mx-auto px-2 py-20 md:max-w-[700px] lg:max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] overflow-x-hidden">
                 <h2
@@ -134,10 +141,10 @@ export default function SummerCampPage() {
                             planning, execution, and presentation</p>
                     </div>
                 </div>
-                <button
-                    className="z-10 my-10 px-10 py-5 bg-red-500 rounded-xl text-2xl text-white flex flex-col mx-auto hover:cursor-pointer hover:bg-red-400 transition all-ease duration-300">
+                <NavLink to="/courses/arduino"
+                    className="z-10 my-10 px-10 py-5 bg-red-500 w-[215px] text-center rounded-xl text-2xl text-white flex flex-col mx-auto hover:cursor-pointer hover:bg-red-400 transition all-ease duration-300">
                     Apply Now
-                </button>
+                </NavLink>
                 <h2
                     className="timeline-content js--fadeInRight text-4xl md:text-6xl md:py-20 max-w-[1000px] mx-auto text-center text-yellow-200">
                     Curriculum</h2>

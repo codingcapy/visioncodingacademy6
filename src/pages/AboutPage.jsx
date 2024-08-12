@@ -345,11 +345,22 @@ export default function AboutPage() {
                         </div>
                     </div>
                 </section>
-                <section className="mx-2 py-10 border-t-2 border-b-2">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.918591896756!2d-122.80519882320316!3d49.27793977108967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548678cc852829e7%3A0x417feb8745527bef!2s2885%20Barnet%20Hwy%2C%20Coquitlam%2C%20BC%20V3B%201C1!5e0!3m2!1sen!2sca!4v1715144121249!5m2!1sen!2sca"
-                        width="300" height="450" allowFullScreen="" loading="lazy"
-                        referrerPolicy="no-referrer-when-downgrade" className="map mx-auto"></iframe>
+                <section className="md:flex mx-auto py-10 w-[100%]">
+                    <div className="mx-2 w-[100%]">
+                        <h1 className="text-2xl py-2 text-center md:text-left">Coquitlam Location</h1>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.918591896756!2d-122.80519882320316!3d49.27793977108967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548678cc852829e7%3A0x417feb8745527bef!2s2885%20Barnet%20Hwy%2C%20Coquitlam%2C%20BC%20V3B%201C1!5e0!3m2!1sen!2sca!4v1715144121249!5m2!1sen!2sca"
+                            width="300" height="450" allowFullScreen="" loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade" className="map mx-auto"></iframe>
+
+                    </div>
+                    <div className="mx-2 py-10 md:py-0 w-[100%]">
+                        <h1 className="text-2xl py-2 text-center md:text-left">West Vancouver Location</h1>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83196.59938726886!2d-123.33264520273437!3d49.33523070000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54866f5e357e6601%3A0xfe3a1182e56f9edb!2sVision%20Coding%20Academy!5e0!3m2!1sen!2sca!4v1715361821515!5m2!1sen!2sca"
+                            width="300" height="450" allowFullScreen="" loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade" className="map mx-auto"></iframe>
+                    </div>
                 </section>
             </div>
         </main>
