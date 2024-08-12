@@ -198,14 +198,14 @@ export default function AboutPage() {
                         <h1 className="md:pl-2 text-3xl text-center">Jay</h1>
                         <div className="md:pl-2 text-lg md:text-xl py-5">Director and DevOps Engineer</div>
                     </div>
-                    <p class="timeline-content js--fadeInLeft px-2 text-lg md:text-2xl text-center md:text-left">
+                    <p className="timeline-content js--fadeInLeft px-2 text-lg md:text-2xl text-center md:text-left">
                         At Vision Coding Academy, I, Jay, blend
-                        my <span class="text-yellow-200">tech know-how</span> with <span
-                            class="text-yellow-200">educational
-                            insights</span> to create a <span class="text-yellow-200">dynamic learning environment</span>. My journey in tech and
+                        my <span className="text-yellow-200">tech know-how</span> with <span
+                            className="text-yellow-200">educational
+                            insights</span> to create a <span className="text-yellow-200">dynamic learning environment</span>. My journey in tech and
                         teaching isn't just about imparting
                         knowledge;
-                        it's about <span class="text-yellow-200">igniting a passion for innovation and
+                        it's about <span className="text-yellow-200">igniting a passion for innovation and
                             problem-solving</span> in our students.
                     </p>
                 </section>
