@@ -149,9 +149,12 @@ export default function ContactPage() {
 
     async function handleSubmit(e) {
         e.preventDefault();
-        console.log("form reached")
-        const res = await axios.post(`${DOMAIN}/api/questions`);
-        console.log(DOMAIN)
+        const first_name = e.target.firstname.value;
+        const last_name = e.target.lastname.value;
+        const contact = e.target.contact.value;
+        const content = e.target.content.value;
+        const newQuestion = { first_name, last_name, contact, content }
+        const res = await axios.post(`${DOMAIN}/api/questions`, newQuestion);
         if (res?.data.success) {
             setNotification("Message sent successfully! If you need a response, we will get back to you as soon as possible :)")
             setFNameInput("")
@@ -162,10 +165,6 @@ export default function ContactPage() {
         else {
             console.log(res)
             setNotification("There was an error sending the message :( We will look into this issue, please try again in the near future!")
-            setFNameInput("")
-            setLNameInput("")
-            setContactInput("")
-            setContentInput("")
         }
     }
 

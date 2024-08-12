@@ -493,8 +493,8 @@ export default function CoursesPage() {
                         className="nav-element py-2 text-lg md:text-2xl">
                         <div className="bg-yellow-300 rounded-full h-[50px] w-[50px] md:h-[75px] md:w-[75px]">
                             <svg fill="#000000" height="65px" width="65px" version="1.1" id="Layer_1"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                viewBox="0 0 310 310" xml:space="preserve" className="hidden md:block mx-auto pt-2">
+                                xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
+                                viewBox="0 0 310 310" xmlSpace="preserve" className="hidden md:block mx-auto pt-2">
                                 <g id="XMLID_834_">
                                     <path id="XMLID_835_" d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064
                                 c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996
@@ -504,8 +504,8 @@ export default function CoursesPage() {
                                 </g>
                             </svg>
                             <svg fill="#000000" height="45px" width="45px" version="1.1" id="Layer_1"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                viewBox="0 0 310 310" xml:space="preserve" className="md:hidden mx-auto pt-2">
+                                xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
+                                viewBox="0 0 310 310" xmlSpace="preserve" className="md:hidden mx-auto pt-2">
                                 <g id="XMLID_834_">
                                     <path id="XMLID_835_" d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064
                                 c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996
@@ -539,8 +539,8 @@ export default function CoursesPage() {
                     <NavLink to="http://wa.me/+16049003707" target="_blank" className="nav-element py-2 text-lg md:text-2xl">
                         <div className="bg-yellow-300 rounded-full h-[50px] w-[50px] md:h-[75px] md:w-[75px]">
                             <svg fill="#000000" height="60px" width="60px" version="1.1" id="Layer_1"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                viewBox="0 0 308 308" xml:space="preserve" className="hidden md:block mx-auto pt-2">
+                                xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
+                                viewBox="0 0 308 308" xmlSpace="preserve" className="hidden md:block mx-auto pt-2">
                                 <g id="XMLID_468_">
                                     <path id="XMLID_469_" d="M227.904,176.981c-0.6-0.288-23.054-11.345-27.044-12.781c-1.629-0.585-3.374-1.156-5.23-1.156
                                 c-3.032,0-5.579,1.511-7.563,4.479c-2.243,3.334-9.033,11.271-11.131,13.642c-0.274,0.313-0.648,0.687-0.872,0.687
@@ -562,8 +562,8 @@ export default function CoursesPage() {
                                 </g>
                             </svg>
                             <svg fill="#000000" height="40px" width="40px" version="1.1" id="Layer_1"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                viewBox="0 0 308 308" xml:space="preserve" className="md:hidden mx-auto pt-2">
+                                xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
+                                viewBox="0 0 308 308" xmlSpace="preserve" className="md:hidden mx-auto pt-2">
                                 <g id="XMLID_468_">
                                     <path id="XMLID_469_" d="M227.904,176.981c-0.6-0.288-23.054-11.345-27.044-12.781c-1.629-0.585-3.374-1.156-5.23-1.156
                                 c-3.032,0-5.579,1.511-7.563,4.479c-2.243,3.334-9.033,11.271-11.131,13.642c-0.274,0.313-0.648,0.687-0.872,0.687
