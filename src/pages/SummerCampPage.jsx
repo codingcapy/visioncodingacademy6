@@ -340,10 +340,10 @@ export default function SummerCampPage() {
                     <p className="text-sm md:text-lg">Activity: Each student presents their project to the class</p>
                     <img src={icon75} alt="logo" className="w-[75px] pt-5" />
                 </div>
-                <button
-                    className="z-10 my-20 px-10 py-5 bg-red-500 rounded-xl text-2xl text-white flex flex-col mx-auto hover:cursor-pointer hover:bg-red-400 transition all-ease duration-300">
+                <NavLink to="/courses/arduino"
+                    className="z-10 my-20 px-10 py-5 bg-red-500 text-center w-[215px] rounded-xl text-2xl text-white flex flex-col mx-auto hover:cursor-pointer hover:bg-red-400 transition all-ease duration-300">
                     Apply Now
-                </button>
+                </NavLink>
                 <div className="fixed bottom-2 right-2 md:bottom-16 md:right-16 bg-transparent">
                     <div className="py-2 bg-transparent z-10">
                         <a href="https://www.instagram.com/vision.coding/"
