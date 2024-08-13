@@ -154,16 +154,20 @@ export default function ContactPage() {
         const contact = e.target.contact.value;
         const content = e.target.content.value;
         const newQuestion = { first_name, last_name, contact, content }
-        const res = await axios.post(`${DOMAIN}/api/questions`, newQuestion);
-        if (res?.data.success) {
-            setNotification("Message sent successfully! If you need a response, we will get back to you as soon as possible :)")
-            setFNameInput("")
-            setLNameInput("")
-            setContactInput("")
-            setContentInput("")
+        try {
+            const res = await axios.post(`${DOMAIN}/api/questions`, newQuestion);
+            if (res?.data.success) {
+                setNotification("Message sent successfully! If you need a response, we will get back to you as soon as possible :)")
+                setFNameInput("")
+                setLNameInput("")
+                setContactInput("")
+                setContentInput("")
+            }
+            else {
+                setNotification("There was an error sending the message :( We will look into this issue, please try again in the near future!")
+            }
         }
-        else {
-            console.log(res)
+        catch (err) {
             setNotification("There was an error sending the message :( We will look into this issue, please try again in the near future!")
         }
     }

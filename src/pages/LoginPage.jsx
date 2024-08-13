@@ -6,18 +6,21 @@ version: 1.0
 description: Login page for Vision Coding Academy
  */
 
-import { useEffect } from "react"
-import { NavLink } from "react-router-dom";
+import { useEffect, useState } from "react"
+import { NavLink, useNavigate } from "react-router-dom";
 
 export default function LoginPage() {
 
+    const navigate = useNavigate();
+    const [notification, setNotification] = useState("")
+
     useEffect(() => {
         document.title = 'Login | Vision Coding';
-      }, []);
+    }, []);
 
-      async function handleLogin(e){
+    async function handleLogin(e) {
         e.preventDefault();
-      }
+    }
 
     return (
         <main className="flex-1 mx-auto">
