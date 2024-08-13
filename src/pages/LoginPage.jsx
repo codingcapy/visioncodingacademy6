@@ -6,13 +6,17 @@ version: 1.0
 description: Login page for Vision Coding Academy
  */
 
+import axios from "axios";
 import { useEffect, useState } from "react"
 import { NavLink, useNavigate } from "react-router-dom";
+import DOMAIN from "../services/endpoint";
+import useAuthStore from "../store/AuthStore";
 
 export default function LoginPage() {
 
     const navigate = useNavigate();
     const [notification, setNotification] = useState("")
+    const { loginService, authLoading, user } = useAuthStore((state) => state);
 
     useEffect(() => {
         document.title = 'Login | Vision Coding';
@@ -20,6 +24,15 @@ export default function LoginPage() {
 
     async function handleLogin(e) {
         e.preventDefault();
+        const email = e.target.email.value;
+        const password = e.target.password.value;
+        if (!email || !password) return;
+        loginService(email, password);
+        if (!user) {
+            setTimeout(() => {
+                setMessage("Invalid login credentials");
+            }, 500)
+        }
     }
 
     return (
@@ -36,12 +49,12 @@ export default function LoginPage() {
                     <form onSubmit={handleLogin} className="flex flex-col mx-auto">
                         <div className="flex flex-col">
                             <label htmlFor="title">Email</label>
-                            <input type="email" name='title' id='title' placeholder="Email" required
+                            <input type="email" name='email' id='email' placeholder="Email" required
                                 className="px-2 border rounded-lg border-slate-700 py-1 w-[300px] text-black" />
                         </div>
                         <div className="flex flex-col my-2">
                             <label htmlFor="content">Password</label>
-                            <input type="password" name='content' id='content' placeholder='Password' required rows="10"
+                            <input type="password" name='password' id='password' placeholder='Password' required rows="10"
                                 cols="40" className="px-2 border rounded-lg border-slate-700 py-1 w-[300px] text-black" />
                         </div>
                         <button

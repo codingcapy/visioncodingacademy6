@@ -9,9 +9,12 @@ description: Header component for Vision Coding Academy
 import React, { useEffect, useState } from 'react';
 import { NavLink } from "react-router-dom";
 import visionCodingIcon from "/yellow1.png";
+import useAuthStore from '../store/AuthStore';
 
 export default function Header() {
+
     const [navVisible, setNavVisible] = useState(false);
+    const { user, logoutService } = useAuthStore((state) => state);
 
     useEffect(() => {
         function handleResize() {
@@ -83,7 +86,7 @@ export default function Header() {
                     </li>
                 </ul>
             </nav>
-            <div className="flex">
+            {!user && <div className="flex">
                 <NavLink to="/login"
                     className="nav-element hidden px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300 md:text-2xl">
                     Login
@@ -92,7 +95,17 @@ export default function Header() {
                     className="nav-element hidden px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300 md:text-2xl">
                     Signup
                 </NavLink>
-            </div>
+            </div>}
+            {user && <div className="flex">
+                <NavLink to="/login"
+                    className="nav-element hidden px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300 md:text-2xl">
+                    {user?.username}
+                </NavLink>
+                <button onClick={logoutService}
+                    className="nav-element hidden px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300 md:text-2xl">
+                    Logout
+                </button>
+            </div>}
         </header>
     );
 }
