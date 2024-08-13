@@ -30,7 +30,8 @@ export default function SignupPage() {
             if (password != confirm){
                 return setNotification("passwords don't match!")
             }
-            const res = await axios.post(`${DOMAIN}/api/users`)
+            const new_user = {email, username, password}
+            const res = await axios.post(`${DOMAIN}/api/users`, new_user)
             if (res?.data?.success) {
                 setNotification("success! Redirecting...")
                 setTimeout(() => {
@@ -39,7 +40,7 @@ export default function SignupPage() {
             }
             else {
                 setTimeout(() => {
-                    setNotification("Invalid login credentials!")
+                    setNotification(res?.data?.message)
                 }, 1000)
             }
         }
