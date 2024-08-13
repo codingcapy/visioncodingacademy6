@@ -23,6 +23,13 @@ export default function SignupPage() {
     async function handleSubmit(e) {
         e.preventDefault();
         try {
+            const email = e.target.email.value;
+            const username = e.target.username.value;
+            const password = e.target.password.value;
+            const confirm = e.target.confirm.value;
+            if (password != confirm){
+                return setNotification("passwords don't match!")
+            }
             const res = await axios.post(`${DOMAIN}/api/users`)
             if (res?.data?.success) {
                 setNotification("success! Redirecting...")
