@@ -29,6 +29,7 @@ import { TfiEmail } from "react-icons/tfi";
 import { FaWhatsapp } from "react-icons/fa";
 import { IoEyeOutline } from "react-icons/io5";
 import { TbTargetArrow } from "react-icons/tb";
+import FloatingNav from '../components/FloatingNav';
 
 export default function HomePage() {
 
@@ -484,6 +485,7 @@ export default function HomePage() {
                     </div>
                 </section>
             </div>
+            <FloatingNav />
         </main>
     )
 }
