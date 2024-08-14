@@ -248,12 +248,12 @@ export default function ContactPage() {
                     </section>
                     <p className='text-center'>{notification}</p>
                     <div className="mt-20">
-                    <div
-                        className="static bg-gradient-to-r from-black via-yellow-400 to-black h-[2px]">
+                        <div
+                            className="static bg-gradient-to-r from-black via-yellow-400 to-black h-[2px]">
+                        </div>
+                        <img src={visionCodingIcon} alt=""
+                            className="relative bottom-[45px] md:bottom-[60px] left-[40%] md:left-[48%] w-[75px] md:w-[100px] bg-black" />
                     </div>
-                    <img src={visionCodingIcon} alt=""
-                        className="relative bottom-[45px] md:bottom-[60px] left-[40%] md:left-[48%] w-[75px] md:w-[100px] bg-black" />
-                </div>
                     <section className="md:flex mx-auto py-10 w-[100%]">
                         <div className="mx-2 w-[100%]">
                             <h1 className="text-2xl py-2">Coquitlam Location</h1>
