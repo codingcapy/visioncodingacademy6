@@ -37,7 +37,7 @@ export default function LoginPage() {
         if (!user) {
             setTimeout(() => {
                 setNotification("Invalid login credentials");
-            }, 500)
+            }, 700)
         }
     }
 
@@ -67,10 +67,11 @@ export default function LoginPage() {
                             className="px-3 py-3 my-7 border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500">Login</button>
                         <p className="text-lg text-center">New User? <NavLink to="/signup"
                             className="text-yellow-200 font-bold">Sign Up</NavLink></p>
-                        <p className="text-lg text-center">Forgot Password? <a href="#"
-                            className="text-yellow-200 font-bold">Recovery</a></p>
+                        <p className="text-lg text-center">Forgot Password? <NavLink to="/forgotpassword"
+                            className="text-yellow-200 font-bold">Recovery</NavLink></p>
                     </form>
                 </section>
+                {authLoading ? <h2 className="text-center">Loading...</h2> : null}
                 <p className="text-center">{notification}</p>
             </div>
         </main>
