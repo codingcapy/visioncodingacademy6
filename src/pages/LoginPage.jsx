@@ -22,6 +22,12 @@ export default function LoginPage() {
         document.title = 'Login | Vision Coding';
     }, []);
 
+    useEffect(() => {
+        if (!!user) {
+            navigate(`/`);
+        }
+    }, [user])
+
     async function handleLogin(e) {
         e.preventDefault();
         const email = e.target.email.value;
@@ -30,7 +36,7 @@ export default function LoginPage() {
         loginService(email, password);
         if (!user) {
             setTimeout(() => {
-                setMessage("Invalid login credentials");
+                setNotification("Invalid login credentials");
             }, 500)
         }
     }
@@ -65,6 +71,7 @@ export default function LoginPage() {
                             className="text-yellow-200 font-bold">Recovery</a></p>
                     </form>
                 </section>
+                <p className="text-center">{notification}</p>
             </div>
         </main>
     )
