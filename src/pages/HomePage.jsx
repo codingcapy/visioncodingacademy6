@@ -137,7 +137,7 @@ export default function HomePage() {
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
-                            className="border-4 rounded-2xl border-gray-800 mb-10 md:mb-0"
+                            className="js--fadeInRight border-4 rounded-2xl border-gray-800 mb-10 md:mb-0"
                         ></iframe>
                         <iframe
                             width={`${window.innerWidth < 700 ? 300 : 400}`}
@@ -147,7 +147,7 @@ export default function HomePage() {
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
-                            className="border-4 rounded-2xl border-gray-800 mb-10 md:mb-0 md:mx-2"
+                            className="js--fadeInRight border-4 rounded-2xl border-gray-800 mb-10 md:mb-0 md:mx-2"
                         ></iframe>
                         <iframe
                             width={`${window.innerWidth < 700 ? 300 : 400}`}
@@ -157,7 +157,7 @@ export default function HomePage() {
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
-                            className="border-4 rounded-2xl border-gray-800 my-2 md:my-0"
+                            className="js--fadeInRight border-4 rounded-2xl border-gray-800 my-2 md:my-0"
                         ></iframe>
                     </div>
                     <p className="timeline-content js--fadeInBottom pb-2 text-lg md:text-2xl md:py-5">Welcome to Vision
