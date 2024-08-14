@@ -21,8 +21,6 @@ const useAuthStore = create((set, get) => ({
         set({ user: null, authLoading: false, tokenLoading: false });
     },
     loginService: async (email, password) => {
-        console.log(email)
-        console.log(password)
         set({ authLoading: true });
         try {
             const res = await axios.post(`${DOMAIN}/api/user/login`, { email, password });
