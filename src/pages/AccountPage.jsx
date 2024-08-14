@@ -1,9 +1,50 @@
+import { useState } from "react"
 import useAuthStore from "../store/AuthStore"
 import visionCodingIcon from "/yellow1.png"
 
 export default function AccountPage() {
 
     const { user } = useAuthStore((state) => state)
+    const [editPasswordMode, setEditPasswordMode] = useState(false)
+    const [editUsernameMode, setEditUsernameMode] = useState(false)
+    const [notification, setNotification] = useState("");
+
+    async function handleEditPassword(e) {
+        e.preventDefault()
+        const password = e.target.password.value;
+        const userId = user.user_id
+        const updatedPassword = { password };
+        try {
+            const res = await axios.post(`${DOMAIN}/api/users/${userId}`, updatedPassword);
+            if (res?.data.success) {
+                setEditPasswordMode(false);
+                setNotification("Password updated successfully!")
+            }
+            else {
+                setNotification(res?.data.message)
+            }
+        }
+        catch (err) {
+            setNotification("There was an error updating the password :( We will look into this issue, please try again in the near future!")
+        }
+    }
+
+    async function handleEditUsername(e) {
+        e.preventDefault()
+        const username = e.target.username.value;
+        const userId = user.user_id
+        const updatedUsername = username;
+        try {
+            const res = await axios.post(`${DOMAIN}/api/users/update/${userId}`, updatedUsername);
+            if (res?.data.success) {
+                setEditUsernameMode(false);
+                setMessage("Username updated successfully!")
+            }
+        }
+        catch (err) {
+            setNotification("There was an error updating the password :( We will look into this issue, please try again in the near future!")
+        }
+    }
 
     return (
         <main className="flex-1 overflow-x-hidden">
@@ -16,10 +57,27 @@ export default function AccountPage() {
                     className="relative bottom-[45px] md:bottom-[60px] left-[40%] md:left-[48%] w-[75px] md:w-[100px] bg-black" />
             </div>
             <section className="flex flex-col mx-auto">
-                <h2 className="mx-auto text-2xl">Username: <span className="pb-5 text-yellow-200">{user.username}</span></h2>
-                <button className="pb-2 text-2xl">Edit</button>
-                <h2 className="mx-auto text-2xl">Password: <span className="py-5 text-yellow-200">••••••••••</span></h2>
-                <button className="pb-2 text-2xl">Edit</button>
+                <div className="mx-auto pb-10">
+                    <h2 className="text-2xl">Username: <span className="text-yellow-200">{user.username}</span></h2>
+                    {editUsernameMode ?
+                        <form onSubmit={handleEditUsername} className="flex flex-col">
+                            <input type="text" id="username" name="username" placeholder="New Username" required className="px-2 border rounded-lg border-slate-700 py-1 text-black" />
+                            <button type="submit" className="rounded-xl my-5 py-2 px-2 bg-slate-700 text-white" >Change Username</button>
+                            <button className="" onClick={() => setEditUsernameMode(false)}>Cancel</button>
+                        </form>
+                        : <button className="px-3 py-3 my-7 border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500 w-[200px] mx-auto" onClick={() => setEditUsernameMode(true)}>Edit</button>}
+                </div>
+                <div className="mx-auto">
+                    <h2 className="text-2xl">Password: <span className="text-yellow-200">••••••••••</span></h2>
+                    {editPasswordMode
+                        ? <form onSubmit={handleEditPassword} className="flex flex-col">
+                            <input type="password" id="password" name="password" placeholder="New Password" required className="px-2 border rounded-lg border-slate-700 py-1 text-black" />
+                            <button type="submit" className="rounded-xl my-5 py-2 px-2 bg-slate-700 text-white" >Change password</button>
+                            <button className="" onClick={() => setEditPasswordMode(false)}>Cancel</button>
+                        </form>
+                        :
+                        <button className="px-3 py-3 my-7 border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500 w-[200px] mx-auto" onClick={() => setEditPasswordMode(true)}>Edit</button>}
+                </div>
             </section>
             <div className="mt-20">
                 <div
